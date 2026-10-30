@@ -3,6 +3,7 @@
 import { askPerplexity, parseJSON, stripCites } from '../lib/perplexity.mjs';
 import { quotes } from '../lib/market.mjs';
 import { THEMES } from '../lib/taxonomy.mjs';
+import { timingSafeEqual } from 'node:crypto';
 
 const cache = new Map(); // topic|depth -> { at, body }
 const hits = new Map(); // ip -> [timestamps]
@@ -37,13 +38,23 @@ function limited(ip) {
   return list.length > LIMIT_PER_HOUR;
 }
 
+function codeMatches(given, expected) {
+  const a = Buffer.from(String(given || ''));
+  const b = Buffer.from(String(expected));
+  return a.length === b.length && timingSafeEqual(a, b);
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Use POST' });
+  // Live research spends the owner's Perplexity credit, so it is private:
+  // it only runs for someone holding RESEARCH_PASSCODE. Without that variable it is off for everyone.
   const code = process.env.RESEARCH_PASSCODE;
-  if (code && req.headers['x-passcode'] !== code) return res.status(401).json({ error: 'passcode' });
+  if (!code) return res.status(403).json({ error: 'not_configured' });
+  if (!codeMatches(req.headers['x-passcode'], code)) return res.status(401).json({ error: 'passcode' });
 
   let body = req.body;
   if (typeof body === 'string') { try { body = JSON.parse(body); } catch { body = {}; } }
+  if (body?.unlock) return res.status(200).json({ ok: true });
   const topic = String(body?.topic || '').trim().slice(0, 200);
   const depth = body?.depth === 'deep' ? 'deep' : 'quick';
   if (!topic) return res.status(400).json({ error: 'Missing topic' });

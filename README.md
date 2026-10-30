@@ -26,9 +26,18 @@ Each commit from the workflow redeploys the site on Vercel automatically.
 4. **Vercel** — at vercel.com, “Add New → Project”, import the repository, add the environment variable `PERPLEXITY_API_KEY`, and deploy. Your public link is shown at the end (you can add your own domain under Settings → Domains).
 5. **First edition** — in GitHub: Actions → “Publish edition” → Run workflow. From then on it runs on its own.
 
+## Keeping live research private
+
+Your Perplexity key is only ever used on the server; visitors never see it. Live research on the Personal tab would spend your credit, so it is **off for everyone until you set a code**:
+
+1. Vercel → your project → Settings → Environment Variables → add `RESEARCH_PASSCODE` with a code only you know → then Deployments → ⋯ → Redeploy.
+2. On the site, Personal tab → “Owner? Unlock live research” → enter the code once. That browser stays unlocked until you press Lock.
+
+Visitors can still read every edition, search and filter the archive, and use their own watchlist. The three daily editions cost the same however many people visit.
+
 ## Options (Vercel environment variables)
 
-- `RESEARCH_PASSCODE` — if set, visitors need this code to run live research (protects your Perplexity credit). Browsing the news stays open to everyone.
+- `RESEARCH_PASSCODE` — required to switch on live research (see above).
 - `RESEARCH_LIMIT_PER_HOUR` — research requests per visitor per hour (default 20).
 - `PPLX_EFFORT` (GitHub secret or workflow env) — `low` (default) or `medium` for more thorough editions.
 

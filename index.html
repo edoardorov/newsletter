@@ -123,8 +123,10 @@ var store = {
   set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 };
 var DATA = { today: '', updated: '', stories: [] };
-var S = { tab: 'today', edition: null, detail: null, q: '', date: 'all', scope: 'All', region: 'All', themes: [], inst: null };
+var S = { tab: 'today', edition: null, detail: null, q: '', date: 'all', scope: 'All', region: 'All', themes: [], onlyWatch: false, inst: null, unlockOpen: false, unlockMsg: '' };
 var watch = store.get('recap.watch', []);
+var unlocked = !!store.get('recap.code', '');
+var wq = {}, wqPending = false; // live prices for watchlist tickers
 var history = store.get('recap.history', []);
 var view = document.getElementById('view');
 
@@ -175,7 +177,14 @@ function line(series, w, h, markIndex) {
 
 // "Your interest" comes from this viewer's own searches and reading.
 function hay(s) { return [s.title, s.dek, s.region, s.asset, s.scope].concat(s.keywords || [], s.themes || [], (s.companies || []).map(function (c) { return c.name + ' ' + c.ticker; })).join(' ').toLowerCase(); }
+// Watchlist: whole-word match on a story's text, themes, companies and tickers.
+function wordRe(w) { return new RegExp('(^|[^a-z0-9])' + String(w).toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^a-z0-9]|$)'); }
+function watchHits(s) { var h = hay(s); return watch.filter(function (w) { return wordRe(w).test(h); }); }
+function isWatched(s) { return watchHits(s).length > 0; }
+function watchCount(w) { var re = wordRe(w); return DATA.stories.filter(function (s) { return re.test(hay(s)); }).length; }
+function tickerLike(w) { return /^[A-Za-z0-9][A-Za-z0-9.\-]{0,11}$/.test(w) && !/\s/.test(w); }
 function interest(s) {
+  if (isWatched(s)) return 1;
   if (!history.length) return 0.5;
   var h = hay(s), n = 0;
   history.forEach(function (t) { if (t && h.indexOf(t) >= 0) n++; });
@@ -202,7 +211,7 @@ function tile(s) {
     '<div class="in"><div class="mono sub kick"><span>' + esc(s.region + ' · ' + s.asset) + '</span><span>Score ' + Math.round(sc * 100) + '</span></div>' +
     '<h3 class="ttl"><span class="hl" style="background:linear-gradient(transparent 62%,' + colorOf(s) + ' 62%)">' + esc(s.title) + '</span></h3>' +
     '<p class="dek">' + esc(s.dek) + '</p>' +
-    '<div class="tags"><span class="tag solid">' + esc(s.scope) + '</span>' + themeTags(s) + companyTags(s) + '</div></div></button>';
+    '<div class="tags">' + (isWatched(s) ? '<span class="tag solid">Watchlist</span>' : '') + '<span class="tag solid">' + esc(s.scope) + '</span>' + themeTags(s) + companyTags(s) + '</div></div></button>';
 }
 
 function renderToday() {
@@ -226,24 +235,25 @@ function renderToday() {
 }
 
 function filtered() {
-  var q = S.q.trim().toLowerCase(), wl = watch.map(function (w) { return w.toLowerCase(); });
+  var q = S.q.trim().toLowerCase();
   return DATA.stories.filter(function (s) {
     if (q && hay(s).indexOf(q) < 0) return false;
+    if (S.onlyWatch && !isWatched(s)) return false;
     if (S.date !== 'all' && daysAgo(s.date) > +S.date) return false;
     if (S.scope !== 'All' && s.scope !== S.scope) return false;
     if (S.region !== 'All' && s.region !== S.region) return false;
     if (S.themes.length && !(s.themes || []).some(function (t) { return S.themes.indexOf(t) >= 0; })) return false;
     return true;
-  }).map(function (s) { var h = hay(s); return { s: s, w: wl.some(function (w) { return h.indexOf(w) >= 0; }) }; })
+  }).map(function (s) { return { s: s, w: isWatched(s) }; })
     .sort(function (a, b) { return (b.w - a.w) || (a.s.date < b.s.date ? 1 : a.s.date > b.s.date ? -1 : score(b.s) - score(a.s)); });
 }
 
 function renderInst() {
   var r = S.inst; if (!r) return '';
   var h = '<div class="inst"><div class="head" style="align-items:baseline"><h2 class="serif" style="font-size:30px"><span class="hl" style="background:linear-gradient(transparent 62%,#BCC8EA 62%)">' + esc(r.topic) + '</span></h2>' +
-    '<span class="mono sub" style="font-size:11px">' + (r.data ? 'Perplexity · ' + (r.data.depth === 'deep' ? 'deep research' : 'quick research') + ' · ' + fmtUpdated(r.data.generatedAt) : 'Perplexity research') + '</span></div>';
+    '<div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><span class="mono sub" style="font-size:11px">' + (r.data ? 'Perplexity · ' + (r.data.depth === 'deep' ? 'deep research' : 'quick research') + ' · ' + fmtUpdated(r.data.generatedAt) : 'Perplexity research') + '</span>' +
+    '<button class="btn ghost" style="min-height:36px" data-act="closeinst" aria-label="Close research">Close ×</button></div></div>';
   if (r.loading) return h + '<p class="mono" style="margin:0;font-size:12px">' + (r.depth === 'deep' ? 'Researching in depth… this can take up to a minute' : 'Searching the web…') + '</p></div>';
-  if (r.needCode) return h + '<form data-form="code" style="display:flex;gap:8px;flex-wrap:wrap"><label class="sr" for="code">Access code</label><input id="code" class="field" style="flex:1 1 200px" placeholder="Access code for research" autocomplete="off"><button class="btn">Unlock</button></form><p class="sub" style="margin:0;font-size:14px">Research on this site is limited to people with the access code.</p></div>';
   if (r.error) return h + '<p style="margin:0">' + esc(r.error) + '</p><button class="btn ghost" style="align-self:flex-start" data-act="research" data-v="' + (r.depth || 'quick') + '">Try again</button></div>';
   var d = r.data;
   h += '<div class="cols" style="gap:32px"><div class="main" style="gap:14px">' +
@@ -271,20 +281,35 @@ function renderPersonal() {
   var res = filtered();
   var hasFilters = S.date !== 'all' || S.scope !== 'All' || S.region !== 'All' || S.themes.length;
   var opt = function (v, l, cur) { return '<option value="' + v + '"' + (v === cur ? ' selected' : '') + '>' + l + '</option>'; };
+  var unlockUI = unlocked
+    ? '<button class="mono sub" style="background:none;border:0;padding:0;font-size:10px;text-decoration:underline;cursor:pointer;align-self:flex-start" data-act="lock">Live research unlocked in this browser · Lock</button>'
+    : (S.unlockOpen
+      ? '<form data-form="code" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><label class="sr" for="code">Research code</label><input id="code" class="field" style="flex:0 1 260px" type="password" placeholder="Your research code" autocomplete="off"><button class="btn">Unlock</button><button type="button" class="btn ghost" data-act="unlockclose">Cancel</button>' +
+        (S.unlockMsg ? '<span style="font-size:14px">' + esc(S.unlockMsg) + '</span>' : '') + '</form>'
+      : '<button class="mono sub" style="background:none;border:0;padding:0;font-size:10px;text-decoration:underline;cursor:pointer;align-self:flex-start" data-act="unlockopen">Owner? Unlock live research</button>');
   return '<section class="section" style="gap:24px">' +
-    '<form data-form="search" style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end"><div style="flex:999 1 420px;display:flex;flex-direction:column;gap:6px"><label for="q" class="mono lab">Search the archive, or research any topic live with Perplexity</label>' +
+    '<div style="display:flex;flex-direction:column;gap:10px"><form data-form="search" style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end"><div style="flex:999 1 420px;display:flex;flex-direction:column;gap:6px"><label for="q" class="mono lab">' + (unlocked ? 'Search the archive, or research any topic live with Perplexity' : 'Search the archive') + '</label>' +
     '<input id="q" class="field" style="font-size:18px;min-height:52px" type="search" placeholder="Company, ticker, theme or keyword" value="' + esc(S.q) + '" autocomplete="off"></div>' +
-    '<button class="btn" style="min-height:52px" type="submit">Research</button></form>' +
+    (unlocked ? '<button class="btn" style="min-height:52px" type="submit">Research</button>' : '') + '</form>' + unlockUI + '</div>' +
     renderInst() +
     '<div class="cols"><aside class="side">' +
+    '<div class="grp"><span class="mono lab">Show</span><div style="display:flex;gap:6px"><button class="pill' + (!S.onlyWatch ? ' on' : '') + '" data-act="onlywatch" data-v="0">All stories</button><button class="pill' + (S.onlyWatch ? ' on' : '') + '" data-act="onlywatch" data-v="1"' + (watch.length ? '' : ' disabled title="Add something to your watchlist first"') + '>Watchlist only</button></div></div>' +
     '<div class="grp"><label for="f-date" class="mono lab">Date</label><select id="f-date" class="field" data-filter="date">' + opt('all', 'All (6 months)', S.date) + opt('0', 'Today', S.date) + opt('7', 'Last 7 days', S.date) + opt('30', 'Last 30 days', S.date) + opt('90', 'Last 3 months', S.date) + '</select></div>' +
     '<div class="grp"><span class="mono lab">Scope</span><div style="display:flex;gap:6px" role="group" aria-label="Scope">' + ['All', 'Macro', 'Micro'].map(function (o) { return '<button class="pill' + (S.scope === o ? ' on' : '') + '" data-act="scope" data-v="' + o + '">' + o + '</button>'; }).join('') + '</div></div>' +
     '<div class="grp"><label for="f-region" class="mono lab">Region</label><select id="f-region" class="field" data-filter="region">' + ['All', 'UK', 'Europe', 'US', 'Global'].map(function (o) { return opt(o, o, S.region); }).join('') + '</select></div>' +
     '<div class="grp"><span class="mono lab">Themes</span><div class="tags">' + themes.map(function (t) { var on = S.themes.indexOf(t) >= 0; return '<button class="pill' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="theme" data-v="' + esc(t) + '">' + esc(t) + '</button>'; }).join('') + '</div>' +
     (hasFilters ? '<button class="btn ghost" style="min-height:36px;align-self:flex-start" data-act="clear">Clear filters</button>' : '') + '</div>' +
-    '<div class="box"><h3 class="serif">Watchlist</h3><form data-form="watch" style="display:flex;gap:6px"><label for="wl" class="sr">Add to watchlist</label><input id="wl" class="field" placeholder="Ticker, company or theme" autocomplete="off"><button class="btn">Add</button></form>' +
-    (watch.length ? '<div class="tags">' + watch.map(function (w, i) { return '<button class="pill on" data-act="unwatch" data-v="' + i + '" aria-label="Remove ' + esc(w) + ' from watchlist">' + esc(w) + ' ×</button>'; }).join('') + '</div>'
-      : '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">Nothing followed yet. Matching stories get a watchlist badge and move to the top. Your watchlist is saved in this browser only.</p>') + '</div>' +
+    '<div class="box"><h3 class="serif">Watchlist</h3>' +
+    '<p class="sub" style="margin:0;font-size:13px;line-height:1.5">Follow the companies, tickers or themes you care about (e.g. NVDA, NatWest, Crypto). Every story that mentions them gets a Watchlist badge, a bigger tile on Today, and goes to the top here. Tickers also show their live price. Saved in this browser only.</p>' +
+    '<form data-form="watch" style="display:flex;gap:6px"><label for="wl" class="sr">Add to watchlist</label><input id="wl" class="field" placeholder="Ticker, company or theme" autocomplete="off"><button class="btn">Add</button></form>' +
+    (watch.length ? '<div style="display:flex;flex-direction:column;gap:6px">' + watch.map(function (w, i) {
+      var n = watchCount(w), q = wq[w.toUpperCase()];
+      return '<div class="card" style="flex-direction:row;justify-content:space-between;align-items:center;padding:8px 8px 8px 12px"><div style="display:flex;flex-direction:column;gap:3px;min-width:0">' +
+        '<span class="mono" style="font-size:13px;font-weight:500">' + esc(w) + '</span>' +
+        '<span class="mono sub" style="font-size:10px">' + n + (n === 1 ? ' story' : ' stories') +
+        (q && q.price != null ? ' · <span class="' + dirClass(q.change) + '">' + q.price.toFixed(2) + ' ' + esc(q.currency || '') + ' ' + pct(q.change) + '</span>' : '') + '</span></div>' +
+        '<button class="pill" style="min-width:36px;padding:0 10px" data-act="unwatch" data-v="' + i + '" aria-label="Remove ' + esc(w) + ' from watchlist">×</button></div>';
+    }).join('') + '</div>' : '') + '</div>' +
     '</aside><div class="main"><div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px"><span class="mono" style="font-size:12px">Major news · ' + res.length + (res.length === 1 ? ' story' : ' stories') + '</span><span class="mono sub" style="font-size:11px">Archive keeps 6 months</span></div>' +
     (res.length ? res.map(function (x) {
       var s = x.s;
@@ -321,7 +346,8 @@ function renderDetail(s) {
         (c.series && c.series.length > 2 ? '<svg viewBox="0 0 300 130" style="width:100%;height:auto" role="img" aria-label="' + esc(c.ticker) + ' daily closes around the news">' + line(c.series, 300, 130, c.eventIndex) +
           '<text x="15" y="126" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">BEFORE</text><text x="285" y="126" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">AFTER</text></svg>'
           : '<span class="mono sub" style="font-size:10px">Daily-close chart fills in at the next edition</span>') +
-        '<div class="mono" style="display:flex;justify-content:space-between;font-size:11px;border-top:1px solid var(--line);padding-top:8px"><span class="sub">Live</span><span data-q="' + esc(c.ticker) + '">…</span></div></div>';
+        '<div class="mono" style="display:flex;justify-content:space-between;font-size:11px;border-top:1px solid var(--line);padding-top:8px"><span class="sub">Live</span><span data-q="' + esc(c.ticker) + '">…</span></div>' +
+        (watch.indexOf(c.ticker) >= 0 ? '<span class="mono sub" style="font-size:10px">On your watchlist</span>' : '<button class="pill" style="align-self:flex-start" data-act="follow" data-v="' + esc(c.ticker) + '">+ Watchlist</button>') + '</div>';
     }).join('') : '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">No single listed company is central to this story.</p>') + '</div>' +
     '<div class="box" style="gap:12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><h3 class="serif">Tile score</h3><span class="mono" style="font-size:20px">' + Math.round(sc * 100) + '</span></div>' +
     '<p class="sub" style="margin:0;font-size:13px;line-height:1.5">The average of three 0–100 measures. It sets how wide the story’s tile is on Today.</p>' +
@@ -347,23 +373,52 @@ function render() {
   if (d) { view.innerHTML = renderDetail(d); document.title = d.title + ' · The Recap'; liveQuotes(d); window.scrollTo(0, 0); return; }
   document.title = 'The Recap · Daily financial news';
   view.innerHTML = S.tab === 'today' ? renderToday() : renderPersonal();
+  if (S.tab === 'personal') loadWatchQuotes();
+}
+
+function callResearch(payload, code) {
+  return fetch('/api/research', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-passcode': code || '' }, body: JSON.stringify(payload) })
+    .then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }, function () { return { status: r.status, j: {} }; }); });
+}
+var NOT_CONFIGURED = 'Live research is switched off until the site owner sets RESEARCH_PASSCODE on Vercel.';
+function lockOut(msg) { unlocked = false; store.set('recap.code', ''); S.unlockOpen = true; S.unlockMsg = msg; }
+
+function loadWatchQuotes() {
+  var need = watch.filter(function (w) { return tickerLike(w) && !(w.toUpperCase() in wq); }).map(function (w) { return w.toUpperCase(); });
+  if (!need.length || wqPending) return;
+  wqPending = true;
+  fetch('/api/quote?s=' + encodeURIComponent(need.join(','))).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (d) {
+    need.forEach(function (s) { wq[s] = d && d[s] && !d[s].error ? d[s] : null; });
+    wqPending = false;
+    if (S.tab === 'personal' && !S.detail && !(document.activeElement && document.activeElement.tagName === 'INPUT')) render();
+  });
 }
 
 function research(depth) {
   var topic = S.q.trim(); if (!topic) return;
+  if (!unlocked) { S.unlockOpen = true; render(); return; }
   remember([topic]);
   S.inst = { topic: topic, depth: depth, loading: true }; render();
-  var headers = { 'Content-Type': 'application/json' }, code = store.get('recap.code', '');
-  if (code) headers['x-passcode'] = code;
-  fetch('/api/research', { method: 'POST', headers: headers, body: JSON.stringify({ topic: topic, depth: depth }) })
-    .then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }, function () { return { status: r.status, j: {} }; }); })
+  callResearch({ topic: topic, depth: depth }, store.get('recap.code', ''))
     .then(function (x) {
-      if (S.inst && S.inst.topic !== topic) return;
-      if (x.status === 401) S.inst = { topic: topic, depth: depth, needCode: true };
+      if (!S.inst || S.inst.topic !== topic) return;
+      if (x.status === 401) { S.inst = null; lockOut('That code didn’t work. Enter it again.'); }
+      else if (x.status === 403) S.inst = { topic: topic, depth: depth, error: NOT_CONFIGURED };
       else if (x.status !== 200) S.inst = { topic: topic, depth: depth, error: x.status === 429 ? 'Too many research requests from this connection. Try again in a while.' : 'Research didn’t complete. Please try again.' };
       else S.inst = { topic: topic, data: x.j };
       render();
-    }).catch(function () { S.inst = { topic: topic, depth: depth, error: 'Research is unavailable right now.' }; render(); });
+    }).catch(function () { if (S.inst && S.inst.topic === topic) { S.inst = { topic: topic, depth: depth, error: 'Research is unavailable right now.' }; render(); } });
+}
+
+function unlock(code) {
+  if (!code) return;
+  S.unlockMsg = 'Checking…'; render();
+  callResearch({ unlock: true }, code).then(function (x) {
+    if (x.status === 200) { store.set('recap.code', code); unlocked = true; S.unlockOpen = false; S.unlockMsg = ''; }
+    else if (x.status === 403) S.unlockMsg = NOT_CONFIGURED;
+    else S.unlockMsg = 'That code isn’t right.';
+    render();
+  }).catch(function () { S.unlockMsg = 'Couldn’t check the code. Try again.'; render(); });
 }
 
 document.addEventListener('click', function (e) {
@@ -377,15 +432,21 @@ document.addEventListener('click', function (e) {
   else if (act === 'scope') { S.scope = v; render(); }
   else if (act === 'theme') { var i = S.themes.indexOf(v); if (i >= 0) S.themes.splice(i, 1); else S.themes.push(v); render(); }
   else if (act === 'clear') { S.date = 'all'; S.scope = 'All'; S.region = 'All'; S.themes = []; render(); }
-  else if (act === 'unwatch') { watch.splice(+v, 1); store.set('recap.watch', watch); render(); }
+  else if (act === 'unwatch') { watch.splice(+v, 1); store.set('recap.watch', watch); if (!watch.length) S.onlyWatch = false; render(); }
+  else if (act === 'follow') { if (v && watch.indexOf(v) < 0) { watch.push(v); store.set('recap.watch', watch); } b.textContent = 'On your watchlist'; b.disabled = true; }
+  else if (act === 'onlywatch') { S.onlyWatch = v === '1' && watch.length > 0; render(); }
   else if (act === 'research') { research(v === 'deep' ? 'deep' : 'quick'); }
+  else if (act === 'closeinst') { S.inst = null; render(); }
+  else if (act === 'unlockopen') { S.unlockOpen = true; S.unlockMsg = ''; render(); var c = document.getElementById('code'); if (c) c.focus(); }
+  else if (act === 'unlockclose') { S.unlockOpen = false; S.unlockMsg = ''; render(); }
+  else if (act === 'lock') { store.set('recap.code', ''); unlocked = false; S.inst = null; render(); }
 });
 document.addEventListener('submit', function (e) {
   var f = e.target.getAttribute('data-form'); if (!f) return;
   e.preventDefault();
-  if (f === 'search') { S.q = document.getElementById('q').value; research('quick'); }
+  if (f === 'search') { S.q = document.getElementById('q').value; if (unlocked) research('quick'); }
   else if (f === 'watch') { var v = document.getElementById('wl').value.trim(); if (v && watch.indexOf(v) < 0) { watch.push(v); store.set('recap.watch', watch); remember([v]); } render(); }
-  else if (f === 'code') { store.set('recap.code', document.getElementById('code').value.trim()); research(S.inst && S.inst.depth || 'quick'); }
+  else if (f === 'code') { unlock(document.getElementById('code').value.trim()); }
 });
 document.addEventListener('input', function (e) {
   if (e.target.id === 'q') { S.q = e.target.value; var pos = e.target.selectionStart; render(); var q = document.getElementById('q'); if (q) { q.focus(); try { q.setSelectionRange(pos, pos); } catch (x) {} } }
@@ -421,7 +482,7 @@ function load(initial) {
   });
 }
 load(true).catch(function () { view.innerHTML = '<div class="section"><div class="empty"><p class="serif">The news feed couldn’t load. Please refresh in a moment.</p></div></div>'; });
-setInterval(function () { load(false).catch(function () {}); }, 5 * 60 * 1000);
+setInterval(function () { wq = {}; load(false).catch(function () {}); if (S.tab === 'personal' && !S.detail) loadWatchQuotes(); }, 5 * 60 * 1000);
 })();
 </script>
 </body>
