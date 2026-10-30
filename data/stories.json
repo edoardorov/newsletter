@@ -1,8 +1,529 @@
 {
  "today": "2026-10-30",
- "updated": "2026-10-30T15:30:00Z",
+ "updated": "2026-10-30T16:51:03.923Z",
  "edition": "MD",
  "stories": [
+  {
+   "id": "20261030-md-ai-spending-fears-deepen-the-global-tech",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Tech",
+    "AI",
+    "Growth"
+   ],
+   "keywords": [
+    "AI investment",
+    "European shares",
+    "Wall Street",
+    "technology"
+   ],
+   "companies": [
+    {
+     "name": "Alphabet",
+     "ticker": "GOOGL",
+     "move": 0,
+     "series": [
+      320.21,
+      316.8,
+      320.58,
+      324.89,
+      283.82,
+      279.935
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Amazon",
+     "ticker": "AMZN",
+     "move": 0,
+     "series": [
+      248,
+      249.09,
+      253.1,
+      254.6,
+      243.79,
+      238.915
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "move": 0,
+     "series": [
+      86.96,
+      90.47,
+      93.74,
+      95.53,
+      92.07,
+      64.465
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.95,
+   "imp": 0.9,
+   "title": "AI spending fears deepen the global tech selloff",
+   "dek": "AI-spending jitters drove a broad tech-led selloff, with US indexes sharply lower in early trading.",
+   "body": [
+    "European shares fell as renewed concern about returns on heavy AI investment weighed on technology stocks. The STOXX 600 was down around 0.3% in morning trading, though it remained on track for a monthly gain.",
+    "US futures also pointed lower, with S&P 500 e-minis down 0.89% in Reuters’ morning report. After the open, the S&P 500 fell 1.16% and the Nasdaq dropped 2.26%, while the Dow edged up 0.08%."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Tech giants' spending spooks investors as bonds rally",
+     "url": "https://www.reuters.com/legal/transactional/global-markets-global-markets-2026-10-30/"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Nasdaq tumbles at open as Amazon, Intel add to AI spending woes",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WA1YV?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-euro-zone-growth-beats-forecasts-as-infl",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Rates",
+   "sentiment": "Neutral",
+   "themes": [
+    "Growth",
+    "Inflation",
+    "Rates"
+   ],
+   "keywords": [
+    "euro-zone GDP",
+    "Germany",
+    "Spain",
+    "ECB"
+   ],
+   "companies": [],
+   "cov": 0.9,
+   "imp": 0.75,
+   "title": "Euro-zone growth beats forecasts as inflation risks persist",
+   "dek": "The bloc’s growth beat expectations, but uneven national results and rising price pressures cloud the policy picture.",
+   "body": [
+    "Euro-zone GDP grew 0.4% quarter on quarter in the third quarter, slowing from 0.6% in the previous quarter but exceeding the 0.2% growth economists had forecast.",
+    "Germany expanded 0.2%, Spain and the Netherlands each grew 0.6%, Italy was flat and France contracted 0.1%. Separate national inflation readings showed price growth accelerating in several major euro-zone economies, complicating the outlook for the ECB."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Euro zone growth beats projections again",
+     "url": "https://www.reuters.com/world/europe/euro-zone-growth-beats-projections-again-2026-10-30/"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-german-inflation-cools-more-than-expecte",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Rates",
+   "sentiment": "Positive",
+   "themes": [
+    "Inflation",
+    "Rates"
+   ],
+   "keywords": [
+    "German CPI",
+    "fuel tax",
+    "core inflation",
+    "ECB"
+   ],
+   "companies": [],
+   "cov": 0.82,
+   "imp": 0.7,
+   "title": "German inflation cools more than expected",
+   "dek": "A larger-than-expected slowdown in German prices offered some relief amid wider euro-area inflation concerns.",
+   "body": [
+    "Germany’s harmonised inflation rate slowed to 2.8% year on year in October, from 3.3% in September and below the 3.1% expected by economists polled by Reuters.",
+    "The first month of a fuel-tax cut helped ease pump-price pressures. Core inflation also declined, to 2.1% from 2.4%."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "German inflation slows more than expected in October",
+     "url": "https://www.reuters.com/business/german-inflation-slows-october-2026-10-30/"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-ecb-survey-finds-more-euro-zone-firms-an",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Labour market",
+    "Inflation",
+    "Rates"
+   ],
+   "keywords": [
+    "wage demands",
+    "ECB survey",
+    "energy costs",
+    "pay growth"
+   ],
+   "companies": [],
+   "cov": 0.7,
+   "imp": 0.65,
+   "title": "ECB survey finds more euro-zone firms anticipate wage pressure",
+   "dek": "The survey adds to the ECB’s focus on whether the energy-driven inflation rise will feed into wages.",
+   "body": [
+    "The ECB’s quarterly survey of large euro-zone companies found that 40% expected or saw a risk of higher wage demands, up from 20% in the previous survey in July.",
+    "Companies still expected wage growth to slow, from 3.2% last year to 3.0% this year and 2.9% next year, but at a more gradual pace than previously anticipated. The survey also pointed to continued cost pressures, including from energy and agricultural prices."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Euro zone companies brace for higher wage demands, ECB poll shows",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WA12C?channel=FBi345"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-us-labour-costs-rise-at-a-slower-pace-in",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Neutral",
+   "themes": [
+    "Labour market",
+    "Inflation",
+    "Rates"
+   ],
+   "keywords": [
+    "US labour costs",
+    "wages",
+    "Employment Cost Index",
+    "inflation"
+   ],
+   "companies": [],
+   "cov": 0.78,
+   "imp": 0.65,
+   "title": "US labour costs rise at a slower pace in the third quarter",
+   "dek": "A moderation in quarterly labour-cost growth offered a counterpoint to recent US inflation concerns.",
+   "body": [
+    "US employment costs rose 0.8% in the third quarter, matching economists’ expectations but slowing from a 0.9% increase in the second quarter, according to the Employment Cost Index.",
+    "Wages and salaries rose 0.7% in the quarter, also slower than the prior period. Total labour costs were up 3.4% over the year to September, while inflation-adjusted wages fell 0.6%."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Slower wage growth curbs US labor costs in third quarter",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WA1U7?channel=FBi345"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-bp-posts-8-46-billion-quarterly-profit-a",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "UK",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Energy"
+   ],
+   "keywords": [
+    "BP results",
+    "profit",
+    "net debt",
+    "refining"
+   ],
+   "companies": [
+    {
+     "name": "BP",
+     "ticker": "BP.L",
+     "move": 0.5,
+     "series": [
+      638.5,
+      630.8,
+      612.7,
+      619.9,
+      624.3,
+      628.75
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
+    }
+   ],
+   "cov": 0.85,
+   "imp": 0.75,
+   "title": "BP posts $8.46 billion quarterly profit and reaches debt target early",
+   "dek": "Higher energy prices and refining margins lifted BP’s profit to a record under its current reporting measure.",
+   "body": [
+    "BP reported third-quarter underlying replacement-cost profit of $8.46 billion, above the $7.33 billion expected by analysts and up from $2.2 billion a year earlier. The company said its quarterly operating cash flow was $14.8 billion.",
+    "Net debt fell to $13.9 billion, allowing BP to reach its net-debt target a year early. The company said it would use the windfall to settle its remaining Deepwater Horizon liabilities; its shares were up about 0.5% in morning trading."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "BP beats third-quarter forecasts with record $8.46 billion profit",
+     "url": "https://www.reuters.com/business/bp-posts-net-income-846-bln-beating-expectations-2026-10-30/"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-sanofi-lifts-its-2026-outlook-again-as-q",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Healthcare",
+    "M&A"
+   ],
+   "keywords": [
+    "Sanofi",
+    "guidance",
+    "Dupixent",
+    "acquisitions"
+   ],
+   "companies": [
+    {
+     "name": "Sanofi",
+     "ticker": "SAN.PA",
+     "move": 5.9,
+     "series": [
+      74.12,
+      74.58,
+      75.15,
+      75.51,
+      76.15,
+      79.91
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.85,
+   "imp": 0.75,
+   "title": "Sanofi lifts its 2026 outlook again as quarterly profit beats forecasts",
+   "dek": "A strong quarter and upgraded guidance lifted the French drugmaker’s shares, while its new CEO flagged dealmaking ambitions.",
+   "body": [
+    "Sanofi raised its 2026 targets for the second time this year, projecting low-teens sales growth and mid-teens growth in business earnings per share at constant exchange rates.",
+    "Third-quarter business operating income was €5.43 billion, ahead of the €4.32 billion analyst consensus cited by Reuters. The French drugmaker’s shares rose nearly 6% to their highest level since April as it also signalled interest in acquisitions to replenish its pipeline."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Sanofi teases appetite for larger deals, lifts 2026 growth targets under new CEO Garijo",
+     "url": "https://www.reuters.com/legal/litigation/sanofi-lifts-expectations-2026-sales-growth-looks-ma-2026-10-30/"
+    },
+    {
+     "pub": "Sanofi",
+     "title": "Q3 2026: double-digit growth in sales and business EPS; 2026 guidance upgraded",
+     "url": "https://www.sanofi.com/en/media-room/press-releases/2026/2026-10-30-06-30-00-3392028"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-puma-gains-as-results-point-to-progress-",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Consumer"
+   ],
+   "keywords": [
+    "Puma",
+    "quarterly sales",
+    "turnaround",
+    "sportswear"
+   ],
+   "companies": [
+    {
+     "name": "Puma",
+     "ticker": "PUMG.DE",
+     "move": 6.9
+    }
+   ],
+   "cov": 0.65,
+   "imp": 0.55,
+   "title": "Puma gains as results point to progress in its turnaround",
+   "dek": "Quarterly results and its product rollout helped the sportswear group stand out in a weak European market.",
+   "body": [
+    "Puma shares advanced after the German sportswear company reported third-quarter sales that Reuters said were in line with estimates, supporting signs of progress in its turnaround.",
+    "Reuters’ European-market report put the shares up 4% in one update; a later market report recorded a gain of 6.9%."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "European shares drop as AI spending worries hit tech; though best month since June in sight",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/european-shares-ease-ai-driven-082535937.html?fr=sycsrp_catchall"
+    },
+    {
+     "pub": "Bloomberg",
+     "title": "Stock Movers: BP, Sanofi, Puma",
+     "url": "https://www.bloomberg.com/news/audio/2026-10-30/stock-movers-bp-sanofi-puma-podcast"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-bayer-rises-after-winning-roundup-cancer",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Healthcare",
+    "Regulation"
+   ],
+   "keywords": [
+    "Bayer",
+    "Roundup",
+    "litigation",
+    "court ruling"
+   ],
+   "companies": [
+    {
+     "name": "Bayer",
+     "ticker": "BAYN.DE",
+     "move": 4.1,
+     "series": [
+      43.98,
+      45.56,
+      46.15,
+      46.03,
+      47.96,
+      50.22
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.6,
+   "imp": 0.55,
+   "title": "Bayer rises after winning Roundup cancer-claims trial",
+   "dek": "A courtroom win gave Bayer a lift amid its long-running Roundup litigation overhang.",
+   "body": [
+    "Bayer rose after winning a trial on Thursday involving claims by three women that its Roundup weedkiller caused their cancer. Reuters reported the shares up 4.1% in European trading.",
+    "The court outcome offered a positive legal development for the company as investors weighed ongoing litigation exposure."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "European shares ease as AI-driven tech selloff deepens",
+     "url": "https://www.reuters.com/business/european-shares-ease-ai-driven-tech-selloff-deepens-2026-10-30/"
+    }
+   ]
+  },
+  {
+   "id": "20261030-md-binance-says-partners-have-located-about",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Negative",
+   "themes": [
+    "Crypto",
+    "Regulation"
+   ],
+   "keywords": [
+    "asset freezes",
+    "Bitcoin",
+    "stablecoins",
+    "security"
+   ],
+   "companies": [
+    {
+     "name": "Binance",
+     "ticker": "BNB-USD",
+     "move": 0,
+     "series": [
+      737.7246,
+      741.4194,
+      744.1481,
+      758.6685,
+      697.6913,
+      699.58
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Tether",
+     "ticker": "USDT-USD",
+     "move": 0,
+     "series": [
+      0.9987,
+      0.9983,
+      0.9987,
+      0.999,
+      0.9977,
+      0.9988
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Circle Internet Group",
+     "ticker": "CRCL",
+     "move": 0,
+     "series": [
+      85.91,
+      79.84,
+      81.58,
+      81.71,
+      79.99,
+      72.705
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.95,
+   "imp": 0.95,
+   "title": "Binance says partners have located about $3 billion in affected assets",
+   "dek": "Asset freezes covered roughly half the reported haul, but crypto prices remained under pressure as the recovery picture stayed incomplete.",
+   "body": [
+    "Following the reported Binance security incident, the exchange said it and its partners had located about $3 billion of the estimated $6.3 billion in affected assets; Reuters reported that it gave no update on the remaining $3.3 billion.",
+    "Bitcoin reached a six-week low and was last down about 3% in Reuters’ market update, while ether was down more than 3%. Reuters also reported that stablecoin issuers had frozen roughly half of the stolen assets."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Analysts react as Binance freezes assets after $6.3 billion security breach",
+     "url": "https://www.reuters.com/legal/government/view-analysts-react-binance-freezes-assets-after-63-billion-security-breach-2026-10-30/"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Explainer: Gone in 20 minutes: How the biggest heist in crypto history unfolded",
+     "url": "https://www.reuters.com/legal/government/gone-20-minutes-how-biggest-heist-crypto-history-unfolded-2026-10-30/"
+    }
+   ]
+  },
   {
    "id": "20261030-am-intel",
    "date": "2026-10-30",
@@ -25,7 +546,17 @@
     {
      "name": "Intel",
      "ticker": "INTC",
-     "move": -25.6
+     "move": -25.6,
+     "series": [
+      86.96,
+      90.47,
+      93.74,
+      95.53,
+      92.07,
+      64.465
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     }
    ],
    "cov": 0.95,
@@ -72,7 +603,17 @@
     {
      "name": "Amazon",
      "ticker": "AMZN",
-     "move": -7.1
+     "move": -7.1,
+     "series": [
+      248,
+      249.09,
+      253.1,
+      254.6,
+      243.79,
+      238.915
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     }
    ],
    "cov": 0.9,
@@ -201,7 +742,17 @@
     {
      "name": "AstraZeneca",
      "ticker": "AZN.L",
-     "move": 3.8
+     "move": 3.8,
+     "series": [
+      12824,
+      12854,
+      12822,
+      12764,
+      13052,
+      13992
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
     }
    ],
    "cov": 0.7,
@@ -247,7 +798,17 @@
     {
      "name": "NatWest Group",
      "ticker": "NWG.L",
-     "move": -7.4
+     "move": -7.4,
+     "series": [
+      627.4,
+      644,
+      634.4,
+      646.8,
+      635.2,
+      580.8
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
     }
    ],
    "cov": 0.7,
@@ -293,7 +854,17 @@
     {
      "name": "Mobico Group",
      "ticker": "MCG.L",
-     "move": 12
+     "move": 12,
+     "series": [
+      40.4,
+      38.74,
+      39.28,
+      38.74,
+      39.38,
+      43.9625
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
     }
    ],
    "cov": 0.5,
@@ -339,7 +910,17 @@
     {
      "name": "Sandisk",
      "ticker": "SNDK",
-     "move": -7.8
+     "move": -7.8,
+     "series": [
+      1238.03,
+      1255.58,
+      1304.84,
+      1404.77,
+      1330.05,
+      1165.6
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     }
    ],
    "cov": 0.55,
@@ -385,12 +966,32 @@
     {
      "name": "Reddit",
      "ticker": "RDDT",
-     "move": -23
+     "move": -23,
+     "series": [
+      144.25,
+      138.45,
+      136.46,
+      134.7,
+      129.6,
+      91.62
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     },
     {
      "name": "Twilio",
      "ticker": "TWLO",
-     "move": -20.2
+     "move": -20.2,
+     "series": [
+      261.79,
+      263.65,
+      254.56,
+      253.77,
+      241.9,
+      199.555
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     }
    ],
    "cov": 0.65,
@@ -470,7 +1071,17 @@
     {
      "name": "BT Group",
      "ticker": "BT-A.L",
-     "move": 5.7
+     "move": 5.7,
+     "series": [
+      211.8,
+      211.2,
+      213.4,
+      212.5,
+      213,
+      227.3
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
     }
    ],
    "cov": 0.45,
@@ -490,493 +1101,6 @@
      "pub": "MarketScreener",
      "title": "FTSE 100 edges up as EU growth beats forecasts",
      "url": "https://www.marketscreener.com/news/ftse-100-edges-up-as-eu-growth-beats-forecasts-ce785fdbdd8bff22"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-nasdaq",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Macro",
-   "region": "US",
-   "asset": "Equities",
-   "sentiment": "Negative",
-   "themes": [
-    "AI",
-    "Tech"
-   ],
-   "keywords": [
-    "Nasdaq",
-    "AI capex",
-    "Semiconductors",
-    "Megacaps"
-   ],
-   "companies": [
-    {
-     "name": "Arm Holdings",
-     "ticker": "ARM",
-     "move": -8.9
-    },
-    {
-     "name": "AMD",
-     "ticker": "AMD",
-     "move": -8.1
-    },
-    {
-     "name": "Nvidia",
-     "ticker": "NVDA",
-     "move": -2.7
-    }
-   ],
-   "cov": 0.95,
-   "imp": 0.9,
-   "title": "Nasdaq slides more than 2% as AI-spending doubts spread through tech",
-   "dek": "The S&P 500 fell about 1.1% while the Dow held roughly flat.",
-   "body": [
-    "The Nasdaq-100 was down about 2.4% and the S&P 500 about 1.1% in early New York trading, as results from Intel and Amazon, and Alphabet the day before, raised questions about the return on AI investment.",
-    "Chipmakers led the declines: Arm and AMD fell around 8–9% and Nvidia about 3%. Hardware names including Dell and HP also dropped sharply without news of their own.",
-    "The Nasdaq Composite is on course for a fall of about 2.5% in October, while the Dow is on track for a gain of close to 3%."
-   ],
-   "sources": [
-    {
-     "pub": "StockTitan",
-     "title": "Stock Market Today Live, October 30, 2026",
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
-    },
-    {
-     "pub": "TheStreet",
-     "title": "Stock Market Today, Oct. 30, 2026",
-     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
-    },
-    {
-     "pub": "CoinDesk",
-     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
-     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-ezgdp",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Macro",
-   "region": "Europe",
-   "asset": "Rates",
-   "sentiment": "Positive",
-   "themes": [
-    "Growth",
-    "Labour market"
-   ],
-   "keywords": [
-    "GDP",
-    "Unemployment",
-    "ECB",
-    "Eurozone"
-   ],
-   "companies": [],
-   "cov": 0.75,
-   "imp": 0.55,
-   "title": "Eurozone growth beats forecasts at 0.4% in the third quarter",
-   "dek": "Annual growth picked up to 1.3%; unemployment held at 6.5%.",
-   "body": [
-    "Eurozone GDP rose 0.4% quarter-on-quarter, double the 0.2% expected, though slower than the 0.6% of the second quarter. Annual growth rose to 1.3%.",
-    "Unemployment stayed at 6.5% in September rather than dipping to 6.4% as forecast. The CAC 40 edged up while the DAX fell 0.6%."
-   ],
-   "sources": [
-    {
-     "pub": "MarketScreener",
-     "title": "FTSE 100 edges up as EU growth beats forecasts",
-     "url": "https://www.marketscreener.com/news/ftse-100-edges-up-as-eu-growth-beats-forecasts-ce785fdbdd8bff22"
-    },
-    {
-     "pub": "Share Talk",
-     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
-     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-cryptostocks",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Micro",
-   "region": "US",
-   "asset": "Crypto",
-   "sentiment": "Negative",
-   "themes": [
-    "Crypto",
-    "Earnings"
-   ],
-   "keywords": [
-    "Coinbase",
-    "Strategy",
-    "CFO resignation",
-    "Crypto equities"
-   ],
-   "companies": [
-    {
-     "name": "Coinbase",
-     "ticker": "COIN",
-     "move": -12
-    },
-    {
-     "name": "Strategy",
-     "ticker": "MSTR",
-     "move": -11
-    },
-    {
-     "name": "Circle",
-     "ticker": "CRCL",
-     "move": -9.5
-    }
-   ],
-   "cov": 0.7,
-   "imp": 0.7,
-   "title": "Coinbase and Strategy lead crypto stocks lower after the Binance hack",
-   "dek": "Coinbase fell 12% on weak third-quarter results; Strategy’s CFO resigned.",
-   "body": [
-    "Coinbase dropped about 12% after weak quarterly results, adding to pressure from the Binance hack. Strategy fell around 11% after CFO Andrew Kang resigned, despite record quarterly operating profit.",
-    "Circle, Bullish and Galaxy fell 7%–10%, and bitcoin miners moving into AI cloud work slipped about 5%. Some Wall Street analysts called the drop a buying opportunity."
-   ],
-   "sources": [
-    {
-     "pub": "CoinDesk",
-     "title": "Live updates: Bitcoin falls to $77,000 as Binance exploit combines with tech woes",
-     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-oilmajors",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Micro",
-   "region": "US",
-   "asset": "Equities",
-   "sentiment": "Positive",
-   "themes": [
-    "Energy",
-    "Earnings"
-   ],
-   "keywords": [
-    "Refining margins",
-    "Oil majors",
-    "Q3 results",
-    "Fuels"
-   ],
-   "companies": [
-    {
-     "name": "Exxon Mobil",
-     "ticker": "XOM",
-     "move": 2.1
-    },
-    {
-     "name": "Chevron",
-     "ticker": "CVX",
-     "move": 1.7
-    }
-   ],
-   "cov": 0.65,
-   "imp": 0.55,
-   "title": "Exxon and Chevron beat as refining margins carry the quarter",
-   "dek": "Exxon’s refining earnings topped its upstream business for the first time in at least six years.",
-   "body": [
-    "Both oil majors beat expectations on strong refining and fuels margins, with crude above $100. Chevron reported a $9.9bn profit.",
-    "For Exxon, refining earnings exceeded upstream for the first time in at least six years. The shares rose about 2% before the open."
-   ],
-   "sources": [
-    {
-     "pub": "TheStreet",
-     "title": "Stock Market Today, Oct. 30, 2026",
-     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
-    },
-    {
-     "pub": "StockTitan",
-     "title": "Stock Market Today Live, October 30, 2026",
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-fedodds",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Macro",
-   "region": "US",
-   "asset": "Rates",
-   "sentiment": "Neutral",
-   "themes": [
-    "Rates",
-    "Labour market"
-   ],
-   "keywords": [
-    "Employment cost index",
-    "Rate hike odds",
-    "Treasuries",
-    "Fed"
-   ],
-   "companies": [],
-   "cov": 0.7,
-   "imp": 0.7,
-   "title": "Odds of a December Fed hike fall to about 70% as Treasury yields ease",
-   "dek": "US employment costs rose 0.8% in the third quarter.",
-   "body": [
-    "The employment cost index showed pay and benefit costs up 0.8% in the three months to September, a release that barely moved markets.",
-    "Futures pricing for a December rate hike fell to roughly 70%, from close to 90% after Wednesday’s Fed press conference, and the 10-year Treasury yield slipped to around 4.90%."
-   ],
-   "sources": [
-    {
-     "pub": "CoinDesk",
-     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
-     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
-    },
-    {
-     "pub": "StockTitan",
-     "title": "Stock Market Today Live, October 30, 2026",
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-spr",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Macro",
-   "region": "Europe",
-   "asset": "Commodities",
-   "sentiment": "Neutral",
-   "themes": [
-    "Energy",
-    "Geopolitics"
-   ],
-   "keywords": [
-    "Strategic reserves",
-    "Diesel",
-    "Supply",
-    "Hormuz"
-   ],
-   "companies": [],
-   "cov": 0.6,
-   "imp": 0.6,
-   "title": "European countries to release 42.6m barrels from emergency oil stocks",
-   "dek": "About half of the release will be diesel.",
-   "body": [
-    "European governments plan to release 42.6m barrels from strategic reserves, roughly half of it diesel, as disruption through the Strait of Hormuz continues.",
-    "Brent still traded above $117 a barrel, up from about $113.75 the day before."
-   ],
-   "sources": [
-    {
-     "pub": "Share Talk",
-     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
-     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-metals",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Macro",
-   "region": "Global",
-   "asset": "Commodities",
-   "sentiment": "Negative",
-   "themes": [
-    "Commodities"
-   ],
-   "keywords": [
-    "Gold",
-    "Silver",
-    "Precious metals",
-    "Futures"
-   ],
-   "companies": [],
-   "cov": 0.5,
-   "imp": 0.5,
-   "title": "Gold slips below $4,000 and silver drops more than 4%",
-   "dek": "Silver futures fell to about $50 an ounce.",
-   "body": [
-    "Gold futures fell about 1.4% to near $3,974 an ounce, slipping under the $4,000 mark, while silver dropped more than 4% to around $50."
-   ],
-   "sources": [
-    {
-     "pub": "TheStreet",
-     "title": "Stock Market Today, Oct. 30, 2026",
-     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
-    },
-    {
-     "pub": "CoinDesk",
-     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
-     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-winners",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Micro",
-   "region": "US",
-   "asset": "Equities",
-   "sentiment": "Positive",
-   "themes": [
-    "Earnings",
-    "Consumer"
-   ],
-   "keywords": [
-    "Results beats",
-    "Guidance raise",
-    "Deliveries",
-    "Snacks"
-   ],
-   "companies": [
-    {
-     "name": "Mondelez",
-     "ticker": "MDLZ",
-     "move": 7.4
-    },
-    {
-     "name": "Regeneron",
-     "ticker": "REGN",
-     "move": 6.9
-    },
-    {
-     "name": "Rivian",
-     "ticker": "RIVN",
-     "move": 5.2
-    }
-   ],
-   "cov": 0.55,
-   "imp": 0.5,
-   "title": "Mondelez, Regeneron and Rivian buck the sell-off on strong results",
-   "dek": "Each beat forecasts; Regeneron and Rivian also improved their outlooks.",
-   "body": [
-    "Mondelez rose about 7% on stronger third-quarter results. Regeneron gained about 7% after a beat and a higher full-year outlook, with revenue up 36%. Rivian rose about 5% on record deliveries and an improved outlook."
-   ],
-   "sources": [
-    {
-     "pub": "TheStreet",
-     "title": "Stock Market Today, Oct. 30, 2026",
-     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
-    },
-    {
-     "pub": "StockTitan",
-     "title": "Stock Market Today Live, October 30, 2026",
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-aave",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Micro",
-   "region": "Global",
-   "asset": "Crypto",
-   "sentiment": "Neutral",
-   "themes": [
-    "Crypto",
-    "Regulation"
-   ],
-   "keywords": [
-    "DeFi",
-    "Lending",
-    "Collateral",
-    "CoinDCX"
-   ],
-   "companies": [],
-   "cov": 0.45,
-   "imp": 0.4,
-   "title": "Aave reopens lending after a precautionary freeze; CoinDCX halts futures",
-   "dek": "Aave says its markets were not affected and loans remain overcollateralised.",
-   "body": [
-    "Aave, the largest DeFi lending protocol, reopened lending and borrowing on its V3 and V4 markets. USDT, USDC and tokenised gold cannot be used as new collateral for now.",
-    "India’s largest exchange, CoinDCX, stopped taking new futures positions because the Binance incident disrupted liquidity."
-   ],
-   "sources": [
-    {
-     "pub": "CoinDesk",
-     "title": "Live updates: Bitcoin falls to $77,000 as Binance exploit combines with tech woes",
-     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-arbor",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Micro",
-   "region": "US",
-   "asset": "Equities",
-   "sentiment": "Negative",
-   "themes": [
-    "Real estate",
-    "Banking"
-   ],
-   "keywords": [
-    "Dividend suspension",
-    "Mortgage REIT",
-    "Net loss",
-    "Credit"
-   ],
-   "companies": [
-    {
-     "name": "Arbor Realty Trust",
-     "ticker": "ABR",
-     "move": -24.2
-    }
-   ],
-   "cov": 0.4,
-   "imp": 0.5,
-   "title": "Arbor Realty plunges 24% after suspending its dividend",
-   "dek": "The mortgage REIT reported an $85.4m third-quarter net loss.",
-   "body": [
-    "Arbor Realty Trust posted a third-quarter net loss of $85.4m and suspended its dividend, sending the shares down about 24%."
-   ],
-   "sources": [
-    {
-     "pub": "StockTitan",
-     "title": "Stock Market Today Live, October 30, 2026",
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
-    }
-   ]
-  },
-  {
-   "id": "20261030-pm1-stryker",
-   "date": "2026-10-30",
-   "ed": "MD",
-   "scope": "Micro",
-   "region": "US",
-   "asset": "Equities",
-   "sentiment": "Negative",
-   "themes": [
-    "Earnings",
-    "Healthcare"
-   ],
-   "keywords": [
-    "Medtech",
-    "Quarter miss",
-    "Devices",
-    "Guidance"
-   ],
-   "companies": [
-    {
-     "name": "Stryker",
-     "ticker": "SYK",
-     "move": -10
-    }
-   ],
-   "cov": 0.45,
-   "imp": 0.45,
-   "title": "Stryker drops 10% after its chief executive says the quarter fell short",
-   "dek": "The medical-device maker was among the day’s biggest large-cap fallers.",
-   "body": [
-    "Stryker fell about 10% in early trading after its chief executive acknowledged that third-quarter results fell short of expectations."
-   ],
-   "sources": [
-    {
-     "pub": "StockTitan",
-     "title": "Stock Market Today Live, October 30, 2026",
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
     }
    ]
   },
@@ -1002,7 +1126,18 @@
     {
      "name": "Alphabet",
      "ticker": "GOOGL",
-     "move": -12.6
+     "move": -12.6,
+     "series": [
+      324.22,
+      320.21,
+      316.8,
+      320.58,
+      324.89,
+      283.82,
+      279.935
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     }
    ],
    "cov": 0.9,
@@ -1042,12 +1177,34 @@
     {
      "name": "ServiceNow",
      "ticker": "NOW",
-     "move": -27
+     "move": -27,
+     "series": [
+      157,
+      158.96,
+      158.18,
+      154.78,
+      150.13,
+      109.67,
+      105.02
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     },
     {
      "name": "Fortinet",
      "ticker": "FTNT",
-     "move": -20.1
+     "move": -20.1,
+     "series": [
+      172.98,
+      179.99,
+      183.33,
+      185,
+      174.08,
+      139.1,
+      134.82
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
     }
    ],
    "cov": 0.7,
