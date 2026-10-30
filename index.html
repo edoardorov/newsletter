@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Recap · Daily financial news</title>
+<meta name="description" content="Three editions a day of the financial news that matters, across UK & Europe, US, and crypto.">
+<meta property="og:title" content="The Recap">
+<meta property="og:description" content="Three editions a day of the financial news that matters.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F2DC97'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='20' text-anchor='middle' fill='%230a0a0a'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0a0a0a;--sub:#555;--line:#d6d6d6;--paper:#fff;--soft:#f6f5f1;--track:#ecebe6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+a{color:var(--ink)}a:hover{color:#444}
+button{font:inherit;color:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:0 24px 80px}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase}
+.serif{font-family:Newsreader,Georgia,serif}
+.sub{color:var(--sub)}
+.hl{-webkit-box-decoration-break:clone;box-decoration-break:clone;padding:0 3px;border-radius:2px}
+header.mast{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;padding:36px 0 18px;border-bottom:3px solid var(--ink)}
+header.mast h1{margin:0;font-size:56px;font-weight:500;line-height:.95;letter-spacing:-.02em}
+nav.tabs{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;border-bottom:1px solid var(--ink)}
+.tab{background:none;border:0;border-bottom:2px solid transparent;padding:14px 0;margin-right:28px;font:500 15px/1 Inter,sans-serif;color:var(--sub);cursor:pointer;min-height:44px}
+.tab.on{color:var(--ink);border-bottom-color:var(--ink)}
+.pill{background:#fff;border:1px solid var(--ink);color:var(--ink);padding:0 14px;min-height:36px;font:500 12px/1 'IBM Plex Mono',monospace;letter-spacing:.04em;text-transform:uppercase;cursor:pointer}
+.pill.on{background:var(--ink);color:#fff}
+.btn{background:var(--ink);color:#fff;border:1px solid var(--ink);padding:0 18px;min-height:44px;font:500 14px/1 Inter,sans-serif;cursor:pointer}
+.btn.ghost{background:#fff;color:var(--ink)}
+.btn:disabled{opacity:.45;cursor:default}
+.section{padding-top:28px;display:flex;flex-direction:column;gap:20px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px}
+.head h2{margin:0;font-size:30px;font-weight:500}
+.rows{display:flex;flex-direction:column;gap:16px}
+.rowwrap{display:flex;flex-wrap:wrap;gap:16px}
+.tile{display:flex;flex-direction:column;text-align:left;background:#fff;border:1px solid var(--ink);padding:0;cursor:pointer;min-width:0}
+.tile:hover{background:var(--soft)}
+.tile.lg{border-width:2px}
+.art{display:block;width:100%;height:84px;border-bottom:1px solid var(--ink)}
+.lg .art{height:118px}.md .art{height:98px}
+.tile .in{display:flex;flex-direction:column;gap:10px;padding:14px 16px 16px;flex-grow:1}
+.kick{display:flex;justify-content:space-between;gap:8px;font-size:11px}
+.ttl{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:19px;line-height:1.22;margin:0}
+.lg .ttl{font-size:27px;line-height:1.14}.md .ttl{font-size:22px}
+.dek{display:none;margin:0;font-size:14px;line-height:1.5;color:#444}
+.lg .dek,.md .dek{display:block}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tile .tags{margin-top:auto}
+.tag{display:inline-flex;align-items:center;border:1px solid currentColor;padding:4px 7px;font:500 11px/1 'IBM Plex Mono',monospace;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.tag.solid{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tag.dash{border-style:dashed}
+.empty{border:1px solid var(--ink);padding:48px 32px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.empty p{margin:0;font-size:26px}
+.cols{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+.side{flex:1 1 280px;display:flex;flex-direction:column;gap:26px}
+.main{flex:999 1 560px;min-width:0;display:flex;flex-direction:column}
+.field{width:100%;border:1px solid var(--ink);background:#fff;color:var(--ink);min-height:44px;padding:0 12px;font:400 15px Inter,sans-serif}
+.lab{font-size:11px}
+.grp{display:flex;flex-direction:column;gap:8px}
+.box{border-top:3px solid var(--ink);padding-top:14px;display:flex;flex-direction:column;gap:10px}
+.box h3{margin:0;font-size:22px;font-weight:500}
+.row{display:flex;gap:14px;align-items:center;text-align:left;width:100%;background:#fff;border:0;border-top:1px solid var(--line);padding:14px 0;cursor:pointer}
+.row:hover{background:var(--soft)}
+.row svg{width:96px;height:64px;flex-shrink:0;border:1px solid var(--ink)}
+.inst{border:3px solid var(--ink);padding:22px;display:flex;flex-direction:column;gap:18px}
+.card{border:1px solid var(--ink);padding:12px;display:flex;flex-direction:column;gap:6px}
+.news a{display:flex;flex-direction:column;gap:3px;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.news a:hover .serif{text-decoration:underline}
+.up{color:#1f6b3a}.down{color:#a23a2a}
+.sr{position:absolute;left:-9999px}
+article .lead{margin:0;font-size:46px;line-height:1.08;font-weight:500;letter-spacing:-.01em}
+article p.body{margin:0;font-size:19px;line-height:1.6;max-width:720px}
+.bar{height:6px;background:var(--track)}
+.bar>div{height:6px;background:var(--ink)}
+.notice{border:1px solid var(--ink);padding:12px 14px;font-size:14px;line-height:1.5}
+@media (max-width:700px){.tile{flex-basis:100%!important}header.mast h1{font-size:44px}article .lead{font-size:34px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<filter id="crayon" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3" xChannelSelector="R" yChannelSelector="G"/></filter>
+<filter id="wash" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.05 0.6" numOctaves="3" seed="9" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G"/></filter>
+</defs></svg>
+<div class="wrap">
+<header class="mast">
+<div style="display:flex;flex-direction:column;gap:6px">
+<span class="mono sub" style="font-size:11px">Daily financial news &amp; research</span>
+<h1 class="serif"><a href="#" style="text-decoration:none"><span class="hl" style="background:linear-gradient(transparent 60%,#F2DC97 60%)">The Recap</span></a></h1>
+</div>
+<div class="mono" style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-size:12px;text-align:right">
+<span id="dateLabel"></span>
+<span class="sub">UK · Europe · US · Crypto &amp; alts</span>
+</div>
+</header>
+<nav class="tabs" aria-label="Sections">
+<div style="display:flex">
+<button class="tab" data-act="tab" data-v="today">Today</button>
+<button class="tab" data-act="tab" data-v="personal">Personal</button>
+</div>
+<span class="mono sub" id="status" style="font-size:11px;padding:10px 0"></span>
+</nav>
+<main id="view" aria-live="polite"><p class="mono sub" style="padding-top:28px;font-size:12px">Loading…</p></main>
+<footer class="mono sub" style="margin-top:64px;border-top:1px solid var(--ink);padding-top:14px;font-size:10px;line-height:1.7">
+Stories researched and summarised with Perplexity from the sources linked on each article. Prices from Yahoo Finance, may be delayed. Not investment advice.
+</footer>
+</div>
+<script>
+(function () {
+'use strict';
+var THEME_COLOR = {'Rates':'#BCC8EA','Inflation':'#BCC8EA','Labour market':'#BCC8EA','Growth':'#BCC8EA','Earnings':'#F2DC97','AI':'#F2DC97','Tech':'#F2DC97','Consumer':'#F2DC97','Telecom':'#F2DC97','Energy':'#B5D3B8','Commodities':'#B5D3B8','FX':'#B5D3B8','Geopolitics':'#B5D3B8','Crypto':'#D3BFE6','Regulation':'#D3BFE6','M&A':'#F4C2A9','Banking':'#F4C2A9','Real estate':'#F4C2A9','Private markets':'#F4C2A9','Healthcare':'#A9D8D6'};
+var ART_KIND = {'Rates':'steps','Inflation':'steps','Labour market':'steps','Growth':'steps','Earnings':'bars','AI':'bars','Tech':'bars','Consumer':'bars','Telecom':'bars','Energy':'waves','Commodities':'waves','FX':'waves','Geopolitics':'waves','Crypto':'grid','Regulation':'grid','M&A':'diag','Banking':'diag','Real estate':'diag','Private markets':'diag','Healthcare':'grid'};
+var EDITIONS = [{k:'AM',l:'Morning',time:'08:00',m:480},{k:'MD',l:'Afternoon',time:'15:30',m:930},{k:'PM',l:'Evening',time:'21:30',m:1290}];
+var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var ROW_PATTERN = [4,3,5,4,3];
+
+var store = {
+  get: function (k, d) { try { var v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } },
+  set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+var DATA = { today: '', updated: '', stories: [] };
+var S = { tab: 'today', edition: null, detail: null, q: '', date: 'all', scope: 'All', region: 'All', themes: [], inst: null };
+var watch = store.get('recap.watch', []);
+var history = store.get('recap.history', []);
+var view = document.getElementById('view');
+
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function hash(str) { var h = 7; for (var i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 2147483647; return h || 1; }
+function rng(seed) { var s = seed % 2147483647; if (s <= 0) s += 2147483646; return function () { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; }; }
+function pct(v) { if (v == null || isNaN(v)) return '—'; return (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(1) + '%'; }
+function dirClass(v) { return v > 0 ? 'up' : v < 0 ? 'down' : ''; }
+function colorOf(s) { return THEME_COLOR[(s.themes || [])[0]] || '#E6E1D6'; }
+function dateLabel(d) { var p = d.split('-'); return parseInt(p[2], 10) + ' ' + MONTHS[+p[1] - 1] + ' ' + p[0]; }
+function daysAgo(d) { return Math.round((Date.parse(DATA.today) - Date.parse(d)) / 86400000); }
+function ukNow() {
+  var p = {}; new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+    .formatToParts(new Date()).forEach(function (x) { p[x.type] = x.value; });
+  return { date: p.year + '-' + p.month + '-' + p.day, m: +p.hour * 60 + +p.minute };
+}
+function nextEdition() { var n = ukNow(); for (var i = 0; i < EDITIONS.length; i++) if (n.m < EDITIONS[i].m) return 'today ' + EDITIONS[i].time; return 'tomorrow 08:00'; }
+function fmtUpdated(iso) {
+  if (!iso) return '';
+  try { return new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(iso)) + ' UK'; } catch (e) { return iso; }
+}
+
+function art(kind, seed) {
+  var r = rng(seed), d = '', i, x, y, k;
+  if (kind === 'bars') { for (i = 0; i < 22; i++) { x = 10 + i * 18; var h = 30 + r() * 180; d += 'M' + x + ' 240V' + Math.round(240 - h) + 'H' + (x + 8) + 'V240Z'; } return { d: d, fill: '#1a1a1a', stroke: 'none' }; }
+  if (kind === 'grid') { for (x = 0; x < 400; x += 20) for (y = 0; y < 240; y += 20) if (r() > 0.62) d += 'M' + (x + 4) + ' ' + (y + 4) + 'h12v12h-12Z'; return { d: d, fill: '#1a1a1a', stroke: 'none' }; }
+  if (kind === 'waves') { for (k = 0; k < 8; k++) { var amp = 8 + r() * 22, ph = r() * 6, fr = 0.6 + r() * 1.2; for (x = 0; x <= 400; x += 8) { y = 30 + k * 26 + amp * Math.sin(x / 40 * fr + ph); d += (x === 0 ? 'M' : 'L') + x + ' ' + y.toFixed(1); } } return { d: d, fill: 'none', stroke: '#1a1a1a' }; }
+  if (kind === 'diag') { for (i = 0; i < 30; i++) { x = i * 20 + r() * 10; d += 'M' + x.toFixed(1) + ' 0L' + (x - 170).toFixed(1) + ' 240'; } return { d: d, fill: 'none', stroke: '#1a1a1a' }; }
+  for (k = 0; k < 5; k++) { y = 50 + k * 36; d += 'M0 ' + y.toFixed(0); for (x = 25; x <= 400; x += 25) { y = Math.max(10, Math.min(230, y + (r() - 0.5) * 34)); d += 'H' + x + 'V' + y.toFixed(0); } }
+  return { d: d, fill: 'none', stroke: '#1a1a1a' };
+}
+function artSvg(s, cls, style) {
+  var a = art(ART_KIND[(s.themes || [])[0]] || 'steps', hash(s.id));
+  return '<svg class="' + (cls || '') + '" style="' + (style || '') + '" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">' +
+    '<rect x="18" y="16" width="364" height="208" fill="' + colorOf(s) + '" filter="url(#wash)" opacity="0.9"/>' +
+    '<path d="' + a.d + '" fill="' + a.fill + '" stroke="' + a.stroke + '" stroke-width="2" opacity="0.82" filter="url(#crayon)"/></svg>';
+}
+function line(series, w, h, markIndex) {
+  if (!series || series.length < 2) return '';
+  var mn = Math.min.apply(null, series), mx = Math.max.apply(null, series), span = (mx - mn) || 1, step = (w - 30) / (series.length - 1);
+  var pts = series.map(function (v, i) { return [15 + i * step, 8 + (1 - (v - mn) / span) * (h - 30)]; });
+  var out = '<line x1="15" y1="' + (h - 18) + '" x2="' + (w - 15) + '" y2="' + (h - 18) + '" stroke="#c8c8c8"/>';
+  if (markIndex != null && pts[markIndex]) out += '<line x1="' + pts[markIndex][0].toFixed(1) + '" y1="4" x2="' + pts[markIndex][0].toFixed(1) + '" y2="' + (h - 18) + '" stroke="#0a0a0a" stroke-dasharray="3 3"/>';
+  out += '<polyline points="' + pts.map(function (p) { return p[0].toFixed(1) + ',' + p[1].toFixed(1); }).join(' ') + '" fill="none" stroke="#0a0a0a" stroke-width="2" stroke-linejoin="round"/>';
+  if (markIndex != null && pts[markIndex]) out += '<circle cx="' + pts[markIndex][0].toFixed(1) + '" cy="' + pts[markIndex][1].toFixed(1) + '" r="4" fill="#0a0a0a"/>';
+  return out;
+}
+
+// "Your interest" comes from this viewer's own searches and reading.
+function hay(s) { return [s.title, s.dek, s.region, s.asset, s.scope].concat(s.keywords || [], s.themes || [], (s.companies || []).map(function (c) { return c.name + ' ' + c.ticker; })).join(' ').toLowerCase(); }
+function interest(s) {
+  if (!history.length) return 0.5;
+  var h = hay(s), n = 0;
+  history.forEach(function (t) { if (t && h.indexOf(t) >= 0) n++; });
+  return Math.min(1, 0.3 + 0.7 * Math.min(1, n / 4));
+}
+function remember(terms) {
+  terms.forEach(function (t) { t = String(t || '').toLowerCase().trim(); if (t.length > 1) history.push(t); });
+  history = history.slice(-200); store.set('recap.history', history);
+}
+function score(s) { return ((s.cov || 0.5) + interest(s) + (s.imp || 0.5)) / 3; }
+
+function chunkRows(list) {
+  var rows = [], i = 0, p = 0, n = list.length;
+  while (i < n) { var rem = n - i, size; if (rem <= 5) size = rem; else { size = ROW_PATTERN[p % ROW_PATTERN.length]; if (rem - size < 3) size = rem - 3; } rows.push(list.slice(i, i + size)); i += size; p++; }
+  return rows;
+}
+function companyTags(s) { return (s.companies || []).map(function (c) { return '<span class="tag">' + esc(c.ticker) + ' ' + pct(c.move) + '</span>'; }).join(''); }
+function themeTags(s) { return (s.themes || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join(''); }
+
+function tile(s) {
+  var sc = score(s), tier = sc >= 0.75 ? 'lg' : sc >= 0.6 ? 'md' : 'sm';
+  return '<button class="tile ' + tier + '" style="flex:' + Math.round(sc * 100) + ' 1 200px" data-act="open" data-v="' + esc(s.id) + '" aria-label="Open story: ' + esc(s.title) + '">' +
+    artSvg(s, 'art') +
+    '<div class="in"><div class="mono sub kick"><span>' + esc(s.region + ' · ' + s.asset) + '</span><span>Score ' + Math.round(sc * 100) + '</span></div>' +
+    '<h3 class="ttl"><span class="hl" style="background:linear-gradient(transparent 62%,' + colorOf(s) + ' 62%)">' + esc(s.title) + '</span></h3>' +
+    '<p class="dek">' + esc(s.dek) + '</p>' +
+    '<div class="tags"><span class="tag solid">' + esc(s.scope) + '</span>' + themeTags(s) + companyTags(s) + '</div></div></button>';
+}
+
+function renderToday() {
+  var today = DATA.stories.filter(function (s) { return s.date === DATA.today; });
+  if (!S.edition) {
+    var have = EDITIONS.filter(function (e) { return today.some(function (s) { return s.ed === e.k; }); });
+    S.edition = have.length ? have[have.length - 1].k : 'AM';
+  }
+  var ed = EDITIONS.filter(function (e) { return e.k === S.edition; })[0];
+  var list = today.filter(function (s) { return s.ed === S.edition; }).sort(function (a, b) { return score(b) - score(a); });
+  var h = '<section class="section"><div class="head"><div style="display:flex;flex-direction:column;gap:4px"><h2 class="serif">' + ed.l + ' edition · ' + ed.time + '</h2>' +
+    '<span class="sub" style="font-size:14px">Wider tiles carry a higher score: how widely a story is covered, how often you read or search its topic, and how much it moved markets.</span></div>' +
+    '<div style="display:flex;flex-wrap:wrap;gap:8px" role="group" aria-label="Edition">' +
+    EDITIONS.map(function (e) { return '<button class="pill' + (e.k === S.edition ? ' on' : '') + '" data-act="ed" data-v="' + e.k + '">' + e.l + ' ' + e.time + '</button>'; }).join('') + '</div></div>';
+  if (list.length) {
+    h += '<div class="rows">' + chunkRows(list).map(function (r) { return '<div class="rowwrap">' + r.map(tile).join('') + '</div>'; }).join('') + '</div>';
+  } else {
+    h += '<div class="empty"><span class="mono sub" style="font-size:11px">Not yet published</span><p class="serif">The ' + ed.l.toLowerCase() + ' edition is published at ' + ed.time + ' UK time.</p></div>';
+  }
+  return h + '</section>';
+}
+
+function filtered() {
+  var q = S.q.trim().toLowerCase(), wl = watch.map(function (w) { return w.toLowerCase(); });
+  return DATA.stories.filter(function (s) {
+    if (q && hay(s).indexOf(q) < 0) return false;
+    if (S.date !== 'all' && daysAgo(s.date) > +S.date) return false;
+    if (S.scope !== 'All' && s.scope !== S.scope) return false;
+    if (S.region !== 'All' && s.region !== S.region) return false;
+    if (S.themes.length && !(s.themes || []).some(function (t) { return S.themes.indexOf(t) >= 0; })) return false;
+    return true;
+  }).map(function (s) { var h = hay(s); return { s: s, w: wl.some(function (w) { return h.indexOf(w) >= 0; }) }; })
+    .sort(function (a, b) { return (b.w - a.w) || (a.s.date < b.s.date ? 1 : a.s.date > b.s.date ? -1 : score(b.s) - score(a.s)); });
+}
+
+function renderInst() {
+  var r = S.inst; if (!r) return '';
+  var h = '<div class="inst"><div class="head" style="align-items:baseline"><h2 class="serif" style="font-size:30px"><span class="hl" style="background:linear-gradient(transparent 62%,#BCC8EA 62%)">' + esc(r.topic) + '</span></h2>' +
+    '<span class="mono sub" style="font-size:11px">' + (r.data ? 'Perplexity · ' + (r.data.depth === 'deep' ? 'deep research' : 'quick research') + ' · ' + fmtUpdated(r.data.generatedAt) : 'Perplexity research') + '</span></div>';
+  if (r.loading) return h + '<p class="mono" style="margin:0;font-size:12px">' + (r.depth === 'deep' ? 'Researching in depth… this can take up to a minute' : 'Searching the web…') + '</p></div>';
+  if (r.needCode) return h + '<form data-form="code" style="display:flex;gap:8px;flex-wrap:wrap"><label class="sr" for="code">Access code</label><input id="code" class="field" style="flex:1 1 200px" placeholder="Access code for research" autocomplete="off"><button class="btn">Unlock</button></form><p class="sub" style="margin:0;font-size:14px">Research on this site is limited to people with the access code.</p></div>';
+  if (r.error) return h + '<p style="margin:0">' + esc(r.error) + '</p><button class="btn ghost" style="align-self:flex-start" data-act="research" data-v="' + (r.depth || 'quick') + '">Try again</button></div>';
+  var d = r.data;
+  h += '<div class="cols" style="gap:32px"><div class="main" style="gap:14px">' +
+    '<p class="serif" style="margin:0;font-size:20px;line-height:1.5">' + esc(d.summary) + '</p>' +
+    (d.keyPoints.length ? '<ul style="margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.5">' + d.keyPoints.map(function (k) { return '<li>' + esc(k) + '</li>'; }).join('') + '</ul>' : '') +
+    '<div class="tags"><span class="tag solid">' + esc(d.scope) + '</span>' + d.themes.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + d.keywords.map(function (t) { return '<span class="tag dash">' + esc(t) + '</span>'; }).join('') + '</div>' +
+    (d.depth !== 'deep' ? '<button class="btn ghost" style="align-self:flex-start" data-act="research" data-v="deep">Go deeper</button>' : '') +
+    (d.news && d.news.length ? '<div class="news" style="display:flex;flex-direction:column"><span class="mono" style="font-size:11px;padding-bottom:4px">Top results</span>' + d.news.map(function (n) {
+      return '<a href="' + esc(n.url) + '" target="_blank" rel="noopener"><span class="mono sub" style="font-size:10px">' + esc(n.source) + (n.date ? ' · ' + esc(String(n.date).slice(0, 10)) : '') + '</span><span class="serif" style="font-size:18px">' + esc(n.title) + ' ↗</span>' + (n.snippet ? '<span class="sub" style="font-size:13px;line-height:1.45">' + esc(n.snippet.slice(0, 220)) + '</span>' : '') + '</a>';
+    }).join('') + '</div>' : '') +
+    '</div><div class="side" style="gap:10px"><span class="mono" style="font-size:11px">Live market data</span>' +
+    (d.companies.length ? d.companies.map(function (c) {
+      var q = c.quote;
+      if (!c.listed) return '<div class="card"><span class="serif" style="font-size:17px">' + esc(c.name) + '</span><span class="mono sub" style="font-size:10px">Not publicly listed · no price</span></div>';
+      if (!q || q.error || q.price == null) return '<div class="card"><span class="mono" style="font-size:14px;font-weight:500">' + esc(c.ticker) + '</span><span class="sub" style="font-size:13px">' + esc(c.name) + '</span><span class="mono sub" style="font-size:10px">Price unavailable right now</span></div>';
+      return '<div class="card"><div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><div style="display:flex;flex-direction:column;gap:2px"><span class="mono" style="font-size:14px;font-weight:500">' + esc(c.ticker) + '</span><span class="sub" style="font-size:13px">' + esc(c.name) + (q.exchange ? ' · ' + esc(q.exchange) : '') + '</span></div>' +
+        '<div style="text-align:right"><div class="mono" style="font-size:18px">' + esc(q.price.toFixed(2)) + ' <span class="sub" style="font-size:10px">' + esc(q.currency) + '</span></div><div class="mono ' + dirClass(q.change) + '" style="font-size:13px">' + pct(q.change) + ' today</div></div></div>' +
+        (q.intraday && q.intraday.length > 2 ? '<svg viewBox="0 0 300 70" style="width:100%;height:auto" role="img" aria-label="' + esc(c.ticker) + ' intraday price">' + line(q.intraday, 300, 70) + '</svg>' : '') + '</div>';
+    }).join('') : '<p class="sub" style="margin:0;font-size:14px">No specific companies central to this topic.</p>') + '</div></div>';
+  return h + '</div>';
+}
+
+function renderPersonal() {
+  var themes = []; DATA.stories.forEach(function (s) { (s.themes || []).forEach(function (t) { if (themes.indexOf(t) < 0) themes.push(t); }); });
+  var res = filtered();
+  var hasFilters = S.date !== 'all' || S.scope !== 'All' || S.region !== 'All' || S.themes.length;
+  var opt = function (v, l, cur) { return '<option value="' + v + '"' + (v === cur ? ' selected' : '') + '>' + l + '</option>'; };
+  return '<section class="section" style="gap:24px">' +
+    '<form data-form="search" style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end"><div style="flex:999 1 420px;display:flex;flex-direction:column;gap:6px"><label for="q" class="mono lab">Search the archive, or research any topic live with Perplexity</label>' +
+    '<input id="q" class="field" style="font-size:18px;min-height:52px" type="search" placeholder="Company, ticker, theme or keyword" value="' + esc(S.q) + '" autocomplete="off"></div>' +
+    '<button class="btn" style="min-height:52px" type="submit">Research</button></form>' +
+    renderInst() +
+    '<div class="cols"><aside class="side">' +
+    '<div class="grp"><label for="f-date" class="mono lab">Date</label><select id="f-date" class="field" data-filter="date">' + opt('all', 'All (6 months)', S.date) + opt('0', 'Today', S.date) + opt('7', 'Last 7 days', S.date) + opt('30', 'Last 30 days', S.date) + opt('90', 'Last 3 months', S.date) + '</select></div>' +
+    '<div class="grp"><span class="mono lab">Scope</span><div style="display:flex;gap:6px" role="group" aria-label="Scope">' + ['All', 'Macro', 'Micro'].map(function (o) { return '<button class="pill' + (S.scope === o ? ' on' : '') + '" data-act="scope" data-v="' + o + '">' + o + '</button>'; }).join('') + '</div></div>' +
+    '<div class="grp"><label for="f-region" class="mono lab">Region</label><select id="f-region" class="field" data-filter="region">' + ['All', 'UK', 'Europe', 'US', 'Global'].map(function (o) { return opt(o, o, S.region); }).join('') + '</select></div>' +
+    '<div class="grp"><span class="mono lab">Themes</span><div class="tags">' + themes.map(function (t) { var on = S.themes.indexOf(t) >= 0; return '<button class="pill' + (on ? ' on' : '') + '" aria-pressed="' + on + '" data-act="theme" data-v="' + esc(t) + '">' + esc(t) + '</button>'; }).join('') + '</div>' +
+    (hasFilters ? '<button class="btn ghost" style="min-height:36px;align-self:flex-start" data-act="clear">Clear filters</button>' : '') + '</div>' +
+    '<div class="box"><h3 class="serif">Watchlist</h3><form data-form="watch" style="display:flex;gap:6px"><label for="wl" class="sr">Add to watchlist</label><input id="wl" class="field" placeholder="Ticker, company or theme" autocomplete="off"><button class="btn">Add</button></form>' +
+    (watch.length ? '<div class="tags">' + watch.map(function (w, i) { return '<button class="pill on" data-act="unwatch" data-v="' + i + '" aria-label="Remove ' + esc(w) + ' from watchlist">' + esc(w) + ' ×</button>'; }).join('') + '</div>'
+      : '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">Nothing followed yet. Matching stories get a watchlist badge and move to the top. Your watchlist is saved in this browser only.</p>') + '</div>' +
+    '</aside><div class="main"><div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px"><span class="mono" style="font-size:12px">Major news · ' + res.length + (res.length === 1 ? ' story' : ' stories') + '</span><span class="mono sub" style="font-size:11px">Archive keeps 6 months</span></div>' +
+    (res.length ? res.map(function (x) {
+      var s = x.s;
+      return '<button class="row" data-act="open" data-v="' + esc(s.id) + '" aria-label="Open story: ' + esc(s.title) + '">' + artSvg(s) +
+        '<div style="display:flex;flex-direction:column;gap:7px;min-width:0;flex:1 1 auto"><span class="mono sub" style="font-size:11px">' + dateLabel(s.date) + ' · ' + esc(s.region + ' · ' + s.asset) + '</span>' +
+        '<span class="serif" style="font-size:20px;line-height:1.25"><span class="hl" style="background:linear-gradient(transparent 64%,' + colorOf(s) + ' 64%)">' + esc(s.title) + '</span></span>' +
+        '<div class="tags">' + (x.w ? '<span class="tag solid">Watchlist</span>' : '') + '<span class="tag solid">' + esc(s.scope) + '</span>' + themeTags(s) + companyTags(s) + '</div></div></button>';
+    }).join('') : '<div style="border-top:1px solid var(--line);padding:32px 0"><p class="serif" style="margin:0;font-size:22px">Nothing in the archive matches.</p><p class="sub" style="margin:8px 0 0;font-size:15px">Press Research to search the web for it now.</p></div>') +
+    '</div></div></section>';
+}
+
+function renderDetail(s) {
+  var ed = EDITIONS.filter(function (e) { return e.k === s.ed; })[0];
+  var sc = score(s), parts = [['Coverage', s.cov || 0.5, 'How many outlets and sources reported it.'], ['Your interest', interest(s), 'How often you read or search this topic, in this browser. Starts at 50.'], ['Market impact', s.imp || 0.5, 'Size of the market reaction.']];
+  return '<article class="section" style="gap:24px"><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost" data-act="back">← Back to ' + (S.tab === 'today' ? 'Today' : 'Personal') + '</button><button class="btn ghost" data-act="share">Copy link</button></div>' +
+    '<div class="cols" style="gap:48px"><div class="main" style="gap:18px">' +
+    '<span class="mono sub" style="font-size:12px">' + esc(s.region + ' · ' + s.asset) + ' · ' + dateLabel(s.date) + (ed ? ' · ' + ed.l + ' edition ' + ed.time : '') + '</span>' +
+    '<h2 class="serif lead"><span class="hl" style="background:linear-gradient(transparent 64%,' + colorOf(s) + ' 64%)">' + esc(s.title) + '</span></h2>' +
+    '<p class="serif" style="margin:0;font-size:22px;line-height:1.4;color:#333">' + esc(s.dek) + '</p>' +
+    artSvg(s, '', 'width:100%;height:160px;border:1px solid #0a0a0a') +
+    (s.body || []).map(function (p) { return '<p class="serif body">' + esc(p) + '</p>'; }).join('') +
+    '<div style="display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--ink);padding-top:16px"><span class="mono lab">Key words</span><div class="tags">' + (s.keywords || []).map(function (k) { return '<span class="tag">' + esc(k) + '</span>'; }).join('') + '</div>' +
+    '<span class="mono lab" style="margin-top:8px">Classification</span><div class="tags"><span class="tag solid">' + esc(s.scope) + '</span><span class="tag">' + esc(s.region) + '</span><span class="tag">' + esc(s.asset) + '</span><span class="tag">Sentiment: ' + esc(s.sentiment) + '</span>' + themeTags(s) + '</div></div>' +
+    '<div class="box" style="gap:0"><h3 class="serif" style="margin-bottom:6px">Sources</h3>' + (s.sources || []).map(function (x) {
+      return '<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)"><div style="display:flex;flex-direction:column;gap:3px;min-width:0"><span class="mono sub" style="font-size:11px">' + esc(x.pub) + '</span><span class="serif" style="font-size:17px">' + esc(x.title) + '</span></div>' +
+        (x.url ? '<a class="mono" style="font-size:11px;white-space:nowrap" href="' + esc(x.url) + '" target="_blank" rel="noopener">Open ↗</a>' : '') + '</div>';
+    }).join('') + '</div></div>' +
+    '<aside class="side" style="gap:28px"><div class="box" style="gap:16px"><h3 class="serif">Market impact</h3>' +
+    ((s.companies || []).length ? s.companies.map(function (c) {
+      var w = Math.min(50, Math.abs(c.move || 0) * 2);
+      return '<div class="card" style="padding:14px;gap:10px"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><div style="display:flex;flex-direction:column;gap:2px"><span class="mono" style="font-size:14px;font-weight:500">' + esc(c.ticker) + '</span><span class="sub" style="font-size:13px">' + esc(c.name) + '</span></div>' +
+        '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:2px"><span class="mono ' + dirClass(c.move) + '" style="font-size:22px">' + pct(c.move) + '</span><span class="mono sub" style="font-size:10px">move on the news</span></div></div>' +
+        '<div style="height:8px;background:var(--track);position:relative"><div style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#0a0a0a"></div><div style="position:absolute;top:0;bottom:0;left:' + ((c.move || 0) < 0 ? 50 - w : 50) + '%;width:' + w + '%;background:' + colorOf(s) + '"></div></div>' +
+        (c.series && c.series.length > 2 ? '<svg viewBox="0 0 300 130" style="width:100%;height:auto" role="img" aria-label="' + esc(c.ticker) + ' daily closes around the news">' + line(c.series, 300, 130, c.eventIndex) +
+          '<text x="15" y="126" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">BEFORE</text><text x="285" y="126" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">AFTER</text></svg>'
+          : '<span class="mono sub" style="font-size:10px">Daily-close chart fills in at the next edition</span>') +
+        '<div class="mono" style="display:flex;justify-content:space-between;font-size:11px;border-top:1px solid var(--line);padding-top:8px"><span class="sub">Live</span><span data-q="' + esc(c.ticker) + '">…</span></div></div>';
+    }).join('') : '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">No single listed company is central to this story.</p>') + '</div>' +
+    '<div class="box" style="gap:12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><h3 class="serif">Tile score</h3><span class="mono" style="font-size:20px">' + Math.round(sc * 100) + '</span></div>' +
+    '<p class="sub" style="margin:0;font-size:13px;line-height:1.5">The average of three 0–100 measures. It sets how wide the story’s tile is on Today.</p>' +
+    parts.map(function (p) { return '<div style="display:flex;flex-direction:column;gap:5px"><div class="mono" style="display:flex;justify-content:space-between;font-size:11px"><span>' + p[0] + '</span><span>' + Math.round(p[1] * 100) + '</span></div><div class="bar"><div style="width:' + Math.round(p[1] * 100) + '%"></div></div><span class="sub" style="font-size:12px">' + p[2] + '</span></div>'; }).join('') +
+    '</div></aside></div></article>';
+}
+
+function liveQuotes(s) {
+  var syms = (s.companies || []).map(function (c) { return c.ticker; });
+  if (!syms.length) return;
+  fetch('/api/quote?s=' + encodeURIComponent(syms.join(','))).then(function (r) { return r.ok ? r.json() : null; }).then(function (data) {
+    document.querySelectorAll('[data-q]').forEach(function (el) {
+      var q = data && data[el.getAttribute('data-q')];
+      el.textContent = q && q.price != null ? q.price.toFixed(2) + ' ' + (q.currency || '') + '  ' + pct(q.change) + ' today' : 'unavailable';
+      if (q && q.change != null) el.className = dirClass(q.change);
+    });
+  }).catch(function () { document.querySelectorAll('[data-q]').forEach(function (el) { el.textContent = 'unavailable'; }); });
+}
+
+function render() {
+  document.querySelectorAll('.tab').forEach(function (b) { b.classList.toggle('on', b.getAttribute('data-v') === S.tab); });
+  var d = S.detail && DATA.stories.filter(function (s) { return s.id === S.detail; })[0];
+  if (d) { view.innerHTML = renderDetail(d); document.title = d.title + ' · The Recap'; liveQuotes(d); window.scrollTo(0, 0); return; }
+  document.title = 'The Recap · Daily financial news';
+  view.innerHTML = S.tab === 'today' ? renderToday() : renderPersonal();
+}
+
+function research(depth) {
+  var topic = S.q.trim(); if (!topic) return;
+  remember([topic]);
+  S.inst = { topic: topic, depth: depth, loading: true }; render();
+  var headers = { 'Content-Type': 'application/json' }, code = store.get('recap.code', '');
+  if (code) headers['x-passcode'] = code;
+  fetch('/api/research', { method: 'POST', headers: headers, body: JSON.stringify({ topic: topic, depth: depth }) })
+    .then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }, function () { return { status: r.status, j: {} }; }); })
+    .then(function (x) {
+      if (S.inst && S.inst.topic !== topic) return;
+      if (x.status === 401) S.inst = { topic: topic, depth: depth, needCode: true };
+      else if (x.status !== 200) S.inst = { topic: topic, depth: depth, error: x.status === 429 ? 'Too many research requests from this connection. Try again in a while.' : 'Research didn’t complete. Please try again.' };
+      else S.inst = { topic: topic, data: x.j };
+      render();
+    }).catch(function () { S.inst = { topic: topic, depth: depth, error: 'Research is unavailable right now.' }; render(); });
+}
+
+document.addEventListener('click', function (e) {
+  var b = e.target.closest('[data-act]'); if (!b) return;
+  var act = b.getAttribute('data-act'), v = b.getAttribute('data-v');
+  if (act === 'tab') { S.tab = v; S.detail = null; location.hash = v === 'personal' ? 'personal' : ''; render(); }
+  else if (act === 'ed') { S.edition = v; render(); }
+  else if (act === 'open') { var s = DATA.stories.filter(function (x) { return x.id === v; })[0]; if (s) remember((s.themes || []).concat((s.companies || []).map(function (c) { return c.ticker; }))); location.hash = 'story=' + encodeURIComponent(v); }
+  else if (act === 'back') { location.hash = S.tab === 'personal' ? 'personal' : ''; }
+  else if (act === 'share') { var url = location.href; (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { b.textContent = 'Link copied'; }, function () { b.textContent = url; }); }
+  else if (act === 'scope') { S.scope = v; render(); }
+  else if (act === 'theme') { var i = S.themes.indexOf(v); if (i >= 0) S.themes.splice(i, 1); else S.themes.push(v); render(); }
+  else if (act === 'clear') { S.date = 'all'; S.scope = 'All'; S.region = 'All'; S.themes = []; render(); }
+  else if (act === 'unwatch') { watch.splice(+v, 1); store.set('recap.watch', watch); render(); }
+  else if (act === 'research') { research(v === 'deep' ? 'deep' : 'quick'); }
+});
+document.addEventListener('submit', function (e) {
+  var f = e.target.getAttribute('data-form'); if (!f) return;
+  e.preventDefault();
+  if (f === 'search') { S.q = document.getElementById('q').value; research('quick'); }
+  else if (f === 'watch') { var v = document.getElementById('wl').value.trim(); if (v && watch.indexOf(v) < 0) { watch.push(v); store.set('recap.watch', watch); remember([v]); } render(); }
+  else if (f === 'code') { store.set('recap.code', document.getElementById('code').value.trim()); research(S.inst && S.inst.depth || 'quick'); }
+});
+document.addEventListener('input', function (e) {
+  if (e.target.id === 'q') { S.q = e.target.value; var pos = e.target.selectionStart; render(); var q = document.getElementById('q'); if (q) { q.focus(); try { q.setSelectionRange(pos, pos); } catch (x) {} } }
+});
+document.addEventListener('change', function (e) {
+  var f = e.target.getAttribute('data-filter'); if (!f) return;
+  S[f] = e.target.value; render();
+});
+
+function route() {
+  var h = decodeURIComponent(location.hash.replace(/^#/, ''));
+  if (h.indexOf('story=') === 0) { S.detail = h.slice(6); var s = DATA.stories.filter(function (x) { return x.id === S.detail; })[0]; if (s && S.tab !== 'personal' && s.date !== DATA.today) S.tab = 'personal'; }
+  else { S.detail = null; if (h === 'personal') S.tab = 'personal'; else if (h === '' || h === 'today') S.tab = 'today'; }
+  render();
+}
+window.addEventListener('hashchange', route);
+
+function setStatus() {
+  var t = DATA.today ? DATA.today.split('-') : null;
+  if (t) document.getElementById('dateLabel').textContent = DAYS[new Date(DATA.today + 'T12:00:00Z').getUTCDay()] + ' ' + parseInt(t[2], 10) + ' ' + MONTHS[+t[1] - 1] + ' ' + t[0];
+  document.getElementById('status').textContent = 'Last updated ' + fmtUpdated(DATA.updated) + ' · next ' + nextEdition();
+}
+
+function load(initial) {
+  return fetch('data/stories.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+    var changed = d.updated !== DATA.updated;
+    DATA = { today: d.today || '', updated: d.updated || '', stories: Array.isArray(d.stories) ? d.stories : [] };
+    var cutoff = new Date(Date.parse(DATA.today) - 183 * 86400000).toISOString().slice(0, 10);
+    DATA.stories = DATA.stories.filter(function (s) { return s.date >= cutoff; });
+    setStatus();
+    if (initial) route();
+    else if (changed && !S.detail && document.activeElement && document.activeElement.tagName !== 'INPUT') { S.edition = null; render(); }
+  });
+}
+load(true).catch(function () { view.innerHTML = '<div class="section"><div class="empty"><p class="serif">The news feed couldn’t load. Please refresh in a moment.</p></div></div>'; });
+setInterval(function () { load(false).catch(function () {}); }, 5 * 60 * 1000);
+})();
+</script>
+</body>
+</html>

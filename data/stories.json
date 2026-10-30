@@ -1,0 +1,1141 @@
+{
+ "today": "2026-10-30",
+ "updated": "2026-10-30T15:30:00Z",
+ "edition": "MD",
+ "stories": [
+  {
+   "id": "20261030-am-intel",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech"
+   ],
+   "keywords": [
+    "Q4 guidance",
+    "PC slump",
+    "Gross margin",
+    "Data centre"
+   ],
+   "companies": [
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "move": -25.6
+    }
+   ],
+   "cov": 0.95,
+   "imp": 0.95,
+   "title": "Intel sinks about a quarter as a PC slump and weak outlook overshadow AI growth",
+   "dek": "Fourth-quarter revenue guidance of $15–16bn came in well below the roughly $17.1bn analysts expected.",
+   "body": [
+    "Intel guided fourth-quarter revenue to $15bn–$16bn, below both the third quarter’s $16.5bn and the consensus of about $17.1bn. It expects adjusted gross margin to fall to 38% from 44.1%, and adjusted EPS of about $0.25 against roughly $0.43 expected.",
+    "PC revenue fell 5% to $8.1bn while data-centre and AI revenue rose 78%. Management said PC weakness would last at least through the first half of next year, and also pointed to a factory accident in Israel.",
+    "The shares were down about 25% before the US open, dragging chipmakers in Asia and Europe lower."
+   ],
+   "sources": [
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    },
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-amazon",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "AI"
+   ],
+   "keywords": [
+    "AWS",
+    "Free cash flow",
+    "Capex",
+    "Retail guidance"
+   ],
+   "companies": [
+    {
+     "name": "Amazon",
+     "ticker": "AMZN",
+     "move": -7.1
+    }
+   ],
+   "cov": 0.9,
+   "imp": 0.8,
+   "title": "Amazon misses on earnings as AI spending pushes free cash flow negative",
+   "dek": "AWS grew 39%, but trailing free cash flow swung to about minus $42.4bn.",
+   "body": [
+    "Third-quarter sales rose 12% to $201.9bn and AWS grew 39%, but earnings per share of $1.89 missed the $1.96 estimate and sales were slightly light.",
+    "Trailing twelve-month free cash flow turned negative at about −$42.4bn as Amazon lifted its 2026 capital spending plan to around $220bn, much of it on AI infrastructure.",
+    "The shares fell about 7% before the open, feeding the wider debate over whether AI capex is earning a return."
+   ],
+   "sources": [
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    },
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-binance",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Negative",
+   "themes": [
+    "Crypto",
+    "Regulation"
+   ],
+   "keywords": [
+    "Exchange hack",
+    "Withdrawals",
+    "North Korea",
+    "Liquidations"
+   ],
+   "companies": [],
+   "cov": 0.9,
+   "imp": 0.85,
+   "title": "Binance hit by an estimated $6.3bn hack, likely crypto’s largest theft",
+   "dek": "About $3bn has been frozen; Binance says it will cover all losses and reopen withdrawals within two days.",
+   "body": [
+    "Binance halted withdrawals after attackers drained an estimated $6.3bn. Around $3bn has been frozen with blockchain partners and law enforcement, and investigators have linked the attack to North Korea.",
+    "The exchange first pointed to a compromised employee laptop, then said it had found further points of breach. It has set aside about $6.34bn to make customers whole and says deposits were unaffected.",
+    "Bitcoin dropped below $77,000 and ether fell nearly 6%, with roughly $1.5bn of leveraged positions liquidated."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Bitcoin falls to $77,000 as Binance exploit combines with tech woes",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    },
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-oil",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Negative",
+   "themes": [
+    "Energy",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "Brent",
+    "Strait of Hormuz",
+    "Tanker attacks",
+    "Iran"
+   ],
+   "companies": [],
+   "cov": 0.85,
+   "imp": 0.85,
+   "title": "Brent climbs toward $118 as tanker attacks keep Hormuz risk alive",
+   "dek": "Iran claimed mine strikes on commercial vessels even as Washington said the war would end soon.",
+   "body": [
+    "Brent rose about 2.5% to near $117.80 a barrel and WTI to about $104 after reports of attacks on tankers and Houthi claims of strikes on Saudi Arabia.",
+    "President Trump said the conflict with Iran would end soon without saying how, while US Central Command said southern shipping lanes were open. Qatari mediators returned to Tehran.",
+    "Traders are also weighing the risk of renewed fighting around the 3 November US midterm elections."
+   ],
+   "sources": [
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    },
+    {
+     "pub": "Share Talk",
+     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
+     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-astrazeneca",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "UK",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Healthcare"
+   ],
+   "keywords": [
+    "Q3 results",
+    "Pre-tax profit",
+    "Guidance",
+    "Pharma"
+   ],
+   "companies": [
+    {
+     "name": "AstraZeneca",
+     "ticker": "AZN.L",
+     "move": 3.8
+    }
+   ],
+   "cov": 0.7,
+   "imp": 0.6,
+   "title": "AstraZeneca beats third-quarter forecasts and keeps full-year guidance",
+   "dek": "Pre-tax profit rose 22% to $3.96bn on revenue of $16.21bn.",
+   "body": [
+    "Revenue rose 6.7% to $16.21bn and pre-tax profit climbed 22% to $3.96bn, both ahead of market expectations. Full-year guidance was unchanged.",
+    "The shares rose almost 4%, one of the main supports for the FTSE 100 on a weak day for growth stocks elsewhere."
+   ],
+   "sources": [
+    {
+     "pub": "Share Talk",
+     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
+     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
+    },
+    {
+     "pub": "MarketScreener",
+     "title": "FTSE 100 edges up as EU growth beats forecasts",
+     "url": "https://www.marketscreener.com/news/ftse-100-edges-up-as-eu-growth-beats-forecasts-ce785fdbdd8bff22"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-natwest",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "UK",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Banking"
+   ],
+   "keywords": [
+    "Net interest income",
+    "Job cuts",
+    "AI",
+    "Outlook"
+   ],
+   "companies": [
+    {
+     "name": "NatWest Group",
+     "ticker": "NWG.L",
+     "move": -7.4
+    }
+   ],
+   "cov": 0.7,
+   "imp": 0.7,
+   "title": "NatWest falls 7% as net interest income misses and AI-led job cuts reach 1,400",
+   "dek": "Attributable profit slipped 4.1% to £1.53bn; the full-year outlook was kept.",
+   "body": [
+    "Net interest income rose 8.9% to £3.56bn but missed analyst forecasts, and profit attributable to shareholders fell 4.1% to £1.53bn.",
+    "The bank said about 1,400 roles have gone this year, around 1,000 of them in the quarter, as AI changes how it operates. Its full-year outlook was reaffirmed.",
+    "NatWest was the biggest drag on the FTSE 100 by midday."
+   ],
+   "sources": [
+    {
+     "pub": "Share Talk",
+     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
+     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
+    },
+    {
+     "pub": "MarketScreener",
+     "title": "FTSE 100 edges up as EU growth beats forecasts",
+     "url": "https://www.marketscreener.com/news/ftse-100-edges-up-as-eu-growth-beats-forecasts-ce785fdbdd8bff22"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-mobico",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "UK",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "M&A"
+   ],
+   "keywords": [
+    "Takeover",
+    "Cash offer",
+    "Premium",
+    "Scheme of arrangement"
+   ],
+   "companies": [
+    {
+     "name": "Mobico Group",
+     "ticker": "MCG.L",
+     "move": 12
+    }
+   ],
+   "cov": 0.5,
+   "imp": 0.5,
+   "title": "Mobico agrees £308m cash takeover by Leita Mobility at a 55% premium",
+   "dek": "The 46p-a-share offer values the bus and coach operator at about £2.32bn including debt.",
+   "body": [
+    "Mobico backed a cash offer of 46p a share from Leita Mobility, part of Spain’s Autobuses de León, a 55% premium to the 20 October close of 29.7p.",
+    "Including debt, the deal values the group at around £2.32bn. It is expected to complete through a court-sanctioned scheme. The shares rose about 12%."
+   ],
+   "sources": [
+    {
+     "pub": "Share Talk",
+     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
+     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
+    },
+    {
+     "pub": "MarketScreener",
+     "title": "FTSE 100 edges up as EU growth beats forecasts",
+     "url": "https://www.marketscreener.com/news/ftse-100-edges-up-as-eu-growth-beats-forecasts-ce785fdbdd8bff22"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-sandisk",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech"
+   ],
+   "keywords": [
+    "Memory pricing",
+    "Stock split",
+    "Revenue beat",
+    "NAND"
+   ],
+   "companies": [
+    {
+     "name": "Sandisk",
+     "ticker": "SNDK",
+     "move": -7.8
+    }
+   ],
+   "cov": 0.55,
+   "imp": 0.55,
+   "title": "Sandisk falls despite a revenue beat and an eight-for-one split",
+   "dek": "Investors worry memory pricing is close to a peak.",
+   "body": [
+    "Fiscal first-quarter revenue rose 23% to $11.03bn, above the company’s own forecast, and Sandisk announced an eight-for-one stock split.",
+    "The shares still fell nearly 8% before the open as investors questioned how long strong memory prices can last."
+   ],
+   "sources": [
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    },
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-reddit-twilio",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech"
+   ],
+   "keywords": [
+    "Guidance",
+    "Daily active users",
+    "Revenue growth",
+    "Software"
+   ],
+   "companies": [
+    {
+     "name": "Reddit",
+     "ticker": "RDDT",
+     "move": -23
+    },
+    {
+     "name": "Twilio",
+     "ticker": "TWLO",
+     "move": -20.2
+    }
+   ],
+   "cov": 0.65,
+   "imp": 0.65,
+   "title": "Reddit and Twilio slump on softer outlooks",
+   "dek": "Reddit’s US daily users fell 2% despite 53% revenue growth; Twilio guided growth lower.",
+   "body": [
+    "Reddit grew revenue 53% and beat on earnings, but a weaker fourth-quarter revenue outlook and a 2% drop in US daily active users sent the shares down more than 20%.",
+    "Twilio guided fourth-quarter revenue growth to 17%–17.5% after 20% in the third quarter, and fell around 20% before the open."
+   ],
+   "sources": [
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    },
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-france",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Growth",
+    "Inflation"
+   ],
+   "keywords": [
+    "GDP",
+    "CPI",
+    "OAT yields",
+    "Stagflation"
+   ],
+   "companies": [],
+   "cov": 0.55,
+   "imp": 0.55,
+   "title": "France’s economy shrinks 0.1% as inflation rises to 3.4%",
+   "dek": "The 10-year OAT yield rose to about 4.97%.",
+   "body": [
+    "French GDP fell 0.1% in the third quarter while inflation climbed to 3.4%, a stagflationary mix that pushed the 10-year OAT yield up to about 4.97%."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "id": "20261030-am-bt",
+   "date": "2026-10-30",
+   "ed": "AM",
+   "scope": "Micro",
+   "region": "UK",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Telecom",
+    "M&A"
+   ],
+   "keywords": [
+    "Openreach",
+    "Virgin Media O2",
+    "Fibre",
+    "Wholesale"
+   ],
+   "companies": [
+    {
+     "name": "BT Group",
+     "ticker": "BT-A.L",
+     "move": 5.7
+    }
+   ],
+   "cov": 0.45,
+   "imp": 0.45,
+   "title": "BT jumps on report Virgin Media O2 is close to an Openreach fibre deal",
+   "dek": "Neither company has confirmed the talks.",
+   "body": [
+    "BT rose almost 6% after reports that Virgin Media O2 is nearing an agreement to use Openreach’s fibre network outside its own footprint, while pausing some of its own cable upgrades to save costs. Neither company has confirmed a deal."
+   ],
+   "sources": [
+    {
+     "pub": "Share Talk",
+     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
+     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
+    },
+    {
+     "pub": "MarketScreener",
+     "title": "FTSE 100 edges up as EU growth beats forecasts",
+     "url": "https://www.marketscreener.com/news/ftse-100-edges-up-as-eu-growth-beats-forecasts-ce785fdbdd8bff22"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-nasdaq",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "AI",
+    "Tech"
+   ],
+   "keywords": [
+    "Nasdaq",
+    "AI capex",
+    "Semiconductors",
+    "Megacaps"
+   ],
+   "companies": [
+    {
+     "name": "Arm Holdings",
+     "ticker": "ARM",
+     "move": -8.9
+    },
+    {
+     "name": "AMD",
+     "ticker": "AMD",
+     "move": -8.1
+    },
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "move": -2.7
+    }
+   ],
+   "cov": 0.95,
+   "imp": 0.9,
+   "title": "Nasdaq slides more than 2% as AI-spending doubts spread through tech",
+   "dek": "The S&P 500 fell about 1.1% while the Dow held roughly flat.",
+   "body": [
+    "The Nasdaq-100 was down about 2.4% and the S&P 500 about 1.1% in early New York trading, as results from Intel and Amazon, and Alphabet the day before, raised questions about the return on AI investment.",
+    "Chipmakers led the declines: Arm and AMD fell around 8–9% and Nvidia about 3%. Hardware names including Dell and HP also dropped sharply without news of their own.",
+    "The Nasdaq Composite is on course for a fall of about 2.5% in October, while the Dow is on track for a gain of close to 3%."
+   ],
+   "sources": [
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    },
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    },
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-ezgdp",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Rates",
+   "sentiment": "Positive",
+   "themes": [
+    "Growth",
+    "Labour market"
+   ],
+   "keywords": [
+    "GDP",
+    "Unemployment",
+    "ECB",
+    "Eurozone"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.55,
+   "title": "Eurozone growth beats forecasts at 0.4% in the third quarter",
+   "dek": "Annual growth picked up to 1.3%; unemployment held at 6.5%.",
+   "body": [
+    "Eurozone GDP rose 0.4% quarter-on-quarter, double the 0.2% expected, though slower than the 0.6% of the second quarter. Annual growth rose to 1.3%.",
+    "Unemployment stayed at 6.5% in September rather than dipping to 6.4% as forecast. The CAC 40 edged up while the DAX fell 0.6%."
+   ],
+   "sources": [
+    {
+     "pub": "MarketScreener",
+     "title": "FTSE 100 edges up as EU growth beats forecasts",
+     "url": "https://www.marketscreener.com/news/ftse-100-edges-up-as-eu-growth-beats-forecasts-ce785fdbdd8bff22"
+    },
+    {
+     "pub": "Share Talk",
+     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
+     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-cryptostocks",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Crypto",
+   "sentiment": "Negative",
+   "themes": [
+    "Crypto",
+    "Earnings"
+   ],
+   "keywords": [
+    "Coinbase",
+    "Strategy",
+    "CFO resignation",
+    "Crypto equities"
+   ],
+   "companies": [
+    {
+     "name": "Coinbase",
+     "ticker": "COIN",
+     "move": -12
+    },
+    {
+     "name": "Strategy",
+     "ticker": "MSTR",
+     "move": -11
+    },
+    {
+     "name": "Circle",
+     "ticker": "CRCL",
+     "move": -9.5
+    }
+   ],
+   "cov": 0.7,
+   "imp": 0.7,
+   "title": "Coinbase and Strategy lead crypto stocks lower after the Binance hack",
+   "dek": "Coinbase fell 12% on weak third-quarter results; Strategy’s CFO resigned.",
+   "body": [
+    "Coinbase dropped about 12% after weak quarterly results, adding to pressure from the Binance hack. Strategy fell around 11% after CFO Andrew Kang resigned, despite record quarterly operating profit.",
+    "Circle, Bullish and Galaxy fell 7%–10%, and bitcoin miners moving into AI cloud work slipped about 5%. Some Wall Street analysts called the drop a buying opportunity."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Bitcoin falls to $77,000 as Binance exploit combines with tech woes",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-oilmajors",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Energy",
+    "Earnings"
+   ],
+   "keywords": [
+    "Refining margins",
+    "Oil majors",
+    "Q3 results",
+    "Fuels"
+   ],
+   "companies": [
+    {
+     "name": "Exxon Mobil",
+     "ticker": "XOM",
+     "move": 2.1
+    },
+    {
+     "name": "Chevron",
+     "ticker": "CVX",
+     "move": 1.7
+    }
+   ],
+   "cov": 0.65,
+   "imp": 0.55,
+   "title": "Exxon and Chevron beat as refining margins carry the quarter",
+   "dek": "Exxon’s refining earnings topped its upstream business for the first time in at least six years.",
+   "body": [
+    "Both oil majors beat expectations on strong refining and fuels margins, with crude above $100. Chevron reported a $9.9bn profit.",
+    "For Exxon, refining earnings exceeded upstream for the first time in at least six years. The shares rose about 2% before the open."
+   ],
+   "sources": [
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    },
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-fedodds",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Neutral",
+   "themes": [
+    "Rates",
+    "Labour market"
+   ],
+   "keywords": [
+    "Employment cost index",
+    "Rate hike odds",
+    "Treasuries",
+    "Fed"
+   ],
+   "companies": [],
+   "cov": 0.7,
+   "imp": 0.7,
+   "title": "Odds of a December Fed hike fall to about 70% as Treasury yields ease",
+   "dek": "US employment costs rose 0.8% in the third quarter.",
+   "body": [
+    "The employment cost index showed pay and benefit costs up 0.8% in the three months to September, a release that barely moved markets.",
+    "Futures pricing for a December rate hike fell to roughly 70%, from close to 90% after Wednesday’s Fed press conference, and the 10-year Treasury yield slipped to around 4.90%."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    },
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-spr",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Commodities",
+   "sentiment": "Neutral",
+   "themes": [
+    "Energy",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "Strategic reserves",
+    "Diesel",
+    "Supply",
+    "Hormuz"
+   ],
+   "companies": [],
+   "cov": 0.6,
+   "imp": 0.6,
+   "title": "European countries to release 42.6m barrels from emergency oil stocks",
+   "dek": "About half of the release will be diesel.",
+   "body": [
+    "European governments plan to release 42.6m barrels from strategic reserves, roughly half of it diesel, as disruption through the Strait of Hormuz continues.",
+    "Brent still traded above $117 a barrel, up from about $113.75 the day before."
+   ],
+   "sources": [
+    {
+     "pub": "Share Talk",
+     "title": "FTSE 100 rises as BT and AstraZeneca rally but NatWest plunges 7.4%",
+     "url": "https://www.share-talk.com/ftse-100-rises-as-bt-and-astrazeneca-rally-but-natwest-plunges-7-4/"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-metals",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Negative",
+   "themes": [
+    "Commodities"
+   ],
+   "keywords": [
+    "Gold",
+    "Silver",
+    "Precious metals",
+    "Futures"
+   ],
+   "companies": [],
+   "cov": 0.5,
+   "imp": 0.5,
+   "title": "Gold slips below $4,000 and silver drops more than 4%",
+   "dek": "Silver futures fell to about $50 an ounce.",
+   "body": [
+    "Gold futures fell about 1.4% to near $3,974 an ounce, slipping under the $4,000 mark, while silver dropped more than 4% to around $50."
+   ],
+   "sources": [
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    },
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Binance hack rattles crypto as Intel plunges and AI spending fears hit tech",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-winners",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Consumer"
+   ],
+   "keywords": [
+    "Results beats",
+    "Guidance raise",
+    "Deliveries",
+    "Snacks"
+   ],
+   "companies": [
+    {
+     "name": "Mondelez",
+     "ticker": "MDLZ",
+     "move": 7.4
+    },
+    {
+     "name": "Regeneron",
+     "ticker": "REGN",
+     "move": 6.9
+    },
+    {
+     "name": "Rivian",
+     "ticker": "RIVN",
+     "move": 5.2
+    }
+   ],
+   "cov": 0.55,
+   "imp": 0.5,
+   "title": "Mondelez, Regeneron and Rivian buck the sell-off on strong results",
+   "dek": "Each beat forecasts; Regeneron and Rivian also improved their outlooks.",
+   "body": [
+    "Mondelez rose about 7% on stronger third-quarter results. Regeneron gained about 7% after a beat and a higher full-year outlook, with revenue up 36%. Rivian rose about 5% on record deliveries and an improved outlook."
+   ],
+   "sources": [
+    {
+     "pub": "TheStreet",
+     "title": "Stock Market Today, Oct. 30, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-30-2026"
+    },
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-aave",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Neutral",
+   "themes": [
+    "Crypto",
+    "Regulation"
+   ],
+   "keywords": [
+    "DeFi",
+    "Lending",
+    "Collateral",
+    "CoinDCX"
+   ],
+   "companies": [],
+   "cov": 0.45,
+   "imp": 0.4,
+   "title": "Aave reopens lending after a precautionary freeze; CoinDCX halts futures",
+   "dek": "Aave says its markets were not affected and loans remain overcollateralised.",
+   "body": [
+    "Aave, the largest DeFi lending protocol, reopened lending and borrowing on its V3 and V4 markets. USDT, USDC and tokenised gold cannot be used as new collateral for now.",
+    "India’s largest exchange, CoinDCX, stopped taking new futures positions because the Binance incident disrupted liquidity."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Live updates: Bitcoin falls to $77,000 as Binance exploit combines with tech woes",
+     "url": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-arbor",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Real estate",
+    "Banking"
+   ],
+   "keywords": [
+    "Dividend suspension",
+    "Mortgage REIT",
+    "Net loss",
+    "Credit"
+   ],
+   "companies": [
+    {
+     "name": "Arbor Realty Trust",
+     "ticker": "ABR",
+     "move": -24.2
+    }
+   ],
+   "cov": 0.4,
+   "imp": 0.5,
+   "title": "Arbor Realty plunges 24% after suspending its dividend",
+   "dek": "The mortgage REIT reported an $85.4m third-quarter net loss.",
+   "body": [
+    "Arbor Realty Trust posted a third-quarter net loss of $85.4m and suspended its dividend, sending the shares down about 24%."
+   ],
+   "sources": [
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261030-pm1-stryker",
+   "date": "2026-10-30",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Healthcare"
+   ],
+   "keywords": [
+    "Medtech",
+    "Quarter miss",
+    "Devices",
+    "Guidance"
+   ],
+   "companies": [
+    {
+     "name": "Stryker",
+     "ticker": "SYK",
+     "move": -10
+    }
+   ],
+   "cov": 0.45,
+   "imp": 0.45,
+   "title": "Stryker drops 10% after its chief executive says the quarter fell short",
+   "dek": "The medical-device maker was among the day’s biggest large-cap fallers.",
+   "body": [
+    "Stryker fell about 10% in early trading after its chief executive acknowledged that third-quarter results fell short of expectations."
+   ],
+   "sources": [
+    {
+     "pub": "StockTitan",
+     "title": "Stock Market Today Live, October 30, 2026",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261029-pm-alphabet",
+   "date": "2026-10-29",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "AI"
+   ],
+   "keywords": [
+    "Search revenue",
+    "EPS miss",
+    "Free cash flow",
+    "Capex"
+   ],
+   "companies": [
+    {
+     "name": "Alphabet",
+     "ticker": "GOOGL",
+     "move": -12.6
+    }
+   ],
+   "cov": 0.9,
+   "imp": 0.9,
+   "title": "Alphabet has its worst day on record after an earnings miss",
+   "dek": "Adjusted EPS of $2.12 missed consensus by about 28%; free cash flow was about −$9.1bn.",
+   "body": [
+    "Search revenue of $63.4bn fell short of the $64.9bn expected, and free cash flow came in at about −$9.1bn against −$3.5bn forecast. The shares fell 12.6%, pulling the Nasdaq down 1.4%."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance (Zacks)",
+     "title": "Stock Market News for Oct 30, 2026",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-30-083100676.html"
+    }
+   ]
+  },
+  {
+   "id": "20261029-pm-software",
+   "date": "2026-10-29",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech"
+   ],
+   "keywords": [
+    "Remaining performance obligations",
+    "Service revenue",
+    "Guidance",
+    "Software"
+   ],
+   "companies": [
+    {
+     "name": "ServiceNow",
+     "ticker": "NOW",
+     "move": -27
+    },
+    {
+     "name": "Fortinet",
+     "ticker": "FTNT",
+     "move": -20.1
+    }
+   ],
+   "cov": 0.7,
+   "imp": 0.75,
+   "title": "ServiceNow and Fortinet tumble on soft forward indicators",
+   "dek": "ServiceNow posted its worst day on record.",
+   "body": [
+    "ServiceNow fell 27% after guiding fourth-quarter remaining performance obligation growth to 18.5% against 19.4% expected. Fortinet dropped 20% after trimming its full-year service revenue forecast below consensus."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance (Zacks)",
+     "title": "Stock Market News for Oct 30, 2026",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-30-083100676.html"
+    }
+   ]
+  },
+  {
+   "id": "20261029-pm-usgdp",
+   "date": "2026-10-29",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Positive",
+   "themes": [
+    "Growth",
+    "Inflation"
+   ],
+   "keywords": [
+    "GDP",
+    "Core PCE",
+    "Jobless claims",
+    "Consumer spending"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.6,
+   "title": "US economy grew 3.4% annualised in Q3; core PCE rose 0.3%",
+   "dek": "Growth beat the 3.2% estimate while monthly core inflation came in below forecast.",
+   "body": [
+    "Third-quarter GDP beat the 3.2% estimate. Core PCE rose 0.3% in September, below the 0.4% forecast, for 3.1% year on year, while headline PCE ran at 3.6%. Weekly jobless claims fell to 194,000."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance (Zacks)",
+     "title": "Stock Market News for Oct 30, 2026",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-30-083100676.html"
+    }
+   ]
+  },
+  {
+   "id": "20261028-pm-fed",
+   "date": "2026-10-28",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Neutral",
+   "themes": [
+    "Rates"
+   ],
+   "keywords": [
+    "FOMC",
+    "Kevin Warsh",
+    "Dissent",
+    "Rate hike"
+   ],
+   "companies": [],
+   "cov": 0.9,
+   "imp": 0.8,
+   "title": "Fed holds rates at 3.75%–4% as two officials vote for a hike",
+   "dek": "Lisa Cook and Beth Hammack dissented in favour of tightening.",
+   "body": [
+    "The Federal Reserve under Chair Kevin Warsh left its target range at 3.75%–4%, with Lisa Cook and Beth Hammack voting for an increase. After the press conference, futures priced a December hike at close to 90%."
+   ],
+   "sources": [
+    {
+     "pub": "Federal Reserve",
+     "title": "October 27–28, 2026 FOMC Meeting press conference",
+     "url": "https://www.federalreserve.gov/monetarypolicy/fomcpresconf20261028.htm"
+    },
+    {
+     "pub": "Admiral Markets",
+     "title": "Warsh press conference: Fed holds rates at 3.75% to 4%",
+     "url": "https://admiralmarkets.com/analytics/traders-blog/warsh-press-conference-october-2026"
+    }
+   ]
+  }
+ ]
+}

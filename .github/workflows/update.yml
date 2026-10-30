@@ -1,0 +1,46 @@
+name: Publish edition
+
+# Runs three times a day. GitHub schedules are in UTC, so each edition has two
+# entries (one for GMT, one for BST); the script only publishes inside the
+# right UK-time window and skips if that edition is already out.
+on:
+  schedule:
+    - cron: '40 6,7 * * *'    # Morning edition, ready by 08:00 UK
+    - cron: '10 14,15 * * *'  # Afternoon edition, ready by 15:30 UK
+    - cron: '10 20,21 * * *'  # Evening edition, ready by 21:30 UK
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'AM, MD or PM (leave blank for the latest)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-edition
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build edition with Perplexity
+        run: node scripts/update.mjs
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          EDITION: ${{ github.event.inputs.edition }}
+      - name: Commit new stories
+        run: |
+          if git diff --quiet -- data/stories.json; then echo "No new edition."; exit 0; fi
+          git config user.name "the-recap-bot"
+          git config user.email "the-recap-bot@users.noreply.github.com"
+          git add data/stories.json
+          git commit -m "Publish edition $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push

@@ -1,0 +1,11 @@
+{
+  "name": "the-recap",
+  "private": true,
+  "type": "module",
+  "description": "Daily financial news recap, built with Perplexity and published three times a day.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "update:mock": "MOCK=1 node scripts/update.mjs --edition=AM"
+  }
+}
