@@ -17,6 +17,8 @@
 body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif}
 a{color:var(--ink)}a:hover{color:#444}
 button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.tile:focus-visible,.row:focus-visible{outline-offset:-2px}
 .wrap{max-width:1320px;margin:0 auto;padding:0 24px 80px}
 .mono{font-family:'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.04em;text-transform:uppercase}
 .serif{font-family:Newsreader,Georgia,serif}
@@ -125,7 +127,9 @@ var store = {
 var DATA = { today: '', updated: '', stories: [] };
 var S = { tab: 'today', edition: null, detail: null, q: '', date: 'all', scope: 'All', region: 'All', themes: [], onlyWatch: false, inst: null, unlockOpen: false, unlockMsg: '' };
 var watch = store.get('recap.watch', []);
-var unlocked = !!store.get('recap.code', '');
+// Live research runs either on the visitor's own Perplexity key or, for the owner, with the site's research code.
+function researchMode() { return store.get('recap.pplx', '') ? 'key' : store.get('recap.code', '') ? 'code' : null; }
+var unlocked = !!researchMode();
 var wq = {}, wqPending = false; // live prices for watchlist tickers
 var history = store.get('recap.history', []);
 var view = document.getElementById('view');
@@ -201,17 +205,23 @@ function chunkRows(list) {
   while (i < n) { var rem = n - i, size; if (rem <= 5) size = rem; else { size = ROW_PATTERN[p % ROW_PATTERN.length]; if (rem - size < 3) size = rem - 3; } rows.push(list.slice(i, i + size)); i += size; p++; }
   return rows;
 }
-function companyTags(s) { return (s.companies || []).map(function (c) { return '<span class="tag">' + esc(c.ticker) + ' ' + pct(c.move) + '</span>'; }).join(''); }
+function companyTags(s) {
+  return (s.companies || []).map(function (c) {
+    var q = LQ[c.ticker];
+    return '<span class="tag">' + esc(c.ticker) + (q && q.change != null ? '&nbsp;<span class="' + dirClass(q.change) + '">' + pct(q.change) + '</span>&nbsp;today' : '') + '</span>';
+  }).join('');
+}
 function themeTags(s) { return (s.themes || []).map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join(''); }
 
 function tile(s) {
   var sc = score(s), tier = sc >= 0.75 ? 'lg' : sc >= 0.6 ? 'md' : 'sm';
   return '<button class="tile ' + tier + '" style="flex:' + Math.round(sc * 100) + ' 1 200px" data-act="open" data-v="' + esc(s.id) + '" aria-label="Open story: ' + esc(s.title) + '">' +
     artSvg(s, 'art') +
-    '<div class="in"><div class="mono sub kick"><span>' + esc(s.region + ' · ' + s.asset) + '</span><span>Score ' + Math.round(sc * 100) + '</span></div>' +
+    '<div class="in"><div class="mono sub kick"><span>' + esc(s.region + ' · ' + s.asset) + '</span></div>' +
     '<h3 class="ttl"><span class="hl" style="background:linear-gradient(transparent 62%,' + colorOf(s) + ' 62%)">' + esc(s.title) + '</span></h3>' +
     '<p class="dek">' + esc(s.dek) + '</p>' +
-    '<div class="tags">' + (isWatched(s) ? '<span class="tag solid">Watchlist</span>' : '') + '<span class="tag solid">' + esc(s.scope) + '</span>' + themeTags(s) + companyTags(s) + '</div></div></button>';
+    '<div class="tags">' + (isWatched(s) ? '<span class="tag solid">Watchlist</span>' : '') + '<span class="tag solid">' + esc(s.scope) + '</span>' +
+    (tier === 'sm' ? themeTags({ themes: (s.themes || []).slice(0, 1) }) : themeTags(s)) + companyTags(s) + '</div></div></button>';
 }
 
 function renderToday() {
@@ -281,12 +291,24 @@ function renderPersonal() {
   var res = filtered();
   var hasFilters = S.date !== 'all' || S.scope !== 'All' || S.region !== 'All' || S.themes.length;
   var opt = function (v, l, cur) { return '<option value="' + v + '"' + (v === cur ? ' selected' : '') + '>' + l + '</option>'; };
-  var unlockUI = unlocked
-    ? '<button class="mono sub" style="background:none;border:0;padding:0;font-size:10px;text-decoration:underline;cursor:pointer;align-self:flex-start" data-act="lock">Live research unlocked in this browser · Lock</button>'
-    : (S.unlockOpen
-      ? '<form data-form="code" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><label class="sr" for="code">Research code</label><input id="code" class="field" style="flex:0 1 260px" type="password" placeholder="Your research code" autocomplete="off"><button class="btn">Unlock</button><button type="button" class="btn ghost" data-act="unlockclose">Cancel</button>' +
-        (S.unlockMsg ? '<span style="font-size:14px">' + esc(S.unlockMsg) + '</span>' : '') + '</form>'
-      : '<button class="mono sub" style="background:none;border:0;padding:0;font-size:10px;text-decoration:underline;cursor:pointer;align-self:flex-start" data-act="unlockopen">Owner? Unlock live research</button>');
+  var linkBtn = function (act, label) { return '<button class="mono" style="background:none;border:0;padding:6px 0;font-size:11px;text-decoration:underline;cursor:pointer;align-self:flex-start;color:var(--ink)" data-act="' + act + '">' + label + '</button>'; };
+  var mode = researchMode(), unlockUI;
+  if (unlocked) {
+    unlockUI = '<div class="mono sub" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:11px"><span>' + (mode === 'key' ? 'Live research on: using your own Perplexity key, saved in this browser only.' : 'Live research on: unlocked with the owner code.') + '</span>' +
+      linkBtn('lock', mode === 'key' ? 'Remove my key' : 'Lock') + '</div>';
+  } else if (S.unlockOpen) {
+    var byKey = S.unlockTab !== 'code';
+    unlockUI = '<div class="card" style="padding:16px;gap:12px"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><span class="serif" style="font-size:20px">Turn on live research</span>' +
+      '<div style="display:flex;gap:6px"><button class="pill' + (byKey ? ' on' : '') + '" data-act="unlocktab" data-v="key">My own Perplexity key</button><button class="pill' + (!byKey ? ' on' : '') + '" data-act="unlocktab" data-v="code">Owner code</button></div></div>' +
+      (byKey
+        ? '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">Research runs on your Perplexity account and is billed to you. Your key is saved only in this browser and passed through this site’s server for each search, never stored there. Create a key in the API section of your Perplexity settings.</p>' +
+          '<form data-form="pkey" style="display:flex;gap:8px;flex-wrap:wrap"><label class="sr" for="pkey">Perplexity API key</label><input id="pkey" class="field" style="flex:1 1 260px" type="password" placeholder="pplx-…" autocomplete="off" spellcheck="false"><button class="btn">Use my key</button><button type="button" class="btn ghost" data-act="unlockclose">Cancel</button></form>'
+        : '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">For the site owner: research billed to the site’s Perplexity account.</p>' +
+          '<form data-form="code" style="display:flex;gap:8px;flex-wrap:wrap"><label class="sr" for="code">Owner code</label><input id="code" class="field" style="flex:1 1 220px" type="password" placeholder="Owner code" autocomplete="off"><button class="btn">Unlock</button><button type="button" class="btn ghost" data-act="unlockclose">Cancel</button></form>') +
+      (S.unlockMsg ? '<p style="margin:0;font-size:14px">' + esc(S.unlockMsg) + '</p>' : '') + '</div>';
+  } else {
+    unlockUI = linkBtn('unlockopen', 'Turn on live research with Perplexity →');
+  }
   return '<section class="section" style="gap:24px">' +
     '<div style="display:flex;flex-direction:column;gap:10px"><form data-form="search" style="display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end"><div style="flex:999 1 420px;display:flex;flex-direction:column;gap:6px"><label for="q" class="mono lab">' + (unlocked ? 'Search the archive, or research any topic live with Perplexity' : 'Search the archive') + '</label>' +
     '<input id="q" class="field" style="font-size:18px;min-height:52px" type="search" placeholder="Company, ticker, theme or keyword" value="' + esc(S.q) + '" autocomplete="off"></div>' +
@@ -323,7 +345,7 @@ function renderPersonal() {
 
 function renderDetail(s) {
   var ed = EDITIONS.filter(function (e) { return e.k === s.ed; })[0];
-  var sc = score(s), parts = [['Coverage', s.cov || 0.5, 'How many outlets and sources reported it.'], ['Your interest', interest(s), 'How often you read or search this topic, in this browser. Starts at 50.'], ['Market impact', s.imp || 0.5, 'Size of the market reaction.']];
+  var sc = score(s), parts = [['Coverage', s.cov || 0.5, 'How many outlets and sources reported it.'], ['Your interest', interest(s), 'How often you read or search this topic, in this browser. Starts at 50.'], ['Market reaction', s.imp || 0.5, 'How strongly markets reacted, judged from the coverage.']];
   return '<article class="section" style="gap:24px"><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost" data-act="back">← Back to ' + (S.tab === 'today' ? 'Today' : 'Personal') + '</button><button class="btn ghost" data-act="share">Copy link</button></div>' +
     '<div class="cols" style="gap:48px"><div class="main" style="gap:18px">' +
     '<span class="mono sub" style="font-size:12px">' + esc(s.region + ' · ' + s.asset) + ' · ' + dateLabel(s.date) + (ed ? ' · ' + ed.l + ' edition ' + ed.time : '') + '</span>' +
@@ -337,34 +359,77 @@ function renderDetail(s) {
       return '<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)"><div style="display:flex;flex-direction:column;gap:3px;min-width:0"><span class="mono sub" style="font-size:11px">' + esc(x.pub) + '</span><span class="serif" style="font-size:17px">' + esc(x.title) + '</span></div>' +
         (x.url ? '<a class="mono" style="font-size:11px;white-space:nowrap" href="' + esc(x.url) + '" target="_blank" rel="noopener">Open ↗</a>' : '') + '</div>';
     }).join('') + '</div></div>' +
-    '<aside class="side" style="gap:28px"><div class="box" style="gap:16px"><h3 class="serif">Market impact</h3>' +
-    ((s.companies || []).length ? s.companies.map(function (c) {
-      var w = Math.min(50, Math.abs(c.move || 0) * 2);
-      return '<div class="card" style="padding:14px;gap:10px"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><div style="display:flex;flex-direction:column;gap:2px"><span class="mono" style="font-size:14px;font-weight:500">' + esc(c.ticker) + '</span><span class="sub" style="font-size:13px">' + esc(c.name) + '</span></div>' +
-        '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:2px"><span class="mono ' + dirClass(c.move) + '" style="font-size:22px">' + pct(c.move) + '</span><span class="mono sub" style="font-size:10px">move on the news</span></div></div>' +
-        '<div style="height:8px;background:var(--track);position:relative"><div style="position:absolute;top:0;bottom:0;left:50%;width:1px;background:#0a0a0a"></div><div style="position:absolute;top:0;bottom:0;left:' + ((c.move || 0) < 0 ? 50 - w : 50) + '%;width:' + w + '%;background:' + colorOf(s) + '"></div></div>' +
-        (c.series && c.series.length > 2 ? '<svg viewBox="0 0 300 130" style="width:100%;height:auto" role="img" aria-label="' + esc(c.ticker) + ' daily closes around the news">' + line(c.series, 300, 130, c.eventIndex) +
-          '<text x="15" y="126" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">BEFORE</text><text x="285" y="126" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">AFTER</text></svg>'
-          : '<span class="mono sub" style="font-size:10px">Daily-close chart fills in at the next edition</span>') +
-        '<div class="mono" style="display:flex;justify-content:space-between;font-size:11px;border-top:1px solid var(--line);padding-top:8px"><span class="sub">Live</span><span data-q="' + esc(c.ticker) + '">…</span></div>' +
-        (watch.indexOf(c.ticker) >= 0 ? '<span class="mono sub" style="font-size:10px">On your watchlist</span>' : '<button class="pill" style="align-self:flex-start" data-act="follow" data-v="' + esc(c.ticker) + '">+ Watchlist</button>') + '</div>';
-    }).join('') : '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">No single listed company is central to this story.</p>') + '</div>' +
+    '<aside class="side" style="gap:28px"><div class="box" style="gap:16px"><h3 class="serif">Share prices</h3>' +
+    ((s.companies || []).length ? s.companies.map(function (c) { return priceCard(c, s); }).join('') +
+      '<span class="mono sub" style="font-size:10px;line-height:1.6">Prices from Yahoo Finance, may be delayed. “Before the news” is the last close before the story’s date.</span>'
+      : '<p class="sub" style="margin:0;font-size:14px;line-height:1.5">No single listed company is central to this story.</p>') + '</div>' +
     '<div class="box" style="gap:12px"><div style="display:flex;justify-content:space-between;align-items:baseline"><h3 class="serif">Tile score</h3><span class="mono" style="font-size:20px">' + Math.round(sc * 100) + '</span></div>' +
     '<p class="sub" style="margin:0;font-size:13px;line-height:1.5">The average of three 0–100 measures. It sets how wide the story’s tile is on Today.</p>' +
     parts.map(function (p) { return '<div style="display:flex;flex-direction:column;gap:5px"><div class="mono" style="display:flex;justify-content:space-between;font-size:11px"><span>' + p[0] + '</span><span>' + Math.round(p[1] * 100) + '</span></div><div class="bar"><div style="width:' + Math.round(p[1] * 100) + '%"></div></div><span class="sub" style="font-size:12px">' + p[2] + '</span></div>'; }).join('') +
     '</div></aside></div></article>';
 }
 
-function liveQuotes(s) {
-  var syms = (s.companies || []).map(function (c) { return c.ticker; });
-  if (!syms.length) return;
-  fetch('/api/quote?s=' + encodeURIComponent(syms.join(','))).then(function (r) { return r.ok ? r.json() : null; }).then(function (data) {
-    document.querySelectorAll('[data-q]').forEach(function (el) {
-      var q = data && data[el.getAttribute('data-q')];
-      el.textContent = q && q.price != null ? q.price.toFixed(2) + ' ' + (q.currency || '') + '  ' + pct(q.change) + ' today' : 'unavailable';
-      if (q && q.change != null) el.className = dirClass(q.change);
+function shortDate(iso) { if (!iso) return ''; var p = iso.split('-'); return parseInt(p[2], 10) + ' ' + MONTHS[+p[1] - 1]; }
+function money(v) { return v == null || isNaN(v) ? '—' : (Math.abs(v) >= 1000 ? v.toLocaleString('en-GB', { maximumFractionDigits: 0 }) : v.toFixed(2)); }
+
+// One card per company: live price, today's change, the close before the news, and the change since.
+function priceCard(c, s) {
+  var q = LQ[c.ticker], series = c.series && c.series.length > 2 ? c.series : null, ei = c.eventIndex;
+  var hasBefore = series && ei > 0;
+  var before = hasBefore ? series[ei - 1] : null;
+  var beforeDate = hasBefore && c.dates ? c.dates[ei - 1] : null;
+  var now = q && q.price != null ? q.price : null;
+  var cur = (q && q.currency) || c.currency || '';
+  var since = before && now ? (now / before - 1) * 100 : null;
+  var stat = function (label, value, note, cls) {
+    return '<div style="display:flex;flex-direction:column;gap:3px"><span class="mono sub" style="font-size:10px">' + label + '</span><span class="mono ' + (cls || '') + '" style="font-size:17px">' + value + '</span>' + (note ? '<span class="sub" style="font-size:11px">' + note + '</span>' : '') + '</div>';
+  };
+  var chart = '';
+  if (series) {
+    var w = 300, h = 140, mn = Math.min.apply(null, series.concat(now != null ? [now] : [])), mx = Math.max.apply(null, series.concat(now != null ? [now] : [])), span = (mx - mn) || 1, step = (w - 30) / (series.length - 1);
+    var Y = function (v) { return 10 + (1 - (v - mn) / span) * (h - 40); };
+    var pts = series.map(function (v, i) { return [15 + i * step, Y(v)]; });
+    chart = '<svg viewBox="0 0 ' + w + ' ' + h + '" style="width:100%;height:auto" role="img" aria-label="' + esc(c.ticker) + ' daily closing prices around the news">' +
+      '<line x1="15" y1="' + (h - 28) + '" x2="' + (w - 15) + '" y2="' + (h - 28) + '" stroke="#c8c8c8"/>' +
+      (hasBefore ? '<line x1="15" y1="' + Y(before).toFixed(1) + '" x2="' + (w - 15) + '" y2="' + Y(before).toFixed(1) + '" stroke="#8a8a8a" stroke-dasharray="2 3"/>' : '') +
+      (ei != null && pts[ei] ? '<rect x="' + (pts[ei][0] - step / 2).toFixed(1) + '" y="4" width="' + step.toFixed(1) + '" height="' + (h - 32) + '" fill="' + colorOf(s) + '" opacity="0.55"/>' : '') +
+      '<polyline points="' + pts.map(function (p) { return p[0].toFixed(1) + ',' + p[1].toFixed(1); }).join(' ') + '" fill="none" stroke="#0a0a0a" stroke-width="2" stroke-linejoin="round"/>' +
+      (hasBefore ? '<circle cx="' + pts[ei - 1][0].toFixed(1) + '" cy="' + pts[ei - 1][1].toFixed(1) + '" r="3.5" fill="#fff" stroke="#0a0a0a" stroke-width="1.5"/>' : '') +
+      '<text x="15" y="' + (h - 14) + '" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">' + esc(shortDate(c.dates && c.dates[0])) + '</text>' +
+      (ei != null && pts[ei] ? '<text x="' + pts[ei][0].toFixed(1) + '" y="' + (h - 14) + '" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#0a0a0a">NEWS</text>' : '') +
+      '<text x="' + (w - 15) + '" y="' + (h - 14) + '" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="10" fill="#555">' + esc(shortDate(c.dates && c.dates[c.dates.length - 1])) + '</text></svg>' +
+      '<span class="sub" style="font-size:11px;line-height:1.5">Daily closes. Shaded column = the news day; dashed line = the close before the news.</span>';
+  }
+  return '<div class="card" style="padding:14px;gap:12px">' +
+    '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px"><div style="display:flex;flex-direction:column;gap:2px;min-width:0"><span class="mono" style="font-size:14px;font-weight:500">' + esc(c.ticker) + '</span><span class="sub" style="font-size:13px">' + esc(c.name) + '</span></div>' +
+    '<div style="display:flex;flex-direction:column;align-items:flex-end;gap:2px"><span class="mono" style="font-size:22px">' + (now != null ? money(now) : (q === null ? '—' : '…')) + ' <span class="sub" style="font-size:10px">' + esc(cur) + '</span></span>' +
+    '<span class="mono ' + dirClass(q && q.change) + '" style="font-size:12px">' + (q && q.change != null ? pct(q.change) + ' today' : (q === null ? 'price unavailable' : 'loading price')) + '</span></div></div>' +
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;border-top:1px solid var(--line);padding-top:10px">' +
+    stat('Before the news', hasBefore ? money(before) + ' <span class="sub" style="font-size:10px">' + esc(cur) + '</span>' : '—', hasBefore ? (beforeDate ? 'Close on ' + shortDate(beforeDate) : 'Previous close') : 'Fills in at the next edition') +
+    stat('Since the news', since != null ? pct(since) : '—', since != null ? 'From ' + money(before) + ' to ' + money(now) : '', dirClass(since)) + '</div>' +
+    chart +
+    (watch.indexOf(c.ticker) >= 0 ? '<span class="mono sub" style="font-size:10px">On your watchlist</span>' : '<button class="pill" style="align-self:flex-start" data-act="follow" data-v="' + esc(c.ticker) + '">+ Watchlist</button>') + '</div>';
+}
+
+// Live quotes cache (symbol -> quote, or null when unavailable), fetched in batches of 12.
+var LQ = {}, lqPending = {};
+function ensureQuotes(symbols, done) {
+  var need = []; symbols.forEach(function (s) { if (s && !(s in LQ) && !lqPending[s] && need.indexOf(s) < 0) need.push(s); });
+  if (!need.length) return;
+  var batches = []; for (var i = 0; i < need.length; i += 12) batches.push(need.slice(i, i + 12));
+  need.forEach(function (s) { lqPending[s] = true; });
+  Promise.all(batches.map(function (b) {
+    return fetch('/api/quote?s=' + encodeURIComponent(b.join(','))).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (d) {
+      b.forEach(function (s) { LQ[s] = d && d[s] && !d[s].error && d[s].price != null ? d[s] : null; delete lqPending[s]; });
     });
-  }).catch(function () { document.querySelectorAll('[data-q]').forEach(function (el) { el.textContent = 'unavailable'; }); });
+  })).then(done);
+}
+function busy() { var a = document.activeElement; return a && (a.tagName === 'INPUT' || a.tagName === 'SELECT'); }
+function liveQuotes(s) {
+  ensureQuotes((s.companies || []).map(function (c) { return c.ticker; }), function () {
+    if (S.detail !== s.id) return;
+    var y = window.scrollY; view.innerHTML = renderDetail(s); window.scrollTo(0, y);
+  });
 }
 
 function render() {
@@ -374,14 +439,21 @@ function render() {
   document.title = 'The Recap · Daily financial news';
   view.innerHTML = S.tab === 'today' ? renderToday() : renderPersonal();
   if (S.tab === 'personal') loadWatchQuotes();
+  var shown = S.tab === 'today'
+    ? DATA.stories.filter(function (s) { return s.date === DATA.today && s.ed === S.edition; })
+    : filtered().slice(0, 40).map(function (x) { return x.s; });
+  var syms = []; shown.forEach(function (s) { (s.companies || []).forEach(function (c) { syms.push(c.ticker); }); });
+  ensureQuotes(syms, function () { if (!S.detail && !busy()) { var y = window.scrollY; view.innerHTML = S.tab === 'today' ? renderToday() : renderPersonal(); window.scrollTo(0, y); } });
 }
 
 function callResearch(payload, code) {
-  return fetch('/api/research', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-passcode': code || '' }, body: JSON.stringify(payload) })
+  var headers = { 'Content-Type': 'application/json' }, key = store.get('recap.pplx', '');
+  if (code) headers['x-passcode'] = code; else if (key) headers['x-pplx-key'] = key;
+  return fetch('/api/research', { method: 'POST', headers: headers, body: JSON.stringify(payload) })
     .then(function (r) { return r.json().then(function (j) { return { status: r.status, j: j }; }, function () { return { status: r.status, j: {} }; }); });
 }
-var NOT_CONFIGURED = 'Live research is switched off until the site owner sets RESEARCH_PASSCODE on Vercel.';
-function lockOut(msg) { unlocked = false; store.set('recap.code', ''); S.unlockOpen = true; S.unlockMsg = msg; }
+var NOT_CONFIGURED = 'Owner research is switched off until RESEARCH_PASSCODE is set on Vercel. You can still use your own Perplexity key.';
+function lockOut(msg, tab) { unlocked = false; store.set('recap.code', ''); store.set('recap.pplx', ''); S.unlockOpen = true; S.unlockTab = tab; S.unlockMsg = msg; }
 
 function loadWatchQuotes() {
   var need = watch.filter(function (w) { return tickerLike(w) && !(w.toUpperCase() in wq); }).map(function (w) { return w.toUpperCase(); });
@@ -399,11 +471,14 @@ function research(depth) {
   if (!unlocked) { S.unlockOpen = true; render(); return; }
   remember([topic]);
   S.inst = { topic: topic, depth: depth, loading: true }; render();
-  callResearch({ topic: topic, depth: depth }, store.get('recap.code', ''))
+  var mode = researchMode();
+  callResearch({ topic: topic, depth: depth }, mode === 'code' ? store.get('recap.code', '') : '')
     .then(function (x) {
       if (!S.inst || S.inst.topic !== topic) return;
-      if (x.status === 401) { S.inst = null; lockOut('That code didn’t work. Enter it again.'); }
-      else if (x.status === 403) S.inst = { topic: topic, depth: depth, error: NOT_CONFIGURED };
+      if (x.status === 401) { S.inst = null; lockOut('That code didn’t work. Enter it again.', 'code'); }
+      else if (x.status === 400 && x.j.error === 'bad_key') { S.inst = null; lockOut('Perplexity didn’t accept that key. Check it and paste it again.', 'key'); }
+      else if (x.status === 402) S.inst = { topic: topic, depth: depth, error: 'Your Perplexity account is out of credit or rate-limited. Check it in your Perplexity API settings.' };
+      else if (x.status === 403) { S.inst = null; lockOut(NOT_CONFIGURED, 'key'); }
       else if (x.status !== 200) S.inst = { topic: topic, depth: depth, error: x.status === 429 ? 'Too many research requests from this connection. Try again in a while.' : 'Research didn’t complete. Please try again.' };
       else S.inst = { topic: topic, data: x.j };
       render();
@@ -414,7 +489,7 @@ function unlock(code) {
   if (!code) return;
   S.unlockMsg = 'Checking…'; render();
   callResearch({ unlock: true }, code).then(function (x) {
-    if (x.status === 200) { store.set('recap.code', code); unlocked = true; S.unlockOpen = false; S.unlockMsg = ''; }
+    if (x.status === 200) { store.set('recap.pplx', ''); store.set('recap.code', code); unlocked = true; S.unlockOpen = false; S.unlockMsg = ''; }
     else if (x.status === 403) S.unlockMsg = NOT_CONFIGURED;
     else S.unlockMsg = 'That code isn’t right.';
     render();
@@ -439,7 +514,8 @@ document.addEventListener('click', function (e) {
   else if (act === 'closeinst') { S.inst = null; render(); }
   else if (act === 'unlockopen') { S.unlockOpen = true; S.unlockMsg = ''; render(); var c = document.getElementById('code'); if (c) c.focus(); }
   else if (act === 'unlockclose') { S.unlockOpen = false; S.unlockMsg = ''; render(); }
-  else if (act === 'lock') { store.set('recap.code', ''); unlocked = false; S.inst = null; render(); }
+  else if (act === 'lock') { store.set('recap.code', ''); store.set('recap.pplx', ''); unlocked = false; S.inst = null; render(); }
+  else if (act === 'unlocktab') { S.unlockTab = v; S.unlockMsg = ''; render(); }
 });
 document.addEventListener('submit', function (e) {
   var f = e.target.getAttribute('data-form'); if (!f) return;
@@ -447,6 +523,12 @@ document.addEventListener('submit', function (e) {
   if (f === 'search') { S.q = document.getElementById('q').value; if (unlocked) research('quick'); }
   else if (f === 'watch') { var v = document.getElementById('wl').value.trim(); if (v && watch.indexOf(v) < 0) { watch.push(v); store.set('recap.watch', watch); remember([v]); } render(); }
   else if (f === 'code') { unlock(document.getElementById('code').value.trim()); }
+  else if (f === 'pkey') {
+    var k = document.getElementById('pkey').value.trim();
+    if (!/^pplx-[A-Za-z0-9_-]{16,}$/.test(k)) { S.unlockMsg = 'That doesn’t look like a Perplexity API key. It should start with “pplx-”.'; render(); return; }
+    store.set('recap.code', ''); store.set('recap.pplx', k); unlocked = true; S.unlockOpen = false; S.unlockMsg = '';
+    if (S.q.trim()) research('quick'); else render();
+  }
 });
 document.addEventListener('input', function (e) {
   if (e.target.id === 'q') { S.q = e.target.value; var pos = e.target.selectionStart; render(); var q = document.getElementById('q'); if (q) { q.focus(); try { q.setSelectionRange(pos, pos); } catch (x) {} } }
@@ -482,7 +564,7 @@ function load(initial) {
   });
 }
 load(true).catch(function () { view.innerHTML = '<div class="section"><div class="empty"><p class="serif">The news feed couldn’t load. Please refresh in a moment.</p></div></div>'; });
-setInterval(function () { wq = {}; load(false).catch(function () {}); if (S.tab === 'personal' && !S.detail) loadWatchQuotes(); }, 5 * 60 * 1000);
+setInterval(function () { wq = {}; LQ = {}; load(false).catch(function () {}); if (S.tab === 'personal' && !S.detail) loadWatchQuotes(); }, 5 * 60 * 1000);
 })();
 </script>
 </body>

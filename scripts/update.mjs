@@ -170,7 +170,7 @@ async function main() {
     for (const s of stories) {
       if (s.date < recent) continue;
       for (const c of s.companies || []) {
-        jobs.push(eventWindow(c.ticker, s.date).then((w) => { c.series = w.series; c.eventIndex = w.eventIndex; c.currency = w.currency; }).catch(() => {}));
+        jobs.push(eventWindow(c.ticker, s.date).then((w) => { c.series = w.series; c.dates = w.dates; c.eventIndex = w.eventIndex; c.currency = w.currency; }).catch(() => {}));
       }
     }
     await Promise.all(jobs);

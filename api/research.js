@@ -46,15 +46,23 @@ function codeMatches(given, expected) {
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Use POST' });
-  // Live research spends the owner's Perplexity credit, so it is private:
-  // it only runs for someone holding RESEARCH_PASSCODE. Without that variable it is off for everyone.
-  const code = process.env.RESEARCH_PASSCODE;
-  if (!code) return res.status(403).json({ error: 'not_configured' });
-  if (!codeMatches(req.headers['x-passcode'], code)) return res.status(401).json({ error: 'passcode' });
-
   let body = req.body;
   if (typeof body === 'string') { try { body = JSON.parse(body); } catch { body = {}; } }
-  if (body?.unlock) return res.status(200).json({ ok: true });
+
+  // Two ways to run live research:
+  // 1. Visitor's own key (x-pplx-key): billed to them. Used for this one request, never stored or logged.
+  // 2. Owner's key: only for someone holding RESEARCH_PASSCODE. Without that variable it is off.
+  const visitorKey = String(req.headers['x-pplx-key'] || '').trim();
+  let apiKey;
+  if (visitorKey) {
+    if (!/^pplx-[A-Za-z0-9_-]{16,}$/.test(visitorKey)) return res.status(400).json({ error: 'bad_key' });
+    apiKey = visitorKey;
+  } else {
+    const code = process.env.RESEARCH_PASSCODE;
+    if (!code) return res.status(403).json({ error: 'not_configured' });
+    if (!codeMatches(req.headers['x-passcode'], code)) return res.status(401).json({ error: 'passcode' });
+    if (body?.unlock) return res.status(200).json({ ok: true });
+  }
   const topic = String(body?.topic || '').trim().slice(0, 200);
   const depth = body?.depth === 'deep' ? 'deep' : 'quick';
   if (!topic) return res.status(400).json({ error: 'Missing topic' });
@@ -63,7 +71,7 @@ export default async function handler(req, res) {
   const key = `${topic.toLowerCase()}|${depth}`;
   const cached = cache.get(key);
   if (cached && Date.now() - cached.at < CACHE_MS) return res.status(200).json(cached.body);
-  if (limited(ip)) return res.status(429).json({ error: 'Too many research requests. Try again later.' });
+  if (!apiKey && limited(ip)) return res.status(429).json({ error: 'Too many research requests. Try again later.' });
 
   const today = new Date().toISOString().slice(0, 10);
   try {
@@ -72,6 +80,7 @@ export default async function handler(req, res) {
       recency: depth === 'deep' ? 'month' : 'week',
       schema: SCHEMA,
       timeoutMs: depth === 'deep' ? 55000 : 25000,
+      apiKey,
       instructions: 'You are a financial research assistant. Search the web for the latest, most important news on the topic and answer accurately and concisely. Use only facts from reputable sources; never invent figures. Return JSON only.',
       input: [
         `Today is ${today}. Topic: "${topic}".`,
@@ -104,6 +113,8 @@ export default async function handler(req, res) {
     res.setHeader('Cache-Control', 'no-store');
     return res.status(200).json(out);
   } catch (e) {
+    if (apiKey && (e.status === 401 || e.status === 403)) return res.status(400).json({ error: 'bad_key' });
+    if (apiKey && (e.status === 402 || e.status === 429)) return res.status(402).json({ error: 'key_quota' });
     const status = e.status === 401 || e.status === 403 ? 502 : 500;
     return res.status(status).json({ error: 'Research failed. Please try again.', detail: String(e.message || e).slice(0, 200) });
   }
