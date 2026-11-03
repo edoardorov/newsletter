@@ -1,8 +1,551 @@
 {
- "today": "2026-10-30",
- "updated": "2026-10-30T16:51:03.923Z",
+ "today": "2026-11-03",
+ "updated": "2026-11-03T14:39:46.814Z",
  "edition": "MD",
  "stories": [
+  {
+   "id": "20261103-md-iran-strikes-revive-oil-market-nerves-af",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Negative",
+   "themes": [
+    "Geopolitics",
+    "Commodities",
+    "Energy"
+   ],
+   "keywords": [
+    "Brent crude",
+    "Iran",
+    "Strait of Hormuz",
+    "geopolitics"
+   ],
+   "companies": [],
+   "cov": 0.9,
+   "imp": 0.8,
+   "title": "Iran strikes revive oil-market nerves after Monday’s plunge",
+   "dek": "Reports of US strikes on Iran revived supply concerns after oil’s sharp fall a day earlier.",
+   "body": [
+    "Brent crude rebounded above $100 a barrel after the previous session’s roughly 7% drop, as reports of US strikes on Iran’s Qeshm Island unsettled markets and cast doubt on the prospects for de-escalation. The strikes were described by US officials as defensive.",
+    "The renewed tension around the Strait of Hormuz put energy supply risks back in focus as investors also watched for developments in US-Iran talks."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Morning Bid: So much for a quiet day before the US midterms",
+     "url": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-03/"
+    },
+    {
+     "pub": "Reuters",
+     "title": "COMMENTARY: Midterms and mediation",
+     "url": "https://www.reuters.com/commentary/reuters-open-interest/global-markets-view-usa-2026-11-03/"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-european-stocks-slip-as-tech-fears-meet-",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Tech",
+    "Geopolitics",
+    "AI"
+   ],
+   "keywords": [
+    "STOXX 600",
+    "AI spending",
+    "Drax",
+    "data centres"
+   ],
+   "companies": [
+    {
+     "name": "ASML",
+     "ticker": "ASML.AS",
+     "move": -1.1,
+     "series": [
+      1470,
+      1489.6,
+      1504.8,
+      1412.8,
+      1408,
+      1398
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STMPA.PA",
+     "move": 0,
+     "series": [
+      43.36,
+      43.37,
+      44.205,
+      41.88,
+      43.215,
+      43.38
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    },
+    {
+     "name": "Drax Group",
+     "ticker": "DRX.L",
+     "move": 9,
+     "series": [
+      811,
+      818.5,
+      823,
+      808,
+      809,
+      859.5
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
+    }
+   ],
+   "cov": 0.9,
+   "imp": 0.7,
+   "title": "European stocks slip as tech fears meet renewed Iran tensions",
+   "dek": "AI-trade worries and Middle East tensions weighed on European risk appetite, while Drax jumped on a data-centre deal.",
+   "body": [
+    "European shares were lower as investors weighed concerns about the returns on heavy AI spending against reports of escalating Middle East tensions. The STOXX 600 was down 0.4% at 647.13 by 0955 GMT, with technology stocks falling 1.6%.",
+    "ASML and STMicroelectronics were among the tech stocks under pressure. Drax stood out, rising 9% after announcing a partnership to develop a data centre project that could attract more than £20 billion in investment."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Euronext",
+     "title": "Europe stocks slip on AI concerns, escalating Iran tensions",
+     "url": "https://live.euronext.com/en/financial-news/europe-stocks-slip-ai-concerns-escalating-iran-tensions"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-bayer-raises-2026-profit-outlook-on-phar",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Healthcare"
+   ],
+   "keywords": [
+    "Bayer",
+    "pharma",
+    "guidance",
+    "earnings"
+   ],
+   "companies": [
+    {
+     "name": "Bayer",
+     "ticker": "BAYN.DE",
+     "move": 4.4,
+     "series": [
+      46.15,
+      46.03,
+      47.96,
+      50.58,
+      50.02,
+      53.74
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.85,
+   "imp": 0.7,
+   "title": "Bayer raises 2026 profit outlook on pharma strength",
+   "dek": "Stronger pharmaceutical performance prompted the German group to lift its full-year earnings range.",
+   "body": [
+    "Bayer raised its 2026 adjusted EBITDA outlook to €9.8 billion–€10.3 billion from €9.6 billion–€10.1 billion, citing better-than-expected pharmaceutical performance. Its pharma business recorded third-quarter sales of €4.68 billion, 5% above analysts’ expectations in a Vara Research poll.",
+    "The group also lowered its expected year-end net financial debt range by €1 billion, to €28 billion–€29 billion. Its crop-science division’s adjusted core earnings were €101 million, below analysts’ €164 million estimate."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Bayer hikes 2026 profit outlook as pharma unit beats expectations",
+     "url": "https://www.reuters.com/business/bayer-raises-2026-profit-outlook-2026-11-03/"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-ab-foods-warns-of-another-profit-decline",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "UK",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Consumer"
+   ],
+   "keywords": [
+    "AB Foods",
+    "Primark",
+    "sugar",
+    "profit forecast"
+   ],
+   "companies": [
+    {
+     "name": "Associated British Foods",
+     "ticker": "ABF.L",
+     "move": -3,
+     "series": [
+      1927,
+      1898,
+      1884,
+      1922.5,
+      1943,
+      1887.5
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
+    }
+   ],
+   "cov": 0.8,
+   "imp": 0.65,
+   "title": "AB Foods warns of another profit decline as sugar losses deepen",
+   "dek": "Lower Primark profitability and deeper sugar losses dragged on earnings, with another profit decline forecast.",
+   "body": [
+    "Associated British Foods reported adjusted operating profit of £1.508 billion for the year to September 12, down 13% in reported currency and 14% at constant currency. Revenue was £19.58 billion, down 1% at constant currency, while adjusted earnings per share fell 11% to 156.0p.",
+    "The Primark owner expects adjusted operating profit and adjusted EPS to fall again in 2026/27, mainly because of its sugar business. Sugar recorded a £47 million loss in the year just ended, and ABF expects that loss to widen to £70 million–£170 million."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Primark-owner AB Foods forecasts further profit decline as sugar losses deepen",
+     "url": "https://www.reuters.com/business/retail-consumer/primark-owner-forecasts-further-profit-decline-sugar-losses-deepen-2026-11-03/"
+    },
+    {
+     "pub": "Associated British Foods",
+     "title": "2026 Annual Results Announcement",
+     "url": "https://www.abf.co.uk/media/news/2026/2026-annual-results-announcement"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-philips-beats-on-adjusted-profit-and-rea",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Healthcare",
+    "Earnings",
+    "Regulation"
+   ],
+   "keywords": [
+    "Philips",
+    "DOJ",
+    "Respironics",
+    "quarterly results"
+   ],
+   "companies": [
+    {
+     "name": "Philips",
+     "ticker": "PHIA.AS",
+     "move": 4.3,
+     "series": [
+      23.78,
+      24.24,
+      24.28,
+      24.24,
+      24.52,
+      25.96
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.75,
+   "imp": 0.6,
+   "title": "Philips beats on adjusted profit and reaches preliminary DOJ agreement",
+   "dek": "An adjusted profit beat and a preliminary DOJ agreement supported the Dutch medtech group.",
+   "body": [
+    "Philips said third-quarter adjusted EBITA rose 7.2% to €569 million, ahead of analysts’ €522 million estimate, while comparable sales increased 3% to €4.39 billion, slightly below forecasts.",
+    "The company also reached a preliminary agreement with the US Department of Justice to resolve investigations connected to its 2021 global recall of sleep and respiratory-care devices. Philips reiterated its 2026 financial targets."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Philips reaches DOJ agreement over device recall, books €288 million provision in Q3",
+     "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/philips-beats-quarterly-profit-estimates-driven-by-higher-sales-gross-margin-2026-11-03/"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-lufthansa-rises-despite-trimming-its-ann",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Growth"
+   ],
+   "keywords": [
+    "Lufthansa",
+    "airlines",
+    "guidance",
+    "European stocks"
+   ],
+   "companies": [
+    {
+     "name": "Lufthansa",
+     "ticker": "LHA.DE",
+     "move": 3.3,
+     "series": [
+      7.15,
+      7.114,
+      7.246,
+      7.172,
+      7.468,
+      7.87
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.6,
+   "imp": 0.4,
+   "title": "Lufthansa rises despite trimming its annual profit forecast",
+   "dek": "Investors appeared to look past a lower annual profit outlook to resilient results.",
+   "body": [
+    "Lufthansa shares rose 3.3% even as the airline trimmed its annual profit forecast. Reuters cited analysts’ view that the company’s results were broadly resilient.",
+    "The move came against a weaker European market, where investors were focused on technology valuations and Middle East tensions."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Euronext",
+     "title": "Europe stocks slip on AI concerns, escalating Iran tensions",
+     "url": "https://live.euronext.com/en/financial-news/europe-stocks-slip-ai-concerns-escalating-iran-tensions"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-apple-slides-in-premarket-after-warning-",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech"
+   ],
+   "keywords": [
+    "Apple",
+    "gross margin",
+    "memory chips",
+    "US premarket"
+   ],
+   "companies": [
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "move": -4.5,
+     "series": [
+      347.1,
+      343.83,
+      348.91,
+      344.63,
+      338.32,
+      329.67
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.9,
+   "imp": 0.75,
+   "title": "Apple slides in premarket after warning of holiday-quarter margin pressure",
+   "dek": "A margin warning overshadowed the iPhone maker’s earnings beat in premarket trading.",
+   "body": [
+    "Apple shares fell 4.5% in premarket trading after the company warned that higher memory-chip costs would pressure gross margin in the holiday quarter, overshadowing stronger-than-expected results and iPhone sales.",
+    "The weakness added to investor concerns about profitability across big technology companies, even as markets awaited US midterm election results."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "S&P 500, Nasdaq set for higher open as oil prices extend declines, midterm results awaited",
+     "url": "https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-palantir-falls-before-the-open-despite-u",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "AI",
+    "Tech"
+   ],
+   "keywords": [
+    "Palantir",
+    "AI",
+    "revenue",
+    "premarket"
+   ],
+   "companies": [
+    {
+     "name": "Palantir Technologies",
+     "ticker": "PLTR",
+     "move": -6.3,
+     "series": [
+      198.73,
+      196.81,
+      196.42,
+      184.11,
+      178.34,
+      171.12
+     ],
+     "dates": [
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.8,
+   "imp": 0.6,
+   "title": "Palantir falls before the open despite upbeat sales guidance",
+   "dek": "Strong results and an above-consensus sales forecast failed to prevent a premarket decline.",
+   "body": [
+    "Palantir shares fell 6.3% in premarket trading, although the software company forecast fourth-quarter revenue above analysts’ estimates after beating third-quarter expectations.",
+    "Investors were unconvinced by the outlook: Reuters reported that the shares fell despite the upbeat revenue forecast, amid broader concern about technology valuations and AI spending."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "S&P 500, Nasdaq set for higher open as oil prices extend declines, midterm results awaited",
+     "url": "https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/"
+    }
+   ]
+  },
+  {
+   "id": "20261103-md-bitcoin-extends-losses-to-a-one-month-lo",
+   "date": "2026-11-03",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Negative",
+   "themes": [
+    "Crypto",
+    "Regulation"
+   ],
+   "keywords": [
+    "Bitcoin",
+    "Binance",
+    "ETF outflows",
+    "midterms"
+   ],
+   "companies": [],
+   "cov": 0.7,
+   "imp": 0.65,
+   "title": "Bitcoin extends losses to a one-month low near $76,500",
+   "dek": "Election uncertainty and the fallout from the Binance theft weighed on bitcoin and broader crypto sentiment.",
+   "body": [
+    "Bitcoin traded near $76,500 in early trading, down about 2% and at its lowest level in more than a month, as caution ahead of the US midterms added to pressure on digital assets.",
+    "The market was also contending with the fallout from the reported $6.3 billion Binance theft and recent outflows from spot bitcoin funds. Binance said it would cover customer losses and had resumed withdrawals at a staggered pace."
+   ],
+   "sources": [
+    {
+     "pub": "Investing.com via Yahoo Finance UK",
+     "title": "Bitcoin slips to over 1-mth low of $76.5k as U.S. midterm caution weighs",
+     "url": "https://uk.finance.yahoo.com/news/bitcoin-slips-over-1-mth-071110766.html"
+    }
+   ]
+  },
   {
    "id": "20261030-md-ai-spending-fears-deepen-the-global-tech",
    "date": "2026-10-30",
@@ -33,10 +576,22 @@
       320.58,
       324.89,
       283.82,
-      279.935
+      279.84,
+      278.99,
+      278.81
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     },
     {
      "name": "Amazon",
@@ -48,10 +603,22 @@
       253.1,
       254.6,
       243.79,
-      238.915
+      240.35,
+      245.63,
+      246.825
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     },
     {
      "name": "Intel",
@@ -63,10 +630,22 @@
       93.74,
       95.53,
       92.07,
-      64.465
+      65.76,
+      59.97,
+      61.96
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.95,
@@ -262,10 +841,22 @@
       612.7,
       619.9,
       624.3,
-      628.75
+      627.4,
+      600,
+      590.4
      ],
      "eventIndex": 5,
-     "currency": "GBp"
+     "currency": "GBp",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.85,
@@ -314,10 +905,22 @@
       75.15,
       75.51,
       76.15,
-      79.91
+      79.74,
+      80.63,
+      81.33
      ],
      "eventIndex": 5,
-     "currency": "EUR"
+     "currency": "EUR",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.85,
@@ -416,10 +1019,22 @@
       46.15,
       46.03,
       47.96,
-      50.22
+      50.58,
+      50.02,
+      53.74
      ],
      "eventIndex": 5,
-     "currency": "EUR"
+     "currency": "EUR",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.6,
@@ -467,10 +1082,26 @@
       744.1481,
       758.6685,
       697.6913,
-      699.58
+      703.3541,
+      702.6133,
+      711.8843,
+      698.0427,
+      696.58
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-25",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-10-31",
+      "2026-11-01",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     },
     {
      "name": "Tether",
@@ -482,10 +1113,26 @@
       0.9987,
       0.999,
       0.9977,
-      0.9988
+      0.9987,
+      0.9987,
+      0.9987,
+      0.9983,
+      0.9983
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-25",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-10-31",
+      "2026-11-01",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     },
     {
      "name": "Circle Internet Group",
@@ -497,10 +1144,22 @@
       81.58,
       81.71,
       79.99,
-      72.705
+      72.54,
+      72.08,
+      74.34
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.95,
@@ -553,10 +1212,22 @@
       93.74,
       95.53,
       92.07,
-      64.465
+      65.76,
+      59.97,
+      61.96
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.95,
@@ -610,10 +1281,22 @@
       253.1,
       254.6,
       243.79,
-      238.915
+      240.35,
+      245.63,
+      246.825
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.9,
@@ -749,10 +1432,22 @@
       12822,
       12764,
       13052,
-      13992
+      13960,
+      13860,
+      13857.126
      ],
      "eventIndex": 5,
-     "currency": "GBp"
+     "currency": "GBp",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.7,
@@ -805,10 +1500,22 @@
       634.4,
       646.8,
       635.2,
-      580.8
+      579.6,
+      592.2,
+      583.2
      ],
      "eventIndex": 5,
-     "currency": "GBp"
+     "currency": "GBp",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.7,
@@ -861,10 +1568,22 @@
       39.28,
       38.74,
       39.38,
-      43.9625
+      43.96,
+      44,
+      44.24
      ],
      "eventIndex": 5,
-     "currency": "GBp"
+     "currency": "GBp",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.5,
@@ -917,10 +1636,22 @@
       1304.84,
       1404.77,
       1330.05,
-      1165.6
+      1150.89,
+      1075.08,
+      1144.23
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.55,
@@ -973,10 +1704,22 @@
       136.46,
       134.7,
       129.6,
-      91.62
+      91.73,
+      90.97,
+      93.6
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     },
     {
      "name": "Twilio",
@@ -988,10 +1731,22 @@
       254.56,
       253.77,
       241.9,
-      199.555
+      205.03,
+      207.6,
+      208.5872
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.65,
@@ -1078,10 +1833,22 @@
       213.4,
       212.5,
       213,
-      227.3
+      227.3,
+      227.7,
+      224.886
      ],
      "eventIndex": 5,
-     "currency": "GBp"
+     "currency": "GBp",
+     "dates": [
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.45,
@@ -1134,10 +1901,23 @@
       320.58,
       324.89,
       283.82,
-      279.935
+      279.84,
+      278.99,
+      278.81
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.9,
@@ -1185,10 +1965,23 @@
       154.78,
       150.13,
       109.67,
-      105.02
+      105.12,
+      106.01,
+      104.19
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     },
     {
      "name": "Fortinet",
@@ -1201,10 +1994,23 @@
       185,
       174.08,
       139.1,
-      134.82
+      136.08,
+      126.21,
+      128.87
      ],
      "eventIndex": 5,
-     "currency": "USD"
+     "currency": "USD",
+     "dates": [
+      "2026-10-22",
+      "2026-10-23",
+      "2026-10-26",
+      "2026-10-27",
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03"
+     ]
     }
    ],
    "cov": 0.7,
