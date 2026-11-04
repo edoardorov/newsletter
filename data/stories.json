@@ -1,8 +1,468 @@
 {
  "today": "2026-11-04",
- "updated": "2026-11-04T14:52:14.644Z",
- "edition": "MD",
+ "updated": "2026-11-04T20:49:23.070Z",
+ "edition": "PM",
  "stories": [
+  {
+   "id": "20261104-pm-us-stocks-rallied-after-democrats-sweep-",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Growth",
+    "Geopolitics",
+    "Tech"
+   ],
+   "keywords": [
+    "US stocks",
+    "midterms",
+    "sector rotation",
+    "AI regulation"
+   ],
+   "companies": [],
+   "cov": 0.94,
+   "imp": 0.88,
+   "title": "US stocks rallied after Democrats’ sweep eased election uncertainty.",
+   "dek": "US equities climbed in a broad post-election rally, although energy shares fell as crude weakened.",
+   "body": [
+    "US stocks rallied as investors responded to Democrats taking control of both chambers of Congress, easing uncertainty about the election outcome. The Dow rose 2.89%, the S&P 500 gained 1.85% and the Nasdaq Composite advanced 2.13%.",
+    "Communication services, consumer discretionary and consumer staples led gains, while energy was the weakest S&P 500 sector as oil prices fell. Investors also weighed the prospect of greater scrutiny of AI infrastructure and data-centre investment."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Stocks rally, dollar dips after Democrats' midterm sweep",
+     "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-04/"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-treasury-yields-edged-higher-after-rever",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Neutral",
+   "themes": [
+    "Rates",
+    "Growth",
+    "Inflation"
+   ],
+   "keywords": [
+    "Treasuries",
+    "yields",
+    "services",
+    "Federal Reserve"
+   ],
+   "companies": [],
+   "cov": 0.76,
+   "imp": 0.44,
+   "title": "Treasury yields edged higher after reversing an early election-driven drop.",
+   "dek": "Treasuries reversed some early gains as investors weighed the election result and services data.",
+   "body": [
+    "US Treasury yields were choppy as investors assessed the election result and economic data. Reuters reported the 10-year yield up 0.6 basis point to 4.956%, the 30-year up 1.1 basis points to 5.335%, and the two-year up 1.7 basis points to 4.631%.",
+    "Yields had fallen earlier as the election results came in, before paring the decline. October services-sector growth slowed marginally, while supply chains remained strained, Reuters reported."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Fidelity",
+     "title": "Treasuries-US bond yields rise as investors assess economic data, Democrat election victory",
+     "url": "https://www.fidelity.com/news/article/default/202611041112RTRSNEWSCOMBINED_L6N46L0YF_1"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-oil-s-decline-dragged-energy-shares-lowe",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Negative",
+   "themes": [
+    "Geopolitics",
+    "Energy",
+    "Inflation"
+   ],
+   "keywords": [
+    "oil",
+    "Iran",
+    "energy shares",
+    "geopolitics"
+   ],
+   "companies": [],
+   "cov": 0.8,
+   "imp": 0.69,
+   "title": "Oil’s decline dragged energy shares lower as Iran-policy uncertainty returned.",
+   "dek": "Crude weakness weighed on energy shares as markets considered the election’s implications for Iran policy.",
+   "body": [
+    "Oil prices fell as investors reassessed the outlook for the Iran war and the political constraints facing the White House after the Democratic victory. Reuters said energy shares were the biggest losers in the US market as crude weakened.",
+    "The move adds to uncertainty around energy supply and inflation, with the geopolitical outlook still a key influence on oil."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Stocks rally, dollar dips after Democrats' midterm sweep",
+     "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-04/"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Democratic sweep adds new twist to markets' Iran, AI, and debt worries",
+     "url": "https://www.reuters.com/business/media-telecom/democrat-sweep-adds-new-twist-markets-iran-ai-debt-worries-2026-11-04/"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-european-shares-closed-at-a-two-month-hi",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Banking",
+    "Growth"
+   ],
+   "keywords": [
+    "STOXX 600",
+    "European banks",
+    "Spain",
+    "market close"
+   ],
+   "companies": [],
+   "cov": 0.88,
+   "imp": 0.76,
+   "title": "European shares closed at a two-month high as banks surged.",
+   "dek": "European shares finished at a more than two-month high, led by banks.",
+   "body": [
+    "The pan-European STOXX 600 rose 1.82% to 657.40, its highest close since August 26 and its biggest one-day advance since June 12, Reuters reported. The move followed broad gains after the US election result.",
+    "Eurozone banks led sectors, climbing 4.6%; Spain’s lender-heavy benchmark rose 3%. The gains extended the earlier European rebound rather than marking a new development in the day’s macro data."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Lufkin Daily News",
+     "title": "European shares jump over 1% after Democrats sweep US Congress, Novo Nordisk surges",
+     "url": "https://lufkindailynews.com/news_reuters/business/european-shares-rise-as-democrats-take-us-congress-novo-nordisk-surges/article_5b622c8c-5c94-5d57-a3fd-0ebbce82ef4d.html"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-the-dollar-weakened-after-the-democratic",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "FX",
+   "sentiment": "Negative",
+   "themes": [
+    "FX",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "US dollar",
+    "euro",
+    "sterling",
+    "midterms"
+   ],
+   "companies": [],
+   "cov": 0.72,
+   "imp": 0.51,
+   "title": "The dollar weakened after the Democratic election sweep.",
+   "dek": "The dollar fell as investors reassessed the implications of divided government.",
+   "body": [
+    "The dollar weakened after Democrats won control of Congress, while the euro and sterling benefited, according to Reuters. Investors considered whether divided government could constrain abrupt policy changes and alter the outlook for trade and geopolitical policy.",
+    "The currency move came alongside a broad global equity rally, though Reuters noted that investors remained alert to continued volatility."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Stocks rally, dollar dips after Democrats' midterm sweep",
+     "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-04/"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-consumer-and-communications-shares-outpa",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Consumer",
+    "Energy",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "consumer stocks",
+    "communications",
+    "energy",
+    "oil"
+   ],
+   "companies": [],
+   "cov": 0.72,
+   "imp": 0.65,
+   "title": "Consumer and communications shares outpaced energy in the US rally.",
+   "dek": "Consumer and communications shares helped lead the rally while energy fell with crude.",
+   "body": [
+    "The election rally favoured consumer-facing shares, while energy stocks lagged. Reuters identified communication services, consumer discretionary and consumer staples as drivers of US gains, with energy the biggest sector loser as crude prices declined.",
+    "The contrasting performance reflected both a broad increase in risk appetite and a sharp sector-specific reaction to lower oil prices and changing expectations for policy."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Stocks rally, dollar dips after Democrats' midterm sweep",
+     "url": "https://www.reuters.com/world/china/global-markets-wrapup-1-2026-11-04/"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-duolingo-lifted-its-revenue-forecast-as-",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Tech",
+    "Consumer"
+   ],
+   "keywords": [
+    "Duolingo",
+    "user growth",
+    "guidance",
+    "earnings"
+   ],
+   "companies": [
+    {
+     "name": "Duolingo",
+     "ticker": "DUOL",
+     "move": 15,
+     "series": [
+      135.21,
+      136.39,
+      131.59,
+      135.27,
+      128,
+      164.9997
+     ],
+     "dates": [
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.58,
+   "imp": 0.67,
+   "title": "Duolingo lifted its revenue forecast as user growth accelerated.",
+   "dek": "Duolingo raised its annual revenue outlook as user growth lifted shares despite a sharp profit drop.",
+   "body": [
+    "Duolingo reported third-quarter revenue of $309 million, up 13.7% year over year, and daily active users rose 29% to 64.9 million. It raised its full-year revenue outlook to $1.22 billion from $1.21 billion, while quarterly profit fell sharply.",
+    "Shares surged more than 15% in premarket trading, with investors focusing on user growth and the higher revenue outlook despite the profit decline."
+   ],
+   "sources": [
+    {
+     "pub": "Oninvest",
+     "title": "Duolingo's stock soared 15%. Why weren't investors deterred by the plunge in earnings?",
+     "url": "https://en.oninvest.com/article/duolingo-s-stock-soared-15-why-weren-t-investors-deterred-by-the-plunge-in-earnings"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-datadog-fell-as-its-fourth-quarter-outlo",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech"
+   ],
+   "keywords": [
+    "Datadog",
+    "cloud software",
+    "guidance",
+    "earnings"
+   ],
+   "companies": [
+    {
+     "name": "Datadog",
+     "ticker": "DDOG",
+     "move": -13,
+     "series": [
+      278.41,
+      265.84,
+      235.27,
+      216.1,
+      220.52,
+      188.8
+     ],
+     "dates": [
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.62,
+   "imp": 0.68,
+   "title": "Datadog fell as its fourth-quarter outlook disappointed investors.",
+   "dek": "A cautious fourth-quarter revenue outlook overshadowed Datadog’s strong quarterly beat.",
+   "body": [
+    "Datadog’s third-quarter revenue grew 35% to $1.20 billion, and adjusted earnings of $0.81 a share beat expectations, according to its results. The company forecast fourth-quarter revenue of $1.19 billion to $1.20 billion, a range that disappointed investors.",
+    "Shares fell about 13% in regular trading, as the softer near-term outlook outweighed the quarterly beat and higher full-year revenue guidance."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance",
+     "title": "Datadog Sinks 13% as Flat Q4 Revenue Outlook Overshadows Earnings Beat",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/datadog-sinks-13-flat-q4-revenue-outlook-143619472.html"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-amdocs-slumped-after-warning-of-a-steep-",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Telecom"
+   ],
+   "keywords": [
+    "Amdocs",
+    "T-Mobile",
+    "guidance",
+    "telecom"
+   ],
+   "companies": [
+    {
+     "name": "Amdocs",
+     "ticker": "DOX",
+     "move": -26.7,
+     "series": [
+      62.21,
+      62.22,
+      62.83,
+      63.54,
+      62.43,
+      44.24
+     ],
+     "dates": [
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "T-Mobile US",
+     "ticker": "TMUS",
+     "move": 0,
+     "series": [
+      148.08,
+      147.29,
+      156.44,
+      160.15,
+      154.41,
+      158.69
+     ],
+     "dates": [
+      "2026-10-28",
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.48,
+   "imp": 0.75,
+   "title": "Amdocs slumped after warning of a steep fiscal 2027 revenue decline.",
+   "dek": "Amdocs’ steep revenue outlook cut and contract dispute with T-Mobile drove a sharp share decline.",
+   "body": [
+    "Amdocs forecast fiscal 2027 revenue to decline 14.3% to 17.9%, citing a contract dispute with T-Mobile, according to reported company news. Its shares fell sharply during the regular session as investors reacted to the outlook.",
+    "The forecast stood in contrast to the day’s broader risk-on tone and made Amdocs one of the largest single-stock decliners reported."
+   ],
+   "sources": [
+    {
+     "pub": "Stock Titan",
+     "title": "Stocks Jump in the Stock Market Today Live, November 4",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-4-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261104-pm-bitcoin-recovered-above-79-000-after-an-",
+   "date": "2026-11-04",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Positive",
+   "themes": [
+    "Crypto",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "Bitcoin",
+    "crypto",
+    "midterms",
+    "risk appetite"
+   ],
+   "companies": [],
+   "cov": 0.48,
+   "imp": 0.62,
+   "title": "Bitcoin recovered above $79,000 after an election-night slide.",
+   "dek": "Bitcoin rebounded above $79,000 after an election-night dip toward $75,600.",
+   "body": [
+    "Bitcoin recovered after touching about $75,600 during election-result trading, later moving back above $79,000, according to market coverage. The rebound accompanied the broader improvement in risk appetite as the election outcome became clearer.",
+    "The recovery followed a brief sell-off that had taken the cryptocurrency to a multi-week low; price movements remained closely tied to the shifting political and market reaction."
+   ],
+   "sources": [
+    {
+     "pub": "Nexo",
+     "title": "Markets Today - November 4, 2026",
+     "url": "https://nexo.com/blog/markets-today-november-4"
+    },
+    {
+     "pub": "Bitcoin Magazine",
+     "title": "Bitcoin Price Soars Above $79,000 After Democratic Sweep Of Congress",
+     "url": "https://bitcoinmagazine.com/news/bitcoin-trades-above-78000-after-dem-sweep"
+    }
+   ]
+  },
   {
    "id": "20261104-md-eurozone-inflation-rises-to-a-three-year",
    "date": "2026-11-04",
@@ -138,7 +598,7 @@
       131.9,
       135.1,
       135.75,
-      141.9
+      142
      ],
      "dates": [
       "2026-10-28",
@@ -161,7 +621,7 @@
       189.25,
       191.8,
       197.45,
-      203.3
+      203.1
      ],
      "dates": [
       "2026-10-28",
@@ -219,7 +679,7 @@
       266.1,
       270.2,
       270.15,
-      286.55
+      285.2
      ],
      "dates": [
       "2026-10-28",
@@ -278,7 +738,7 @@
       504.8,
       466.84,
       483.9,
-      504.275
+      483.59
      ],
      "dates": [
       "2026-10-28",
@@ -336,7 +796,7 @@
       57.8,
       58.86,
       57.8,
-      59.88
+      60.98
      ],
      "dates": [
       "2026-10-28",
@@ -394,7 +854,7 @@
       47.795,
       48.58,
       48.81,
-      50.81
+      51.38
      ],
      "dates": [
       "2026-10-28",
@@ -575,7 +1035,7 @@
       1412.8,
       1408,
       1385,
-      1339.8
+      1337.6
      ],
      "dates": [
       "2026-10-27",
@@ -600,7 +1060,7 @@
       41.88,
       43.215,
       43.1,
-      42.065
+      40.885
      ],
      "dates": [
       "2026-10-27",
@@ -625,7 +1085,7 @@
       808,
       809,
       862.5,
-      858.5
+      858
      ],
      "dates": [
       "2026-10-27",
@@ -686,7 +1146,7 @@
       50.58,
       50.02,
       51.84,
-      53.94
+      54.24
      ],
      "dates": [
       "2026-10-27",
@@ -747,7 +1207,7 @@
       1922.5,
       1943,
       1900,
-      1984.5
+      2021
      ],
      "dates": [
       "2026-10-27",
@@ -814,7 +1274,7 @@
       24.24,
       24.52,
       25.7,
-      26.8
+      27.38
      ],
      "dates": [
       "2026-10-27",
@@ -875,7 +1335,7 @@
       7.172,
       7.468,
       7.762,
-      8.052
+      8.1
      ],
      "dates": [
       "2026-10-27",
@@ -936,7 +1396,7 @@
       344.63,
       338.32,
       331.9,
-      350.195
+      351.695
      ],
      "dates": [
       "2026-10-27",
@@ -998,7 +1458,7 @@
       184.11,
       178.34,
       175.4,
-      171.8554
+      171.31
      ],
      "dates": [
       "2026-10-27",
@@ -1097,7 +1557,7 @@
       279.84,
       278.99,
       280.03,
-      289.05
+      290.6
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1126,7 +1586,7 @@
       240.35,
       245.63,
       250.69,
-      268.67
+      267.825
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1155,7 +1615,7 @@
       65.76,
       59.97,
       60.55,
-      59.4901
+      57.735
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1368,7 +1828,7 @@
       627.4,
       600,
       589.3,
-      577.4
+      571.6
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -1434,7 +1894,7 @@
       79.74,
       80.63,
       80.98,
-      83.11
+      84.1
      ],
      "eventIndex": 5,
      "currency": "EUR",
@@ -1550,7 +2010,7 @@
       50.58,
       50.02,
       51.84,
-      53.94
+      54.24
      ],
      "eventIndex": 5,
      "currency": "EUR",
@@ -1617,7 +2077,7 @@
       711.8843,
       698.0427,
       698.5309,
-      708.58
+      714.94
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1650,7 +2110,7 @@
       0.9987,
       0.9983,
       0.9987,
-      0.9987
+      0.9989
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1681,7 +2141,7 @@
       72.54,
       72.08,
       75.22,
-      73.67
+      76.395
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1751,7 +2211,7 @@
       65.76,
       59.97,
       60.55,
-      59.4901
+      57.735
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1822,7 +2282,7 @@
       240.35,
       245.63,
       250.69,
-      268.67
+      267.825
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -1975,7 +2435,7 @@
       13960,
       13860,
       13760,
-      13990
+      14024
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -2045,7 +2505,7 @@
       579.6,
       592.2,
       580,
-      609.8
+      611
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -2115,7 +2575,7 @@
       43.96,
       44,
       44,
-      44.1
+      44
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -2185,7 +2645,7 @@
       1150.89,
       1075.08,
       1126.52,
-      1094.09
+      1036.0007
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2255,7 +2715,7 @@
       91.73,
       90.97,
       96.15,
-      100.505
+      101.54
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2284,7 +2744,7 @@
       205.03,
       207.6,
       213.77,
-      209.44
+      213.33
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2388,7 +2848,7 @@
       227.3,
       227.7,
       222.9,
-      228.1
+      231.6
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -2458,7 +2918,7 @@
       279.84,
       278.99,
       280.03,
-      289.19
+      290.6
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2524,7 +2984,7 @@
       105.12,
       106.01,
       109.16,
-      110.21
+      108.775
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2555,7 +3015,7 @@
       136.08,
       126.21,
       128.11,
-      127.84
+      129.4
      ],
      "eventIndex": 5,
      "currency": "USD",
