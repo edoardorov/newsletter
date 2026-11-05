@@ -1,8 +1,600 @@
 {
  "today": "2026-11-05",
- "updated": "2026-11-05T14:57:11.732Z",
- "edition": "MD",
+ "updated": "2026-11-05T21:04:51.823Z",
+ "edition": "PM",
  "stories": [
+  {
+   "id": "20261105-pm-nasdaq-enters-correction-territory-as-us",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Tech",
+    "AI",
+    "Growth"
+   ],
+   "keywords": [
+    "Nasdaq correction",
+    "AI investment",
+    "midterm elections",
+    "Wall Street"
+   ],
+   "companies": [],
+   "cov": 0.95,
+   "imp": 0.95,
+   "title": "Nasdaq enters correction territory as US stocks reverse post-election rally",
+   "dek": "Wall Street reversed its post-election rally as AI spending and data-centre concerns triggered a broad sell-off and pushed the Nasdaq into correction territory.",
+   "body": [
+    "US stocks suffered a sharp reversal, wiping out much of Wednesday’s post-election rally as investors reassessed the outlook for AI investment and data-centre construction. Reuters reported the Dow down 2.2%, the S&P 500 down 3.4% and the Nasdaq down 5.2% during the session.",
+    "The Nasdaq fell more than 10% from its October record close, putting it in correction territory. The sell-off broadened beyond technology, but chip and AI-infrastructure shares bore the brunt."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Nasdaq set to confirm correction as AI spending worries mount",
+     "url": "https://www.reuters.com/5f374b32b07b/markets/us/nasdaq-set-correction-investors-reassess-ai-spending-boom-2026-11-05"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Chip selloff drags global stocks lower on AI spending concerns",
+     "url": "https://finance.yahoo.com/energy/articles/oil-data-centre-stocks-sink-023443660.html?fr=sycsrp_catchall"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-chipmakers-lead-the-rout-as-ai-spending-",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "AI",
+    "Tech",
+    "Earnings"
+   ],
+   "keywords": [
+    "semiconductors",
+    "AI infrastructure",
+    "data centres",
+    "chip stocks"
+   ],
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "move": -7,
+     "series": [
+      213.66,
+      204.64,
+      202.06,
+      206.69,
+      200.13,
+      181.6
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Advanced Micro Devices",
+     "ticker": "AMD",
+     "move": -12,
+     "series": [
+      566.42,
+      504.8,
+      466.84,
+      483.9,
+      488.78,
+      404.4
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "SanDisk",
+     "ticker": "SNDK",
+     "move": -15,
+     "series": [
+      1330.05,
+      1150.89,
+      1075.08,
+      1126.52,
+      1037.4,
+      806.43
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.9,
+   "imp": 0.9,
+   "title": "Chipmakers lead the rout as AI spending concerns intensify",
+   "dek": "Chipmakers and AI-linked companies were among the steepest fallers as investors questioned the pace and returns of infrastructure investment.",
+   "body": [
+    "Semiconductor and AI-infrastructure stocks led the US rout. Reuters reported the Philadelphia Semiconductor Index fell 11% at one point, while Nvidia fell 7%, AMD fell 12% and SanDisk lost more than 15%.",
+    "Investors worried that greater scrutiny of data-centre development could slow future AI spending; the sell-off also reflected unease about returns on the large sums invested in the sector."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Chip selloff drags global stocks lower on AI spending concerns",
+     "url": "https://finance.yahoo.com/energy/articles/oil-data-centre-stocks-sink-023443660.html?fr=sycsrp_catchall"
+    },
+    {
+     "pub": "Yahoo Finance",
+     "title": "Dow plunges 1,200 points, Nasdaq into correction after midterm results stock rally",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/dow-plunges-1-200-points-173500799.html"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-european-shares-retreat-as-technology-an",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Growth",
+    "Tech",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "Stoxx 600",
+    "European close",
+    "technology",
+    "defence"
+   ],
+   "companies": [],
+   "cov": 0.8,
+   "imp": 0.55,
+   "title": "European shares retreat as technology and defence stocks weaken",
+   "dek": "European markets gave back early gains as weakness in technology and defence shares dragged the regional benchmark lower.",
+   "body": [
+    "European shares closed lower after retreating from an earlier advance. The Stoxx 600 fell 0.5%, according to Sharecast, with losses in London, Frankfurt, Zurich and Milan weighing on the index.",
+    "Technology and defence stocks were under pressure as investors reassessed the implications of the US election result and tracked the sharp US technology sell-off."
+   ],
+   "sources": [
+    {
+     "pub": "Sharecast via Hargreaves Lansdown",
+     "title": "Europe close: Stocks fall as markets reassess mid-term elections",
+     "url": "https://www.hl.co.uk/shares/stock-market-news/market-reports/europe-close-stocks-fall-as-markets-reassess-mid-term-elections"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Tech drag, defence weakness weigh on European shares",
+     "url": "https://ca.finance.yahoo.com/news/tech-drag-defence-weakness-weigh-164047028.html"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-wall-street-s-fear-gauge-jumps-to-an-eig",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Growth",
+    "Tech",
+    "Rates"
+   ],
+   "keywords": [
+    "VIX",
+    "market volatility",
+    "risk reduction",
+    "AI trade"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.75,
+   "title": "Wall Street’s fear gauge jumps to an eight-month high",
+   "dek": "A surge in the VIX underscored a sharp rise in demand for protection as US equities sold off.",
+   "body": [
+    "The Cboe Volatility Index rose to an eight-month high of 28.09, gaining 11.5 points, Reuters reported. The move came a day after US shares rallied following the Democrats’ midterm victory.",
+    "Reuters said traders and analysts pointed to an unwind of crowded AI positions and investors reducing risk; volatility-sensitive funds’ rebalancing could also amplify late-session moves."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Wall Street fear gauge jumps most since 'Liberation Day' as AI trade stumbles",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WG2ZO?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-oil-rebounds-as-tanker-attacks-revive-su",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Positive",
+   "themes": [
+    "Commodities",
+    "Geopolitics",
+    "Energy"
+   ],
+   "keywords": [
+    "Brent",
+    "WTI",
+    "tanker attacks",
+    "Iran war"
+   ],
+   "companies": [],
+   "cov": 0.85,
+   "imp": 0.7,
+   "title": "Oil rebounds as tanker attacks revive supply concerns",
+   "dek": "Crude gained more than 2% as tanker attacks revived supply concerns and traders reassessed the Iran-war outlook.",
+   "body": [
+    "Oil rebounded during US trading, with Brent up 2.43% at $96.92 a barrel and US West Texas Intermediate up 2.44% at $90.27 by 11:43 a.m. ET, Reuters reported.",
+    "The move followed reports of new attacks on tankers, reviving supply concerns as investors weighed whether the US midterm result would change the course of the Iran war. This is a fresh price reversal after the earlier-week decline."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Oil rises over $2 as investors assess Iran war future",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WG066?channel=FBi345"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-bitcoin-slips-below-76-000-as-risk-off-t",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Negative",
+   "themes": [
+    "Crypto",
+    "Growth",
+    "Tech"
+   ],
+   "keywords": [
+    "Bitcoin",
+    "Ether",
+    "liquidations",
+    "risk appetite"
+   ],
+   "companies": [],
+   "cov": 0.8,
+   "imp": 0.8,
+   "title": "Bitcoin slips below $76,000 as risk-off trading returns",
+   "dek": "Bitcoin erased its post-election rebound as a broad risk-off move in equities drove crypto lower and triggered leveraged liquidations.",
+   "body": [
+    "Bitcoin fell below $76,000 as the US technology sell-off spread to digital assets, reversing its post-election move above $80,000. Reuters-linked reporting put bitcoin near $75,700, down about 6%, with ether also falling sharply.",
+    "The retreat coincided with heavy forced selling in leveraged crypto positions: The Block reported close to $1.1 billion in liquidations over 24 hours. The reversal highlighted crypto’s renewed sensitivity to broader risk appetite."
+   ],
+   "sources": [
+    {
+     "pub": "The Block",
+     "title": "Bitcoin erases post-election gains as Wall Street selloff ...",
+     "url": "https://www.theblock.co/news/markets/2026-11-05-bitcoin-erases-post-election-gains-wall-street-selloff-liquidations-435434"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-european-chip-stocks-tumble-amid-ai-inve",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Tech",
+    "AI",
+    "Earnings"
+   ],
+   "keywords": [
+    "ASML",
+    "Siltronic",
+    "Soitec",
+    "AI spending"
+   ],
+   "companies": [
+    {
+     "name": "Siltronic",
+     "ticker": "WAF.DE",
+     "move": -14.5,
+     "series": [
+      63,
+      58.25,
+      59,
+      59.5,
+      57.25,
+      50.2
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    },
+    {
+     "name": "ASML",
+     "ticker": "ASML.AS",
+     "move": -7.8,
+     "series": [
+      1504.8,
+      1412.8,
+      1408,
+      1385,
+      1337.6,
+      1250
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    },
+    {
+     "name": "Soitec",
+     "ticker": "SOI.PA",
+     "move": -17.3,
+     "series": [
+      133,
+      120.25,
+      124.3,
+      124.75,
+      110.05,
+      91.64
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.75,
+   "imp": 0.75,
+   "title": "European chip stocks tumble amid AI-investment concerns",
+   "dek": "European semiconductor names saw steep losses as investors repriced the outlook for AI-related infrastructure spending.",
+   "body": [
+    "European chipmakers extended the global technology sell-off. Reuters reported Siltronic fell 14.5%, ASML retreated 7.8% and Soitec slumped 17.3% during the session.",
+    "The sector’s decline reflected concerns that political scrutiny could slow data-centre construction and future AI investment, although the Reuters report noted that existing orders were not necessarily at risk."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Tech drag, defence weakness weigh on European shares",
+     "url": "https://ca.finance.yahoo.com/news/tech-drag-defence-weakness-weigh-164047028.html"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-cardinal-health-raises-earnings-outlook-",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Healthcare",
+    "Growth"
+   ],
+   "keywords": [
+    "earnings outlook",
+    "pharmaceuticals",
+    "EPS",
+    "guidance"
+   ],
+   "companies": [
+    {
+     "name": "Cardinal Health",
+     "ticker": "CAH",
+     "move": 0,
+     "series": [
+      251.09,
+      250.48,
+      254.33,
+      252.94,
+      261.93,
+      268.03
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.45,
+   "imp": 0.55,
+   "title": "Cardinal Health raises earnings outlook after strong quarter",
+   "dek": "Cardinal Health raised its annual earnings outlook after a strong quarter, standing out against a broad market sell-off.",
+   "body": [
+    "Cardinal Health raised its full-year adjusted earnings forecast to $12.80–$13.00 per share from $12.40–$12.60 after reporting first-quarter adjusted EPS of $3.26, up 28% year on year and above the cited $2.94 consensus estimate.",
+    "The company also lifted its expected profit growth for Pharmaceutical and Specialty Solutions to 10%–12%. Shares reached a record during a session when the broader market was sharply lower."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance",
+     "title": "CAH Shares Post New Record, EW Stock Hits Over Three-Year High – What’s Driving Today’s Rally?",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/cah-shares-post-record-ew-stock-hits-over-three-year-high-180714986.html"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-primo-brands-beats-quarterly-earnings-fo",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Neutral",
+   "themes": [
+    "Earnings",
+    "Consumer",
+    "Growth"
+   ],
+   "keywords": [
+    "quarterly results",
+    "guidance",
+    "beverages",
+    "buyback"
+   ],
+   "companies": [
+    {
+     "name": "Primo Brands",
+     "ticker": "PRMB",
+     "move": 0.9,
+     "series": [
+      19.47,
+      19.74,
+      20.77,
+      20.59,
+      21.02,
+      22.12
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.4,
+   "imp": 0.4,
+   "title": "Primo Brands beats quarterly earnings forecast but flags softer EBITDA",
+   "dek": "Primo Brands beat the earnings estimate but warned that full-year EBITDA would likely reach only the bottom of its existing range.",
+   "body": [
+    "Primo Brands reported third-quarter adjusted earnings of $0.43 per share, above the cited analyst expectation of $0.37, on revenue of $1.82 billion, up 3.1% year on year.",
+    "The company kept its sales-growth and free-cash-flow outlooks, but said adjusted EBITDA was likely to land at the lower end of its $1.47 billion–$1.52 billion range. It also authorised a new $300 million share-repurchase programme."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance",
+     "title": "Primo Brands Beats Q3 Earnings Forecasts as Revenue Rises 3.1%",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/primo-brands-beats-q3-earnings-145620395.html"
+    }
+   ]
+  },
+  {
+   "id": "20261105-pm-arm-s-modest-outlook-fails-to-steady-sha",
+   "date": "2026-11-05",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech",
+    "Growth"
+   ],
+   "keywords": [
+    "Arm",
+    "quarterly earnings",
+    "guidance",
+    "semiconductors"
+   ],
+   "companies": [
+    {
+     "name": "Arm Holdings",
+     "ticker": "ARM",
+     "move": -3,
+     "series": [
+      228.77,
+      205.97,
+      196.79,
+      202.49,
+      191.8,
+      166.72
+     ],
+     "dates": [
+      "2026-10-29",
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.6,
+   "imp": 0.5,
+   "title": "Arm’s modest outlook fails to steady shares amid chip rout",
+   "dek": "Arm topped quarterly estimates, but a near-consensus forecast offered little support amid the chip sell-off.",
+   "body": [
+    "Arm reported fiscal second-quarter adjusted earnings of $0.52 per share on revenue of $1.44 billion, both above the cited analyst estimates. Its forecast for the next quarter was close to consensus: revenue of $1.54 billion, plus or minus $50 million, and adjusted EPS of $0.56, plus or minus $0.04.",
+    "The modestly above-consensus outlook did little to reassure investors amid a wider chip-sector retreat; shares slipped about 3% in after-hours trading, according to Yahoo Finance."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance",
+     "title": "Arm Shares Fall as Third-Quarter Outlook Offers Limited ...",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/arm-shares-fall-third-quarter-113238306.html?fr=sycsrp_catchall"
+    },
+    {
+     "pub": "Yahoo Finance",
+     "title": "Asian chip stocks slide as disappointing Qualcomm, Arm ...",
+     "url": "https://uk.finance.yahoo.com/news/asian-chip-stocks-slide-disappointing-045213777.html"
+    }
+   ]
+  },
   {
    "id": "20261105-md-bank-of-england-raises-bank-rate-to-4-an",
    "date": "2026-11-05",
@@ -110,7 +702,7 @@
       55.5,
       54.16,
       55.12,
-      56.32
+      54.5
      ],
      "dates": [
       "2026-10-29",
@@ -175,7 +767,7 @@
       1000,
       1004.8,
       1003.4,
-      841.8
+      841.5
      ],
      "dates": [
       "2026-10-29",
@@ -235,7 +827,7 @@
       10.88,
       10.855,
       11.275,
-      12.9
+      12.635
      ],
      "dates": [
       "2026-10-29",
@@ -331,7 +923,7 @@
       162.08,
       164.43,
       173.19,
-      156.47
+      156.75
      ],
      "dates": [
       "2026-10-29",
@@ -391,7 +983,7 @@
       5.45,
       5.59,
       5.92,
-      5.2499
+      5.08
      ],
      "dates": [
       "2026-10-29",
@@ -414,7 +1006,7 @@
       724.19,
       724.38,
       701.03,
-      721.51
+      707.63
      ],
      "dates": [
       "2026-10-29",
@@ -437,7 +1029,7 @@
       228.85,
       245.51,
       271.75,
-      354.28
+      356.1
      ],
      "dates": [
       "2026-10-29",
@@ -758,7 +1350,7 @@
       135.27,
       128,
       161.27,
-      161.54
+      157.02
      ],
      "dates": [
       "2026-10-28",
@@ -819,7 +1411,7 @@
       216.1,
       220.52,
       188.72,
-      172.21
+      174.6
      ],
      "dates": [
       "2026-10-28",
@@ -880,7 +1472,7 @@
       63.54,
       62.43,
       43.66,
-      42.645
+      43.83
      ],
      "dates": [
       "2026-10-28",
@@ -905,7 +1497,7 @@
       160.15,
       154.41,
       159.17,
-      161.088
+      160.59
      ],
      "dates": [
       "2026-10-28",
@@ -1112,7 +1704,7 @@
       135.1,
       135.75,
       142,
-      144.65
+      147
      ],
      "dates": [
       "2026-10-28",
@@ -1137,7 +1729,7 @@
       191.8,
       197.45,
       203.1,
-      202.7
+      205.2
      ],
      "dates": [
       "2026-10-28",
@@ -1197,7 +1789,7 @@
       270.2,
       270.15,
       285.2,
-      273.45
+      271.25
      ],
      "dates": [
       "2026-10-28",
@@ -1258,7 +1850,7 @@
       466.84,
       483.9,
       488.78,
-      424.2
+      404.4
      ],
      "dates": [
       "2026-10-28",
@@ -1318,7 +1910,7 @@
       58.86,
       57.8,
       60.98,
-      61.3
+      61.34
      ],
      "dates": [
       "2026-10-28",
@@ -1378,7 +1970,7 @@
       48.58,
       48.81,
       51.38,
-      51.82
+      51.87
      ],
      "dates": [
       "2026-10-28",
@@ -1561,7 +2153,7 @@
       1408,
       1385,
       1337.6,
-      1274.4
+      1250
      ],
      "dates": [
       "2026-10-27",
@@ -1588,7 +2180,7 @@
       43.215,
       43.1,
       40.885,
-      38.28
+      37.065
      ],
      "dates": [
       "2026-10-27",
@@ -1615,7 +2207,7 @@
       809,
       862.5,
       858,
-      865
+      859
      ],
      "dates": [
       "2026-10-27",
@@ -1678,7 +2270,7 @@
       50.02,
       51.84,
       54.24,
-      56.28
+      56.22
      ],
      "dates": [
       "2026-10-27",
@@ -1741,7 +2333,7 @@
       1943,
       1900,
       2021,
-      2013
+      2028
      ],
      "dates": [
       "2026-10-27",
@@ -1810,7 +2402,7 @@
       24.52,
       25.7,
       27.38,
-      27.69
+      27.51
      ],
      "dates": [
       "2026-10-27",
@@ -1873,7 +2465,7 @@
       7.468,
       7.762,
       8.1,
-      8.24
+      8.188
      ],
      "dates": [
       "2026-10-27",
@@ -1936,7 +2528,7 @@
       338.32,
       331.9,
       349.51,
-      351.33
+      344.17
      ],
      "dates": [
       "2026-10-27",
@@ -2000,7 +2592,7 @@
       178.34,
       175.4,
       171.7,
-      157.93
+      154.99
      ],
      "dates": [
       "2026-10-27",
@@ -2101,7 +2693,7 @@
       278.99,
       280.03,
       288.93,
-      286.8477
+      282.57
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2132,7 +2724,7 @@
       245.63,
       250.69,
       266.03,
-      263.3849
+      260.21
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2163,7 +2755,7 @@
       59.97,
       60.55,
       58.27,
-      53.29
+      52.25
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2378,7 +2970,7 @@
       600,
       589.3,
       571.6,
-      570.4
+      567.4
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -2446,7 +3038,7 @@
       80.63,
       80.98,
       84.1,
-      84.72
+      84.53
      ],
      "eventIndex": 5,
      "currency": "EUR",
@@ -2564,7 +3156,7 @@
       50.02,
       51.84,
       54.24,
-      56.28
+      56.22
      ],
      "eventIndex": 5,
      "currency": "EUR",
@@ -2697,7 +3289,7 @@
       72.08,
       75.22,
       76.12,
-      68.84
+      69.49
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2769,7 +3361,7 @@
       59.97,
       60.55,
       58.27,
-      53.29
+      52.25
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2842,7 +3434,7 @@
       245.63,
       250.69,
       266.03,
-      263.375
+      260.21
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2997,7 +3589,7 @@
       13860,
       13760,
       14024,
-      14246
+      14042
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -3069,7 +3661,7 @@
       592.2,
       580,
       611,
-      601.94
+      593.2
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -3141,7 +3733,7 @@
       44,
       44,
       44,
-      44.1
+      44
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -3213,7 +3805,7 @@
       1075.08,
       1126.52,
       1037.4,
-      884.63
+      806.43
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3285,7 +3877,7 @@
       90.97,
       96.15,
       101.89,
-      95.365
+      93.83
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3316,7 +3908,7 @@
       207.6,
       213.77,
       213.5,
-      199.595
+      200.99
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3422,7 +4014,7 @@
       227.7,
       222.9,
       231.6,
-      233.3
+      231.8
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -3494,7 +4086,7 @@
       278.99,
       280.03,
       288.93,
-      286.8477
+      282.57
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3562,7 +4154,7 @@
       106.01,
       109.16,
       108.81,
-      104.515
+      102.35
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3595,7 +4187,7 @@
       126.21,
       128.11,
       129.39,
-      124.27
+      122.51
      ],
      "eventIndex": 5,
      "currency": "USD",
