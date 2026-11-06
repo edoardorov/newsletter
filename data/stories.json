@@ -1,8 +1,493 @@
 {
- "today": "2026-11-05",
- "updated": "2026-11-05T21:04:51.823Z",
- "edition": "PM",
+ "today": "2026-11-06",
+ "updated": "2026-11-06T14:36:25.677Z",
+ "edition": "MD",
  "stories": [
+  {
+   "id": "20261106-md-us-jobs-jump-165-000-strengthening-the-c",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Labour market",
+    "Rates",
+    "Growth"
+   ],
+   "keywords": [
+    "payrolls",
+    "unemployment",
+    "Fed",
+    "Treasury yields"
+   ],
+   "companies": [],
+   "cov": 0.95,
+   "imp": 0.9,
+   "title": "US jobs jump 165,000, strengthening the case for higher rates",
+   "dek": "A stronger-than-expected jobs report reinforced bets on a December Fed rate increase and pushed Treasury yields higher.",
+   "body": [
+    "US payrolls increased by 165,000 in October, well above the 65,000 expected in a Reuters poll, while September’s gain was revised up to 60,000 from 29,000. Unemployment edged down to 4.1% from 4.2%.",
+    "The stronger report lifted expectations of a December Fed rate increase: Reuters reported market-implied odds rose to 78% from 70%. Treasury yields initially rose; the two-year was up 5 basis points at 4.52% and the 10-year up 4 basis points at 4.88% in the report’s snapshot."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "VIEW Strong October jobs report sends yields higher",
+     "url": "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/"
+    },
+    {
+     "pub": "US Bureau of Labor Statistics",
+     "title": "Employment Situation News Release - 2026 M10 Results",
+     "url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-european-stocks-slide-as-ai-concerns-dee",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Tech",
+    "Geopolitics",
+    "Growth"
+   ],
+   "keywords": [
+    "STOXX 600",
+    "AI",
+    "Europe",
+    "technology"
+   ],
+   "companies": [],
+   "cov": 0.9,
+   "imp": 0.8,
+   "title": "European stocks slide as AI concerns deepen the global rout",
+   "dek": "European shares extended the global sell-off as investors reassessed AI investment and regulation risks.",
+   "body": [
+    "The pan-European STOXX 600 fell 1% to 648.83 by 0919 GMT as the global technology sell-off weighed on shares. The decline erased the index’s gains for the week, leaving it down about 0.3% on the week at that point.",
+    "Investors worried that the Democrats’ control of Congress could bring tighter limits on AI data-centre spending, amid concerns about returns, valuations and debt-funded investment."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "European shares fall as global AI rout gathers pace",
+     "url": "https://www.reuters.com/markets/europe/european-shares-set-fall-global-ai-rout-gathers-pace-2026-11-06/"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-teleperformance-slumps-18-after-cutting-",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Tech",
+    "Consumer"
+   ],
+   "keywords": [
+    "guidance",
+    "outsourcing",
+    "trust and safety",
+    "AI"
+   ],
+   "companies": [
+    {
+     "name": "Teleperformance",
+     "ticker": "TEP.PA",
+     "move": -18,
+     "series": [
+      80.3,
+      82.08,
+      80.98,
+      82.22,
+      80.8,
+      65.82
+     ],
+     "dates": [
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.85,
+   "imp": 0.8,
+   "title": "Teleperformance slumps 18% after cutting its revenue outlook",
+   "dek": "A reduced growth outlook sent the customer-services outsourcer sharply lower.",
+   "body": [
+    "Teleperformance shares fell 18% after the outsourcing company cut its full-year revenue-growth outlook. Weakness in its trust and safety business outweighed growth in AI-powered and back-office services, Reuters reported.",
+    "The decline made the company one of the sharpest individual losers in the European session."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "European shares fall as global AI rout gathers pace",
+     "url": "https://www.reuters.com/markets/europe/european-shares-set-fall-global-ai-rout-gathers-pace-2026-11-06/"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-daimler-truck-profit-rises-73-as-weaker-",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Neutral",
+   "themes": [
+    "Earnings",
+    "Growth"
+   ],
+   "keywords": [
+    "quarterly results",
+    "orders",
+    "North America",
+    "profit"
+   ],
+   "companies": [
+    {
+     "name": "Daimler Truck",
+     "ticker": "DTG.DE",
+     "move": 0,
+     "series": [
+      40.54,
+      40.61,
+      40.5,
+      40.9,
+      41.91,
+      39.77
+     ],
+     "dates": [
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06"
+     ],
+     "eventIndex": 5,
+     "currency": "EUR"
+    }
+   ],
+   "cov": 0.75,
+   "imp": 0.55,
+   "title": "Daimler Truck profit rises 73% as weaker orders temper the recovery",
+   "dek": "Profit surged on a North American recovery, though weaker order intake clouded the outlook for the truckmaker’s key market.",
+   "body": [
+    "Daimler Truck reported third-quarter adjusted operating profit of €1.12 billion, up from €648 million a year earlier and slightly above the €1.10 billion company-compiled consensus. It confirmed its full-year outlook.",
+    "But group order intake missed Visible Alpha expectations by 9%, including a 16% shortfall in North America, its largest market by revenue. The North American unit’s adjusted operating margin improved to 12.1% from 6.4%."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Daimler Truck's profit jumps 73%, but weaker North America orders weigh",
+     "url": "https://www.reuters.com/business/daimler-truck-q3-profit-rises-73-north-america-demand-recovers-2026-11-06/"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-iag-rises-despite-forecasting-slightly-l",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "UK",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Growth"
+   ],
+   "keywords": [
+    "IAG",
+    "British Airways",
+    "capacity",
+    "airlines"
+   ],
+   "companies": [
+    {
+     "name": "International Consolidated Airlines Group",
+     "ticker": "IAG.L",
+     "move": 2,
+     "series": [
+      402.6,
+      417.9,
+      417.3,
+      436.3,
+      427.2,
+      431.5
+     ],
+     "dates": [
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06"
+     ],
+     "eventIndex": 5,
+     "currency": "GBp"
+    }
+   ],
+   "cov": 0.6,
+   "imp": 0.3,
+   "title": "IAG rises despite forecasting slightly lower annual capacity",
+   "dek": "The airline group’s shares gained despite a slightly lower capacity outlook.",
+   "body": [
+    "IAG shares rose 2% despite the British Airways owner forecasting slightly lower annual capacity this year, according to Reuters.",
+    "The move contrasted with losses across the broader European market, where the STOXX 600 was down 1% in morning trading."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "European shares fall as global AI rout gathers pace",
+     "url": "https://www.reuters.com/markets/europe/european-shares-set-fall-global-ai-rout-gathers-pace-2026-11-06/"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-brent-heads-for-a-steep-weekly-loss-amid",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Negative",
+   "themes": [
+    "Commodities",
+    "Geopolitics",
+    "Inflation"
+   ],
+   "keywords": [
+    "Brent",
+    "Iran",
+    "Middle East",
+    "crude"
+   ],
+   "companies": [],
+   "cov": 0.8,
+   "imp": 0.6,
+   "title": "Brent heads for a steep weekly loss amid de-escalation hopes",
+   "dek": "Oil remained volatile but was headed for a sharp weekly drop as hopes of Middle East de-escalation offset shipping risks.",
+   "body": [
+    "Brent crude was down 0.8% at $97.55 a barrel by 0826 GMT, after an early rise in a volatile session. Reuters said oil was on course for a sharp weekly decline.",
+    "Hopes that the US midterm result could enable de-escalation in the US-Israeli war on Iran weighed on prices, while continuing attacks on vessels in the Middle East provided a floor."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Oil set for sharp weekly drop after US midterms raise hopes of more Mideast crude exports",
+     "url": "https://uk.finance.yahoo.com/news/oil-set-sharp-weekly-drop-052924519.html"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-dollar-climbs-as-strong-payrolls-lift-fe",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "FX",
+   "sentiment": "Positive",
+   "themes": [
+    "FX",
+    "Rates",
+    "Labour market"
+   ],
+   "keywords": [
+    "US dollar",
+    "payrolls",
+    "Fed",
+    "rate expectations"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.65,
+   "title": "Dollar climbs as strong payrolls lift Fed hike expectations",
+   "dek": "The stronger US labour data supported the dollar as markets raised their estimate of a December rate increase.",
+   "body": [
+    "The dollar index rose 0.7% to 102.18 after October payrolls beat forecasts and the unemployment rate fell to 4.1%, Reuters reported.",
+    "The jobs surprise strengthened rate-hike expectations, with traders raising the implied probability of a December Fed increase to 78% from 70%."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "VIEW Strong October jobs report sends yields higher",
+     "url": "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-bitcoin-steadies-near-76-000-after-more-",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Micro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Neutral",
+   "themes": [
+    "Crypto",
+    "Tech"
+   ],
+   "keywords": [
+    "Bitcoin",
+    "ETF flows",
+    "liquidations",
+    "Ether"
+   ],
+   "companies": [
+    {
+     "name": "Fidelity Wise Origin Bitcoin Fund",
+     "ticker": "FBTC",
+     "move": 0,
+     "series": [
+      66.71,
+      66.6,
+      67.68,
+      69.6,
+      66.17,
+      65.54
+     ],
+     "dates": [
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "iShares Bitcoin Trust",
+     "ticker": "IBIT",
+     "move": 0,
+     "series": [
+      43.36,
+      43.35,
+      44.05,
+      45.33,
+      43.03,
+      42.64
+     ],
+     "dates": [
+      "2026-10-30",
+      "2026-11-02",
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.8,
+   "imp": 0.7,
+   "title": "Bitcoin steadies near $76,000 after more than $1 billion in liquidations",
+   "dek": "Bitcoin steadied after a sharp risk-off move, but liquidation losses and ETF outflows underscored fragile sentiment.",
+   "body": [
+    "Bitcoin was around $76,150, up 0.2% since midnight UTC after recovering from about $75,200. Ether gained 0.3%, according to CoinDesk.",
+    "The modest bounce followed Thursday’s sell-off, when more than $1 billion in leveraged crypto positions were liquidated over 24 hours. US spot bitcoin ETFs recorded further outflows on Thursday, including about $200 million from Fidelity’s FBTC and $105 million from BlackRock’s IBIT."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Bitcoin steadies after AI-led selloff as eyes turn to latest U.S. jobs figures: Crypto Markets Today",
+     "url": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-us-futures-point-to-a-tentative-tech-reb",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Neutral",
+   "themes": [
+    "Tech",
+    "Rates",
+    "Labour market"
+   ],
+   "keywords": [
+    "Nasdaq futures",
+    "S&P 500",
+    "jobs report",
+    "Treasuries"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.65,
+   "title": "US futures point to a tentative tech rebound as jobs data shifts rate bets",
+   "dek": "Futures indicated a tentative tech rebound, while the strong jobs report revived rate concerns before the US session.",
+   "body": [
+    "Nasdaq futures were up 1.4% and S&P 500 futures 0.3% after the October jobs release, while the Dow contract had been lower before the data. The futures moves suggested a possible tech-led recovery after Thursday’s heavy losses.",
+    "The jobs report then sent Treasury yields higher and lifted rate-hike bets, complicating the rebound. Reuters’ market snapshot put the two-year Treasury yield up 5 basis points at 4.52%."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "VIEW Strong October jobs report sends yields higher",
+     "url": "https://www.reuters.com/business/view-strong-october-jobs-report-sends-yields-higher-2026-11-06/"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Nasdaq futures rise after steep AI selloff as chip stocks stabilize",
+     "url": "https://www.reuters.com/business/nasdaq-futures-rise-after-steep-ai-selloff-chip-stocks-stabilize-2026-11-06/"
+    }
+   ]
+  },
+  {
+   "id": "20261106-md-global-equity-funds-log-a-seventh-straig",
+   "date": "2026-11-06",
+   "ed": "MD",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Alternatives",
+   "sentiment": "Positive",
+   "themes": [
+    "Growth",
+    "Commodities"
+   ],
+   "keywords": [
+    "fund flows",
+    "Europe",
+    "equities",
+    "LSEG"
+   ],
+   "companies": [],
+   "cov": 0.6,
+   "imp": 0.35,
+   "title": "Global equity funds log a seventh straight week of inflows",
+   "dek": "Investors kept adding to equity funds even as the technology rout unsettled markets late in the week.",
+   "body": [
+    "Global equity funds attracted inflows for a seventh consecutive week through November 4, with European equity funds taking in $13.25 billion, their largest weekly intake since August 12, Reuters reported, citing LSEG data.",
+    "The inflows came despite the week’s late risk-off move. Reuters linked demand for European funds in part to lower oil and natural-gas prices, which had eased inflation concerns."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Yahoo Finance",
+     "title": "Global equity funds post seventh straight week of inflows",
+     "url": "https://uk.finance.yahoo.com/news/global-equity-funds-post-seventh-091345718.html"
+    }
+   ]
+  },
   {
    "id": "20261105-pm-nasdaq-enters-correction-territory-as-us",
    "date": "2026-11-05",
@@ -74,7 +559,8 @@
       202.06,
       206.69,
       200.13,
-      181.6
+      181.6,
+      192.41
      ],
      "dates": [
       "2026-10-29",
@@ -82,7 +568,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -97,7 +584,8 @@
       466.84,
       483.9,
       488.78,
-      404.4
+      404.4,
+      439.26
      ],
      "dates": [
       "2026-10-29",
@@ -105,7 +593,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -120,7 +609,8 @@
       1075.08,
       1126.52,
       1037.4,
-      806.43
+      806.43,
+      857.9077
      ],
      "dates": [
       "2026-10-29",
@@ -128,7 +618,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -334,7 +825,8 @@
       59,
       59.5,
       57.25,
-      50.2
+      50.2,
+      51.5
      ],
      "dates": [
       "2026-10-29",
@@ -342,7 +834,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -357,7 +850,8 @@
       1408,
       1385,
       1337.6,
-      1250
+      1250,
+      1306
      ],
      "dates": [
       "2026-10-29",
@@ -365,7 +859,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -380,7 +875,8 @@
       124.3,
       124.75,
       110.05,
-      91.64
+      91.64,
+      97.4
      ],
      "dates": [
       "2026-10-29",
@@ -388,7 +884,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -440,7 +937,8 @@
       254.33,
       252.94,
       261.93,
-      268.03
+      267.82,
+      266.595
      ],
      "dates": [
       "2026-10-29",
@@ -448,7 +946,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -500,7 +999,8 @@
       20.77,
       20.59,
       21.02,
-      22.12
+      22.15,
+      21.54
      ],
      "dates": [
       "2026-10-29",
@@ -508,7 +1008,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -560,7 +1061,8 @@
       196.79,
       202.49,
       191.8,
-      166.72
+      166.72,
+      173.06
      ],
      "dates": [
       "2026-10-29",
@@ -568,7 +1070,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -702,7 +1205,8 @@
       55.5,
       54.16,
       55.12,
-      54.5
+      54.5,
+      54.2
      ],
      "dates": [
       "2026-10-29",
@@ -710,7 +1214,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -767,7 +1272,8 @@
       1000,
       1004.8,
       1003.4,
-      841.5
+      841.5,
+      810
      ],
      "dates": [
       "2026-10-29",
@@ -775,7 +1281,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -827,7 +1334,8 @@
       10.88,
       10.855,
       11.275,
-      12.635
+      12.635,
+      13.335
      ],
      "dates": [
       "2026-10-29",
@@ -835,7 +1343,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -923,7 +1432,8 @@
       162.08,
       164.43,
       173.19,
-      156.75
+      156.75,
+      161.99
      ],
      "dates": [
       "2026-10-29",
@@ -931,7 +1441,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -983,7 +1494,8 @@
       5.45,
       5.59,
       5.92,
-      5.08
+      5.09,
+      5.015
      ],
      "dates": [
       "2026-10-29",
@@ -991,7 +1503,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1006,7 +1519,8 @@
       724.19,
       724.38,
       701.03,
-      707.63
+      707.4,
+      680.005
      ],
      "dates": [
       "2026-10-29",
@@ -1014,7 +1528,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1029,7 +1544,8 @@
       228.85,
       245.51,
       271.75,
-      356.1
+      356.1,
+      358.28
      ],
      "dates": [
       "2026-10-29",
@@ -1037,7 +1553,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1350,7 +1867,8 @@
       135.27,
       128,
       161.27,
-      157.02
+      157.02,
+      155.76
      ],
      "dates": [
       "2026-10-28",
@@ -1359,7 +1877,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1411,7 +1930,8 @@
       216.1,
       220.52,
       188.72,
-      174.6
+      174.6,
+      179.31
      ],
      "dates": [
       "2026-10-28",
@@ -1420,7 +1940,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1472,7 +1993,8 @@
       63.54,
       62.43,
       43.66,
-      43.83
+      43.83,
+      42.785
      ],
      "dates": [
       "2026-10-28",
@@ -1481,7 +2003,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1497,7 +2020,8 @@
       160.15,
       154.41,
       159.17,
-      160.59
+      160.59,
+      157.835
      ],
      "dates": [
       "2026-10-28",
@@ -1506,7 +2030,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1704,7 +2229,8 @@
       135.1,
       135.75,
       142,
-      147
+      147,
+      147.55
      ],
      "dates": [
       "2026-10-28",
@@ -1713,7 +2239,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "DKK"
@@ -1729,7 +2256,8 @@
       191.8,
       197.45,
       203.1,
-      205.2
+      205.2,
+      209.1
      ],
      "dates": [
       "2026-10-28",
@@ -1738,7 +2266,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "DKK"
@@ -1789,7 +2318,8 @@
       270.2,
       270.15,
       285.2,
-      271.25
+      271.25,
+      267.4
      ],
      "dates": [
       "2026-10-28",
@@ -1798,7 +2328,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "DKK"
@@ -1850,7 +2381,8 @@
       466.84,
       483.9,
       488.78,
-      404.4
+      404.4,
+      439.26
      ],
      "dates": [
       "2026-10-28",
@@ -1859,7 +2391,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -1910,7 +2443,8 @@
       58.86,
       57.8,
       60.98,
-      61.34
+      61.34,
+      59.02
      ],
      "dates": [
       "2026-10-28",
@@ -1919,7 +2453,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -1970,7 +2505,8 @@
       48.58,
       48.81,
       51.38,
-      51.87
+      51.87,
+      51.46
      ],
      "dates": [
       "2026-10-28",
@@ -1979,7 +2515,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -2153,7 +2690,8 @@
       1408,
       1385,
       1337.6,
-      1250
+      1250,
+      1306
      ],
      "dates": [
       "2026-10-27",
@@ -2163,7 +2701,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -2180,7 +2719,8 @@
       43.215,
       43.1,
       40.885,
-      37.065
+      37.065,
+      38.25
      ],
      "dates": [
       "2026-10-27",
@@ -2190,7 +2730,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -2207,7 +2748,8 @@
       809,
       862.5,
       858,
-      859
+      859,
+      851
      ],
      "dates": [
       "2026-10-27",
@@ -2217,7 +2759,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "GBp"
@@ -2270,7 +2813,8 @@
       50.02,
       51.84,
       54.24,
-      56.22
+      56.22,
+      54.32
      ],
      "dates": [
       "2026-10-27",
@@ -2280,7 +2824,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -2333,7 +2878,8 @@
       1943,
       1900,
       2021,
-      2028
+      2028,
+      1952.5
      ],
      "dates": [
       "2026-10-27",
@@ -2343,7 +2889,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "GBp"
@@ -2402,7 +2949,8 @@
       24.52,
       25.7,
       27.38,
-      27.51
+      27.51,
+      26.83
      ],
      "dates": [
       "2026-10-27",
@@ -2412,7 +2960,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -2465,7 +3014,8 @@
       7.468,
       7.762,
       8.1,
-      8.188
+      8.188,
+      8.32
      ],
      "dates": [
       "2026-10-27",
@@ -2475,7 +3025,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "EUR"
@@ -2528,7 +3079,8 @@
       338.32,
       331.9,
       349.51,
-      344.17
+      344.17,
+      340.6
      ],
      "dates": [
       "2026-10-27",
@@ -2538,7 +3090,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -2592,7 +3145,8 @@
       178.34,
       175.4,
       171.7,
-      154.99
+      154.99,
+      157.7501
      ],
      "dates": [
       "2026-10-27",
@@ -2602,7 +3156,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ],
      "eventIndex": 5,
      "currency": "USD"
@@ -2693,7 +3248,8 @@
       278.99,
       280.03,
       288.93,
-      282.57
+      282.57,
+      287.79
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2707,7 +3263,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     },
     {
@@ -2724,7 +3281,8 @@
       245.63,
       250.69,
       266.03,
-      260.21
+      260.21,
+      260.99
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2738,7 +3296,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     },
     {
@@ -2755,7 +3314,8 @@
       59.97,
       60.55,
       58.27,
-      52.25
+      52.25,
+      55.28
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -2769,7 +3329,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -2970,7 +3531,8 @@
       600,
       589.3,
       571.6,
-      567.4
+      567.4,
+      552.087
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -2984,7 +3546,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3038,7 +3601,8 @@
       80.63,
       80.98,
       84.1,
-      84.53
+      84.53,
+      82
      ],
      "eventIndex": 5,
      "currency": "EUR",
@@ -3052,7 +3616,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3156,7 +3721,8 @@
       50.02,
       51.84,
       54.24,
-      56.22
+      56.22,
+      54.32
      ],
      "eventIndex": 5,
      "currency": "EUR",
@@ -3170,7 +3736,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3289,7 +3856,8 @@
       72.08,
       75.22,
       76.12,
-      69.49
+      69.48,
+      67.95
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3303,7 +3871,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3361,7 +3930,8 @@
       59.97,
       60.55,
       58.27,
-      52.25
+      52.25,
+      55.335
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3375,7 +3945,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3434,7 +4005,8 @@
       245.63,
       250.69,
       266.03,
-      260.21
+      260.21,
+      260.99
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3448,7 +4020,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3589,7 +4162,8 @@
       13860,
       13760,
       14024,
-      14042
+      14042,
+      13578
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -3603,7 +4177,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3661,7 +4236,8 @@
       592.2,
       580,
       611,
-      593.2
+      593.2,
+      583
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -3675,7 +4251,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3733,7 +4310,8 @@
       44,
       44,
       44,
-      44
+      44,
+      44.04
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -3747,7 +4325,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3805,7 +4384,8 @@
       1075.08,
       1126.52,
       1037.4,
-      806.43
+      806.43,
+      859.26
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3819,7 +4399,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -3877,7 +4458,8 @@
       90.97,
       96.15,
       101.89,
-      93.83
+      93.81,
+      94.15
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3891,7 +4473,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     },
     {
@@ -3908,7 +4491,8 @@
       207.6,
       213.77,
       213.5,
-      200.99
+      200.96,
+      200.41
      ],
      "eventIndex": 5,
      "currency": "USD",
@@ -3922,7 +4506,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -4014,7 +4599,8 @@
       227.7,
       222.9,
       231.6,
-      231.8
+      231.8,
+      216.7
      ],
      "eventIndex": 5,
      "currency": "GBp",
@@ -4028,7 +4614,8 @@
       "2026-11-02",
       "2026-11-03",
       "2026-11-04",
-      "2026-11-05"
+      "2026-11-05",
+      "2026-11-06"
      ]
     }
    ],
@@ -4154,7 +4741,7 @@
       106.01,
       109.16,
       108.81,
-      102.35
+      102.36
      ],
      "eventIndex": 5,
      "currency": "USD",
