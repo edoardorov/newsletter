@@ -1,8 +1,523 @@
 {
  "today": "2026-11-10",
- "updated": "2026-11-10T15:13:51.279Z",
- "edition": "MD",
+ "updated": "2026-11-10T20:48:17.975Z",
+ "edition": "PM",
  "stories": [
+  {
+   "id": "20261110-pm-hot-inflation-sends-us-stocks-lower-and-",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Rates",
+    "Inflation"
+   ],
+   "keywords": [
+    "US stocks",
+    "Treasury yields",
+    "Fed",
+    "inflation"
+   ],
+   "companies": [],
+   "cov": 0.95,
+   "imp": 0.9,
+   "title": "Hot inflation sends US stocks lower and Treasury yields sharply higher",
+   "dek": "Hotter inflation drove a broad pullback in US equities and a sharp rise in Treasury yields.",
+   "body": [
+    "US shares reversed Monday’s rally on Tuesday as the October inflation report reinforced expectations of further Federal Reserve tightening. The Dow fell 0.57% to 52,087.13, the S&P 500 lost 0.71% to 7,496.63 and the Nasdaq dropped 0.90% to 25,025.83.",
+    "Treasury yields climbed: the two-year yield rose about 19 basis points to 4.74%, while the 10-year yield gained about 13 basis points to 4.99%. Reuters reported markets were weighing the possibility of a half-point December increase."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "US yields rise, stocks fall as inflation data boosts odds of larger December rate hike",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Wall St falls as hot inflation data fuels rate-hike jitters",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WL18M?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-nvidia-slide-makes-technology-the-weakes",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Tech",
+    "Rates"
+   ],
+   "keywords": [
+    "technology",
+    "Nvidia",
+    "semiconductors",
+    "sectors"
+   ],
+   "companies": [
+    {
+     "name": "NVIDIA",
+     "ticker": "NVDA",
+     "move": -6.3,
+     "series": [
+      206.69,
+      200.13,
+      181.6,
+      186.64,
+      178.67,
+      168.265
+     ],
+     "dates": [
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.8,
+   "imp": 0.75,
+   "title": "Nvidia slide makes technology the weakest US sector",
+   "dek": "Rate concerns and a sharp Nvidia decline weighed on technology shares during the session.",
+   "body": [
+    "Technology was the weakest major S&P 500 sector, falling 1.8%, while rate-sensitive real estate and utilities each lost more than 0.5%, Reuters reported during the session.",
+    "Nvidia fell 6.3% amid concerns following an internal probe into spy claims involving its CEO. The semiconductor index was down 1.9% in midday trading, with peers subdued after recent gains."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Wall St falls as hot inflation data fuels rate-hike jitters",
+     "url": "https://www.kentucky.com/news/nation-world/national/article318009196.html"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-two-year-treasury-yield-posts-its-bigges",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Rates",
+    "Inflation"
+   ],
+   "keywords": [
+    "Treasuries",
+    "two-year yield",
+    "Federal Reserve",
+    "December"
+   ],
+   "companies": [],
+   "cov": 0.85,
+   "imp": 0.85,
+   "title": "Two-year Treasury yield posts its biggest daily jump since 2025",
+   "dek": "Short-dated borrowing costs surged as investors repriced the December rate outlook.",
+   "body": [
+    "The two-year Treasury yield rose to 4.74%, its biggest one-day jump since the April 2025 tariff turmoil, Reuters reported. The 10-year yield rose to 4.988%.",
+    "The move followed inflation data that strengthened the case for another Fed rate increase. Fed Governor Christopher Waller had said he would support at least a quarter-point hike in December and would consider a half-point move if inflation worsened."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Kitco",
+     "title": "US yields rise, stocks fall as inflation data boosts odds of larger December rate hike",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-dollar-rallies-as-hotter-inflation-lifts",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "FX",
+   "sentiment": "Positive",
+   "themes": [
+    "FX",
+    "Rates"
+   ],
+   "keywords": [
+    "dollar",
+    "euro",
+    "yen",
+    "Fed"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.65,
+   "title": "Dollar rallies as hotter inflation lifts rate expectations",
+   "dek": "The dollar strengthened against major peers as markets reassessed the Fed path.",
+   "body": [
+    "The dollar index rose 0.6% to 102.29 as investors responded to the inflation report and higher rate expectations. The euro fell 0.56% to $1.1156 and the dollar gained 0.5% against the yen to 158.68.",
+    "The dollar’s advance accompanied higher Treasury yields and a retreat in risk assets."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Kitco",
+     "title": "US yields rise, stocks fall as inflation data boosts odds of larger December rate hike",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-gold-falls-with-higher-yields-as-oil-rem",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Negative",
+   "themes": [
+    "Commodities",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "gold",
+    "crude",
+    "Brent",
+    "Iran"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.65,
+   "title": "Gold falls with higher yields as oil remains under pressure",
+   "dek": "Higher yields pressured gold, while crude extended its decline amid Iran diplomacy hopes.",
+   "body": [
+    "Gold fell 2.3% to $4,043.73 an ounce as the dollar and Treasury yields rose after the inflation release, according to Reuters.",
+    "US crude slipped 1.39% to $85.67 a barrel and Brent fell 2.03% to $90.69. Oil remained under pressure as investors assessed prospects for talks between Washington and Tehran."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Kitco",
+     "title": "US yields rise, stocks fall as inflation data boosts odds of larger December rate hike",
+     "url": "https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-european-markets-finish-mixed-as-us-infl",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Growth",
+    "Rates"
+   ],
+   "keywords": [
+    "STOXX 600",
+    "banks",
+    "DAX",
+    "FTSE 100"
+   ],
+   "companies": [],
+   "cov": 0.85,
+   "imp": 0.55,
+   "title": "European markets finish mixed as US inflation checks earlier gains",
+   "dek": "European benchmarks ended mixed after a late shift in rate expectations tempered the session’s gains.",
+   "body": [
+    "The STOXX Europe 600 closed 0.27% higher at 658.32, with banks leading sector gains, up 1.7%, according to Reuters. The index finished within 0.8% of its record high.",
+    "The DAX rose 0.31% and the CAC 40 gained 0.55%, while the FTSE 100 slipped 0.29%. European markets surrendered some earlier gains after the US inflation reading lifted rate-hike expectations."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "European shares near record high as lower oil prices boost sentiment",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WL0XC?channel=FBi345"
+    },
+    {
+     "pub": "Associated Press",
+     "title": "European stocks close higher except UK as falling oil prices ease inflation concerns",
+     "url": "https://www.aa.com.tr/en/economy/european-stocks-close-higher-except-uk-as-falling-oil-prices-ease-inflation-concerns/4119442"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-bitcoin-slips-as-etf-withdrawals-extend-",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Negative",
+   "themes": [
+    "Crypto",
+    "Commodities"
+   ],
+   "keywords": [
+    "Bitcoin",
+    "ETF outflows",
+    "MARA",
+    "crypto"
+   ],
+   "companies": [
+    {
+     "name": "MARA Holdings",
+     "ticker": "MARA",
+     "move": 0,
+     "series": [
+      7.16,
+      6.87,
+      5.88,
+      6.35,
+      6.64,
+      7.29
+     ],
+     "dates": [
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.8,
+   "imp": 0.7,
+   "title": "Bitcoin slips as ETF withdrawals extend and MARA discloses sales",
+   "dek": "Bitcoin lagged equities amid sustained ETF withdrawals and disclosed miner selling.",
+   "body": [
+    "Bitcoin traded around $73,435, down 1.4% since midnight UTC, as it failed to join the rebound in US equities, CoinDesk reported.",
+    "US spot bitcoin ETFs recorded $201 million in outflows on Monday, taking withdrawals since November 2 to about $1.5 billion. BlackRock’s IBIT saw its seventh consecutive session of redemptions. Miner MARA said it had sold 13,597 bitcoin for about $1.1 billion over six weeks and planned further sales."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Bitcoin breaks with stocks, declines as ETF outflows mount, MARA reduces holdings",
+     "url": "https://www.coindesk.com/daybook-us/2026/11/10/bitcoin-breaks-with-stocks-declines-as-etf-outflows-mount-mara-sells-holdings"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-nrg-rallies-10-after-earnings-beat",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Energy"
+   ],
+   "keywords": [
+    "NRG",
+    "earnings",
+    "power",
+    "US stocks"
+   ],
+   "companies": [
+    {
+     "name": "NRG Energy",
+     "ticker": "NRG",
+     "move": 10.3,
+     "series": [
+      96.26,
+      83.25,
+      80.55,
+      88.29,
+      97.4,
+      96.725
+     ],
+     "dates": [
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.55,
+   "imp": 0.6,
+   "title": "NRG rallies 10% after earnings beat",
+   "dek": "NRG jumped after quarterly adjusted earnings topped analysts’ expectations.",
+   "body": [
+    "NRG Energy shares surged 10.3% after the company reported third-quarter adjusted earnings of $4.68 a share, above the Zacks consensus estimate of $3.44.",
+    "The result made the power producer one of the day’s notable earnings-driven gainers, against a weaker broader US market."
+   ],
+   "sources": [
+    {
+     "pub": "Zacks via Yahoo Finance",
+     "title": "Company News for Nov 10, 2026",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/company-news-nov-10-2026-100200913.html"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-casella-falls-after-quarterly-results-mi",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Earnings",
+    "Growth"
+   ],
+   "keywords": [
+    "Casella",
+    "earnings miss",
+    "revenue",
+    "waste"
+   ],
+   "companies": [
+    {
+     "name": "Casella Waste Systems",
+     "ticker": "CWST",
+     "move": -5,
+     "series": [
+      96.23,
+      98.88,
+      100.06,
+      98.21,
+      99.02,
+      92.53
+     ],
+     "dates": [
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.55,
+   "imp": 0.45,
+   "title": "Casella falls after quarterly results miss estimates",
+   "dek": "Casella declined after earnings and revenue both came in below expectations.",
+   "body": [
+    "Casella Waste Systems fell more than 5% after its quarterly results missed forecasts. Adjusted earnings were 35 cents a share against a FactSet estimate of 42 cents, while revenue of $559.2 million was below the $563.2 million expected.",
+    "The shortfall added to pressure on individual stocks as investors digested results alongside the inflation-driven market repricing."
+   ],
+   "sources": [
+    {
+     "pub": "CNBC",
+     "title": "Stock market movers: Live updates",
+     "url": "https://www.cnbc.com/2026/11/10/stock-market-movers-live-updates.html"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-coreweave-results-put-its-debt-funded-ai",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Neutral",
+   "themes": [
+    "Earnings",
+    "AI"
+   ],
+   "keywords": [
+    "CoreWeave",
+    "AI cloud",
+    "capital spending",
+    "earnings"
+   ],
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV",
+     "move": 0,
+     "series": [
+      53.74,
+      48.42,
+      43.66,
+      46.4,
+      48.98,
+      48.03
+     ],
+     "dates": [
+      "2026-11-03",
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.7,
+   "imp": 0.6,
+   "title": "CoreWeave results put its debt-funded AI build-out in focus",
+   "dek": "Investors were awaiting CoreWeave’s results, with its AI infrastructure spending and debt burden under scrutiny.",
+   "body": [
+    "CoreWeave was scheduled to report third-quarter results after Tuesday’s close, putting its financing needs and profitability in focus. CNBC said the company had guided for quarterly revenue of $3.4 billion to $3.6 billion and capital expenditure of $11.5 billion to $13.5 billion for the quarter.",
+    "The company’s previously reported revenue backlog was $104.2 billion. The available reports did not provide the evening earnings release or after-hours share move."
+   ],
+   "sources": [
+    {
+     "pub": "CNBC",
+     "title": "CoreWeave earnings put debt-fueled AI build-out under scrutiny",
+     "url": "https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html"
+    }
+   ]
+  },
+  {
+   "id": "20261110-pm-fed-s-waller-backs-a-december-hike-and-f",
+   "date": "2026-11-10",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Rates",
+    "Inflation"
+   ],
+   "keywords": [
+    "Christopher Waller",
+    "Fed",
+    "December hike",
+    "inflation"
+   ],
+   "companies": [],
+   "cov": 0.85,
+   "imp": 0.75,
+   "title": "Fed’s Waller backs a December hike and flags a possible half-point increase",
+   "dek": "Waller backed another December hike and left the door open to a larger move if inflation worsens.",
+   "body": [
+    "Fed Governor Christopher Waller said he would support a 25-basis-point rate increase at the December meeting even if inflation had improved. He said a worsening inflation picture could justify considering a half-point move.",
+    "Futures had priced an approximately 85% chance of a December hike before the October inflation release, Reuters reported. The data subsequently intensified market attention on the size of the next move."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Fed's Waller plans to support at least a quarter-point rate hike in December",
+     "url": "https://www.reuters.com/business/feds-waller-plans-support-at-least-quarter-point-rate-hike-december-2026-11-10/"
+    }
+   ]
+  },
   {
    "id": "20261110-md-us-inflation-ran-hotter-than-forecast-in",
    "date": "2026-11-10",
@@ -134,7 +649,7 @@
       45.95,
       45.755,
       48.625,
-      49.83
+      49.05
      ],
      "dates": [
       "2026-11-03",
@@ -192,7 +707,7 @@
       119.4,
       116.5,
       116.95,
-      116.9
+      115.75
      ],
      "dates": [
       "2026-11-03",
@@ -347,7 +862,7 @@
       52.25,
       56.28,
       59.37,
-      59.645
+      58.0101
      ],
      "dates": [
       "2026-11-03",
@@ -370,7 +885,7 @@
       133.55,
       141.2,
       154.6,
-      156.51
+      153.6618
      ],
      "dates": [
       "2026-11-03",
@@ -393,7 +908,7 @@
       43.66,
       46.4,
       48.98,
-      50.67
+      48.03
      ],
      "dates": [
       "2026-11-03",
@@ -416,7 +931,7 @@
       120.37,
       129.49,
       141.45,
-      142.59
+      132.72
      ],
      "dates": [
       "2026-11-03",
@@ -690,7 +1205,7 @@
       41.91,
       40.49,
       41.77,
-      42.995
+      42.77
      ],
      "dates": [
       "2026-10-30",
@@ -753,7 +1268,7 @@
       427.2,
       433.7,
       450.7,
-      455.2
+      456.7
      ],
      "dates": [
       "2026-10-30",
@@ -888,7 +1403,7 @@
       66.17,
       65.9,
       65.02,
-      64.67
+      64.05
      ],
      "dates": [
       "2026-10-30",
@@ -915,7 +1430,7 @@
       43.03,
       42.88,
       42.32,
-      42.07
+      41.675
      ],
      "dates": [
       "2026-10-30",
@@ -1097,7 +1612,7 @@
       181.6,
       186.64,
       178.67,
-      172.8701
+      168.265
      ],
      "dates": [
       "2026-10-29",
@@ -1126,7 +1641,7 @@
       404.4,
       449.04,
       508.58,
-      536.71
+      513.5
      ],
      "dates": [
       "2026-10-29",
@@ -1155,7 +1670,7 @@
       806.43,
       835.06,
       886.51,
-      891.785
+      852.45
      ],
      "dates": [
       "2026-10-29",
@@ -1375,7 +1890,7 @@
       50.2,
       50.35,
       52.6,
-      54.75
+      53.65
      ],
      "dates": [
       "2026-10-29",
@@ -1404,7 +1919,7 @@
       1250,
       1283.6,
       1343.8,
-      1371.2
+      1361
      ],
      "dates": [
       "2026-10-29",
@@ -1433,7 +1948,7 @@
       91.64,
       94.34,
       99.88,
-      101.35
+      96.8
      ],
      "dates": [
       "2026-10-29",
@@ -1499,7 +2014,7 @@
       267.82,
       271.72,
       274.29,
-      273.16
+      277.97
      ],
      "dates": [
       "2026-10-29",
@@ -1565,7 +2080,7 @@
       22.15,
       22.39,
       24.13,
-      23.91
+      24.02
      ],
      "dates": [
       "2026-10-29",
@@ -1631,7 +2146,7 @@
       166.72,
       174.62,
       186.3,
-      184.245
+      180.67
      ],
      "dates": [
       "2026-10-29",
@@ -1779,7 +2294,7 @@
       54.5,
       54.82,
       56.84,
-      58.48
+      58.52
      ],
      "dates": [
       "2026-10-29",
@@ -1850,7 +2365,7 @@
       841.5,
       812.7,
       845.4,
-      862.8
+      853.3
      ],
      "dates": [
       "2026-10-29",
@@ -1916,7 +2431,7 @@
       12.635,
       13.53,
       13.93,
-      14.135
+      14.4
      ],
      "dates": [
       "2026-10-29",
@@ -2018,7 +2533,7 @@
       156.75,
       165.41,
       171.47,
-      171.37
+      173.265
      ],
      "dates": [
       "2026-10-29",
@@ -2084,7 +2599,7 @@
       5.09,
       4.96,
       5.05,
-      5.055
+      4.9899
      ],
      "dates": [
       "2026-10-29",
@@ -2113,7 +2628,7 @@
       707.4,
       704.55,
       723.76,
-      718.045
+      723.905
      ],
      "dates": [
       "2026-10-29",
@@ -2142,7 +2657,7 @@
       356.1,
       391.22,
       410,
-      390.42
+      394.99
      ],
      "dates": [
       "2026-10-29",
@@ -2469,7 +2984,7 @@
       157.02,
       160.42,
       154.25,
-      155.465
+      156.49
      ],
      "dates": [
       "2026-10-28",
@@ -2536,7 +3051,7 @@
       174.6,
       179.04,
       179.62,
-      181.91
+      178.445
      ],
      "dates": [
       "2026-10-28",
@@ -2603,7 +3118,7 @@
       43.83,
       42.09,
       41.74,
-      40.705
+      41.29
      ],
      "dates": [
       "2026-10-28",
@@ -2634,7 +3149,7 @@
       160.59,
       162.01,
       168.71,
-      165.31
+      168.52
      ],
      "dates": [
       "2026-10-28",
@@ -2847,7 +3362,7 @@
       147,
       148.7,
       147.25,
-      145.05
+      144.7
      ],
      "dates": [
       "2026-10-28",
@@ -2878,7 +3393,7 @@
       205.2,
       209.9,
       207,
-      201
+      198.6
      ],
      "dates": [
       "2026-10-28",
@@ -2944,7 +3459,7 @@
       271.25,
       269.45,
       272.8,
-      271.8
+      271.5
      ],
      "dates": [
       "2026-10-28",
@@ -3011,7 +3526,7 @@
       404.4,
       449.04,
       508.58,
-      536.71
+      513.5
      ],
      "dates": [
       "2026-10-28",
@@ -3077,7 +3592,7 @@
       61.34,
       59.36,
       58.86,
-      58.66
+      58.12
      ],
      "dates": [
       "2026-10-28",
@@ -3143,7 +3658,7 @@
       51.87,
       52.48,
       52.46,
-      53.31
+      53.47
      ],
      "dates": [
       "2026-10-28",
@@ -3332,7 +3847,7 @@
       1250,
       1283.6,
       1343.8,
-      1371.2
+      1361
      ],
      "dates": [
       "2026-10-27",
@@ -3365,7 +3880,7 @@
       37.065,
       37.635,
       39.63,
-      40.52
+      40.105
      ],
      "dates": [
       "2026-10-27",
@@ -3398,7 +3913,7 @@
       859,
       855.5,
       858.5,
-      853.5
+      848.5
      ],
      "dates": [
       "2026-10-27",
@@ -3467,7 +3982,7 @@
       56.22,
       55.58,
       56.62,
-      56.78
+      57.08
      ],
      "dates": [
       "2026-10-27",
@@ -3536,7 +4051,7 @@
       2028,
       1990,
       2001,
-      2014
+      2009
      ],
      "dates": [
       "2026-10-27",
@@ -3611,7 +4126,7 @@
       27.51,
       27.33,
       27.3,
-      27.22
+      27.06
      ],
      "dates": [
       "2026-10-27",
@@ -3680,7 +4195,7 @@
       8.188,
       8.442,
       8.694,
-      8.766
+      8.802
      ],
      "dates": [
       "2026-10-27",
@@ -3749,7 +4264,7 @@
       344.17,
       342.37,
       350.69,
-      347.33
+      349.38
      ],
      "dates": [
       "2026-10-27",
@@ -3819,7 +4334,7 @@
       154.99,
       160.38,
       169.2,
-      168.02
+      167.565
      ],
      "dates": [
       "2026-10-27",
