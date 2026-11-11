@@ -1,8 +1,616 @@
 {
  "today": "2026-11-11",
- "updated": "2026-11-11T14:42:44.772Z",
- "edition": "MD",
+ "updated": "2026-11-11T21:22:12.276Z",
+ "edition": "PM",
  "stories": [
+  {
+   "id": "20261111-pm-goldman-sachs-forecasts-a-further-fed-ra",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Rates",
+    "Inflation"
+   ],
+   "keywords": [
+    "Federal Reserve",
+    "Goldman Sachs",
+    "rate hike",
+    "inflation"
+   ],
+   "companies": [],
+   "cov": 0.78,
+   "imp": 0.78,
+   "title": "Goldman Sachs forecasts a further Fed rate hike in March",
+   "dek": "Goldman Sachs sees another Fed rate increase in March after revising its outlook on persistent inflation.",
+   "body": [
+    "Goldman Sachs now expects the Federal Reserve to raise rates by 25 basis points in March, reversing its earlier view that the hiking cycle would end in December. The change follows three consecutive months of upside inflation surprises, Reuters reported.",
+    "Goldman expects rate cuts to begin in December 2027. Markets had fully priced a 25-basis-point December increase, while Citi said the risk of a 50-basis-point move had increased."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Goldman expects additional Fed rate hike in March",
+     "url": "https://www.reuters.com/business/goldman-expects-additional-fed-rate-hike-march-2026-11-11/"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-oil-rebounds-as-iran-s-nuclear-stance-re",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Positive",
+   "themes": [
+    "Commodities",
+    "Geopolitics"
+   ],
+   "keywords": [
+    "Brent",
+    "WTI",
+    "Iran",
+    "Hormuz"
+   ],
+   "companies": [],
+   "cov": 0.76,
+   "imp": 0.68,
+   "title": "Oil rebounds as Iran's nuclear stance renews supply concerns",
+   "dek": "Oil recovered from two-month lows as Iranian remarks revived concerns about supply and shipping disruption.",
+   "body": [
+    "Oil rebounded as Iran's security chief said Tehran would not allow enriched nuclear material to leave the country, renewing supply concerns. Reuters reported Brent up 2.35% at $93.64 a barrel and U.S. West Texas Intermediate up 1.96% at $87.73 at 12:04 p.m. ET.",
+    "The move followed the previous session's two-month lows. Reuters said there was little sign of easing disruption in the Strait of Hormuz, despite higher OPEC+ production in October."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Oil up 2% as Iran official says country will keep enriched nuclear material",
+     "url": "https://www.reuters.com/business/energy/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-2026-11-11/"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-u-s-technology-shares-lead-a-broad-marke",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Growth",
+    "AI"
+   ],
+   "keywords": [
+    "Wall Street",
+    "Nasdaq 100",
+    "technology",
+    "AI"
+   ],
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV",
+     "move": 0,
+     "series": [
+      48.42,
+      43.66,
+      46.4,
+      48.98,
+      48.73,
+      60.77
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.67,
+   "imp": 0.79,
+   "title": "U.S. technology shares lead a broad market rebound",
+   "dek": "Technology led a U.S. rebound as investors took reassurance from CoreWeave's results, while the Dow lagged.",
+   "body": [
+    "U.S. stocks finished higher, led by technology shares, as CoreWeave's results helped revive appetite for AI-related stocks. A 24/7 Wall St. closing report put the S&P 500 at 7,618, up 1.07%, and the Nasdaq 100 at 28,469.40, up 2.35%; the Dow was little changed at 52,267.80.",
+    "Reuters reported the S&P 500 technology sector up 2.9% in its market report. Closing figures for the three major indices vary across the available reports, so the reported index levels are not fully consistent."
+   ],
+   "sources": [
+    {
+     "pub": "24/7 Wall St.",
+     "title": "FTSE 100 Closes Up 0.12% While DAX Outpaces London by 0.8 Points",
+     "url": "https://247wallst.com/cards/frankfurt-added-0-91-while-london-barely-budged-leaving-uk-ftse-market-bell-01m75qaqphwj350v9tpm37a9ym"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Stocks gain as CoreWeave eases worries; dollar strengthens",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WM05I?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-coreweave-jumps-after-lifting-its-2026-r",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "AI",
+    "Earnings"
+   ],
+   "keywords": [
+    "AI cloud",
+    "backlog",
+    "revenue",
+    "guidance"
+   ],
+   "companies": [
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV",
+     "move": 22.3,
+     "series": [
+      48.42,
+      43.66,
+      46.4,
+      48.98,
+      48.73,
+      60.77
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.82,
+   "imp": 0.86,
+   "title": "CoreWeave jumps after lifting its 2026 revenue outlook",
+   "dek": "A higher revenue outlook and large backlog helped CoreWeave reassure investors about demand for AI computing.",
+   "body": [
+    "CoreWeave shares surged on Wednesday after the AI cloud provider reported third-quarter revenue of $3.66 billion, up 168% year over year, and raised its 2026 revenue forecast to $13.0 billion-$13.3 billion.",
+    "The company reported a $709 million net loss but said its backlog was about $132.5 billion. A Yahoo Finance report put the shares up 22.25% during regular trading."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance",
+     "title": "CoreWeave Stocks Jump 22.25% After 168% Revenue Surge and Raised 2026 Outlook",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/coreweave-stocks-jump-22-25-184453054.html"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Tech lifts world stocks as CoreWeave revives AI trade",
+     "url": "https://www.reuters.com/business/media-telecom/global-markets-global-markets-2026-11-11/"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-memory-and-storage-stocks-join-the-ai-re",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "AI",
+    "Tech"
+   ],
+   "keywords": [
+    "semiconductors",
+    "memory",
+    "AI spending",
+    "data centres"
+   ],
+   "companies": [
+    {
+     "name": "Seagate Technology",
+     "ticker": "STX",
+     "move": 0,
+     "series": [
+      557.06,
+      466.53,
+      460.99,
+      506.14,
+      501.62,
+      551.72
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "SanDisk",
+     "ticker": "SNDK",
+     "move": 0,
+     "series": [
+      1037.4,
+      806.43,
+      835.06,
+      886.51,
+      859.99,
+      977.69
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Micron Technology",
+     "ticker": "MU",
+     "move": 0,
+     "series": [
+      795.23,
+      656.39,
+      690,
+      733.15,
+      725.11,
+      811.3
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.48,
+   "imp": 0.64,
+   "title": "Memory and storage stocks join the AI rebound",
+   "dek": "Storage and memory names rose as improved sentiment around AI infrastructure spread beyond cloud providers.",
+   "body": [
+    "Technology-related shares rallied alongside the broader AI trade. Yahoo Finance reported Seagate up 9%, SanDisk up 8% and Micron up 7% in morning trading as CoreWeave's results eased concerns about AI infrastructure spending.",
+    "The report attributed the improved sentiment to CoreWeave's financing approach, including contract-backed financing and customer prepayments. Those quoted share moves are intraday figures, not closing prices."
+   ],
+   "sources": [
+    {
+     "pub": "Yahoo Finance",
+     "title": "Seagate Spikes 9%, Sandisk Surges 8% as CoreWeave’s Results Revive AI Trade; Micron Climbs 7%",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/seagate-spikes-9-sandisk-surges-8-140842780.html"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-b-g-foods-raises-guidance-after-quarterl",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Consumer"
+   ],
+   "keywords": [
+    "earnings beat",
+    "guidance",
+    "volume",
+    "food"
+   ],
+   "companies": [
+    {
+     "name": "B&G Foods",
+     "ticker": "BGS",
+     "move": 24,
+     "series": [
+      2.57,
+      2.47,
+      2.5,
+      2.66,
+      2.66,
+      3.67
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.3,
+   "imp": 0.54,
+   "title": "B&G Foods raises guidance after quarterly beat",
+   "dek": "B&G Foods raised its outlook after a quarterly beat and a stronger volume trend.",
+   "body": [
+    "B&G Foods reported a third-quarter earnings beat and raised its guidance, citing volume momentum continuing into the fourth quarter. Investrade said the company attributed the results in part to using spare manufacturing capacity for opportunities in institutional, private-label and club channels.",
+    "The same report listed B&G Foods shares up 24% during the session; a closing move was not available in the source."
+   ],
+   "sources": [
+    {
+     "pub": "Investrade",
+     "title": "Mid-Morning Look: November 11, 2026",
+     "url": "https://investrade.com/mid-morning-look-november-11-2026/"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-fossil-raises-its-2026-outlook-after-a-q",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Consumer"
+   ],
+   "keywords": [
+    "earnings",
+    "sales",
+    "guidance",
+    "consumer"
+   ],
+   "companies": [
+    {
+     "name": "Fossil Group",
+     "ticker": "FOSL",
+     "move": 25,
+     "series": [
+      7.62,
+      7.77,
+      7.81,
+      8.06,
+      7.87,
+      9.97
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.3,
+   "imp": 0.56,
+   "title": "Fossil raises its 2026 outlook after a quarterly beat",
+   "dek": "Fossil lifted its full-year outlook after beating quarterly estimates on earnings and sales.",
+   "body": [
+    "Fossil posted adjusted third-quarter earnings of $0.23 a share, compared with analysts' expected loss of $0.04, and sales of $271.2 million, above the cited $248.65 million estimate, according to Investrade.",
+    "The company raised its 2026 sales outlook to $980 million-$990 million and its adjusted operating-margin forecast to 5.5%-6.5%. Investrade reported shares up 25% during the session."
+   ],
+   "sources": [
+    {
+     "pub": "Investrade",
+     "title": "Mid-Morning Look: November 11, 2026",
+     "url": "https://investrade.com/mid-morning-look-november-11-2026/"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-gevo-lifts-its-ebitda-outlook-after-reco",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "Energy"
+   ],
+   "keywords": [
+    "biofuels",
+    "earnings",
+    "EBITDA",
+    "guidance"
+   ],
+   "companies": [
+    {
+     "name": "Gevo",
+     "ticker": "GEVO",
+     "move": 37,
+     "series": [
+      1.28,
+      1.22,
+      1.39,
+      1.47,
+      1.39,
+      1.82
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.27,
+   "imp": 0.54,
+   "title": "Gevo lifts its EBITDA outlook after record quarterly results",
+   "dek": "Gevo raised its earnings outlook after a record quarter that beat estimates.",
+   "body": [
+    "Gevo reported record third-quarter results, with adjusted earnings of $0.12 a share against an estimated $0.02 and revenue of $82.95 million against an estimated $54.5 million, Investrade reported.",
+    "The company raised its 2026 adjusted EBITDA outlook to more than $90 million from $60 million. The report listed the shares up 37% during the session."
+   ],
+   "sources": [
+    {
+     "pub": "Investrade",
+     "title": "Mid-Morning Look: November 11, 2026",
+     "url": "https://investrade.com/mid-morning-look-november-11-2026/"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-oklo-receives-clearance-to-advance-react",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Energy",
+    "Regulation"
+   ],
+   "keywords": [
+    "nuclear",
+    "reactor",
+    "Department of Energy",
+    "clearance"
+   ],
+   "companies": [
+    {
+     "name": "Oklo",
+     "ticker": "OKLO",
+     "move": 4,
+     "series": [
+      22.12,
+      19.2,
+      23.55,
+      26.84,
+      25.09,
+      25.86
+     ],
+     "dates": [
+      "2026-11-04",
+      "2026-11-05",
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.25,
+   "imp": 0.36,
+   "title": "Oklo receives clearance to advance reactor testing",
+   "dek": "A federal clearance moves Oklo's test reactor into its research and testing phase.",
+   "body": [
+    "Oklo said the U.S. Department of Energy cleared its Groves Isotope Test Reactor for unrestricted operations, allowing the facility to advance to research, testing and training, according to Investrade.",
+    "The report listed Oklo shares up 4% during the session. It did not provide further details on the timing or commercial implications of the clearance."
+   ],
+   "sources": [
+    {
+     "pub": "Investrade",
+     "title": "Mid-Morning Look: November 11, 2026",
+     "url": "https://investrade.com/mid-morning-look-november-11-2026/"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-european-markets-close-higher-as-technol",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Growth",
+    "Inflation"
+   ],
+   "keywords": [
+    "Stoxx 600",
+    "DAX",
+    "CAC 40",
+    "German inflation"
+   ],
+   "companies": [],
+   "cov": 0.6,
+   "imp": 0.47,
+   "title": "European markets close higher as technology shares advance",
+   "dek": "European markets finished higher, with technology strength and German inflation data among the reported supports.",
+   "body": [
+    "European shares ended higher. Hargreaves Lansdown's market report put the Stoxx 600 up 0.7% at 663.05, the DAX up 1.2% at 26,662.77 and the CAC 40 up 0.7% at 8,332.87.",
+    "The report said technology shares were supported by CoreWeave's results and that softer-than-expected German inflation data helped ease rate concerns. European market reports differed on some index returns, including the DAX."
+   ],
+   "sources": [
+    {
+     "pub": "Hargreaves Lansdown",
+     "title": "Europe close: Stocks rise as CoreWeave earnings, Siemens Energy outlook lift sentiment",
+     "url": "https://www.hl.co.uk/shares/stock-market-news/market-reports/europe-close-stocks-rise-as-coreweave-earnings,-siemens-energy-outlook-lift-sentiment"
+    }
+   ]
+  },
+  {
+   "id": "20261111-pm-bitcoin-holds-near-74-000-as-etf-outflow",
+   "date": "2026-11-11",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Neutral",
+   "themes": [
+    "Crypto"
+   ],
+   "keywords": [
+    "Bitcoin",
+    "ETF flows",
+    "crypto",
+    "institutional demand"
+   ],
+   "companies": [],
+   "cov": 0.67,
+   "imp": 0.34,
+   "title": "Bitcoin holds near $74,000 as ETF outflows persist",
+   "dek": "Bitcoin steadied near $74,000, but spot ETF outflows continued for a fourth session.",
+   "body": [
+    "Bitcoin traded near $74,000 on Wednesday, little changed, while U.S. spot bitcoin ETFs recorded $95 million of net outflows on Tuesday, their fourth consecutive session of withdrawals, CoinDesk reported.",
+    "CoinDesk said the outflow was smaller than the $201 million recorded Monday and $412 million on Friday. The figures describe Tuesday's fund flows; no new Wednesday flow data was available."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Bitcoin sits out stock rebound as ETF outflows extend to fourth day",
+     "url": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+    }
+   ]
+  },
   {
    "id": "20261111-md-european-shares-hold-near-records-as-sie",
    "date": "2026-11-11",
@@ -33,7 +641,7 @@
       648.33,
       656.52,
       658.32,
-      660.96
+      663.05
      ],
      "dates": [
       "2026-11-04",
@@ -56,7 +664,7 @@
       118.1,
       124.1,
       119.84,
-      130.16
+      132.76
      ],
      "dates": [
       "2026-11-04",
@@ -79,7 +687,7 @@
       13.032,
       13.598,
       13.44,
-      10.73
+      10.54
      ],
      "dates": [
       "2026-11-04",
@@ -174,7 +782,7 @@
       46.4,
       48.98,
       48.73,
-      56.5
+      60.77
      ],
      "dates": [
       "2026-11-04",
@@ -197,7 +805,7 @@
       186.64,
       178.67,
       168.89,
-      173.015
+      173.73
      ],
      "dates": [
       "2026-11-04",
@@ -298,7 +906,7 @@
       118.1,
       124.1,
       119.84,
-      130.16
+      132.76
      ],
      "dates": [
       "2026-11-04",
@@ -357,7 +965,7 @@
       209.9,
       207,
       198.6,
-      190.2
+      191.05
      ],
      "dates": [
       "2026-11-04",
@@ -421,7 +1029,7 @@
       57.64,
       58.6,
       58.14,
-      59.16
+      59.2
      ],
      "dates": [
       "2026-11-04",
@@ -480,7 +1088,7 @@
       13.032,
       13.598,
       13.44,
-      10.73
+      10.54
      ],
      "dates": [
       "2026-11-04",
@@ -650,7 +1258,7 @@
       186.64,
       178.67,
       168.89,
-      173.015
+      173.73
      ],
      "dates": [
       "2026-11-03",
@@ -856,7 +1464,7 @@
       6.35,
       6.64,
       7.34,
-      7.615
+      7.66
      ],
      "dates": [
       "2026-11-03",
@@ -917,7 +1525,7 @@
       88.29,
       97.4,
       97.11,
-      98.6
+      97.5
      ],
      "dates": [
       "2026-11-03",
@@ -978,7 +1586,7 @@
       98.21,
       99.02,
       93,
-      93.465
+      98.53
      ],
      "dates": [
       "2026-11-03",
@@ -1039,7 +1647,7 @@
       46.4,
       48.98,
       48.73,
-      56.5
+      60.77
      ],
      "dates": [
       "2026-11-03",
@@ -1237,7 +1845,7 @@
       45.755,
       48.625,
       49.05,
-      51.75
+      52.12
      ],
      "dates": [
       "2026-11-03",
@@ -1297,7 +1905,7 @@
       116.5,
       116.95,
       115.75,
-      115.75
+      117.35
      ],
      "dates": [
       "2026-11-03",
@@ -1391,7 +1999,7 @@
       13.36,
       13.44,
       12.83,
-      12.76
+      12.7
      ],
      "dates": [
       "2026-11-03",
@@ -1456,7 +2064,7 @@
       56.28,
       59.37,
       58.13,
-      61.0424
+      62.5
      ],
      "dates": [
       "2026-11-03",
@@ -1481,7 +2089,7 @@
       141.2,
       154.6,
       154.39,
-      164.3115
+      168.8
      ],
      "dates": [
       "2026-11-03",
@@ -1506,7 +2114,7 @@
       46.4,
       48.98,
       48.73,
-      56.4666
+      60.77
      ],
      "dates": [
       "2026-11-03",
@@ -1531,7 +2139,7 @@
       129.49,
       141.45,
       134,
-      151.6203
+      154.69
      ],
      "dates": [
       "2026-11-03",
@@ -1744,7 +2352,7 @@
       68.44,
       67.44,
       69.02,
-      71.6
+      71.3
      ],
      "dates": [
       "2026-10-30",
@@ -1809,7 +2417,7 @@
       40.49,
       41.77,
       42.77,
-      42.72
+      42.33
      ],
      "dates": [
       "2026-10-30",
@@ -1874,7 +2482,7 @@
       433.7,
       450.7,
       456.7,
-      455.4
+      458.5
      ],
      "dates": [
       "2026-10-30",
@@ -2011,7 +2619,7 @@
       65.9,
       65.02,
       64.05,
-      63.93
+      64.88
      ],
      "dates": [
       "2026-10-30",
@@ -2040,7 +2648,7 @@
       42.88,
       42.32,
       41.68,
-      41.61
+      42.24
      ],
      "dates": [
       "2026-10-30",
@@ -2224,7 +2832,7 @@
       186.64,
       178.67,
       168.89,
-      173.05
+      173.73
      ],
      "dates": [
       "2026-10-29",
@@ -2255,7 +2863,7 @@
       449.04,
       508.58,
       515.21,
-      525.1
+      552.9
      ],
      "dates": [
       "2026-10-29",
@@ -2286,7 +2894,7 @@
       835.06,
       886.51,
       859.99,
-      945.352
+      977.69
      ],
      "dates": [
       "2026-10-29",
@@ -2508,7 +3116,7 @@
       50.35,
       52.6,
       53.65,
-      56.25
+      57.65
      ],
      "dates": [
       "2026-10-29",
@@ -2539,7 +3147,7 @@
       1283.6,
       1343.8,
       1361,
-      1395
+      1403.8
      ],
      "dates": [
       "2026-10-29",
@@ -2570,7 +3178,7 @@
       94.34,
       99.88,
       96.8,
-      105.3
+      108.35
      ],
      "dates": [
       "2026-10-29",
@@ -2638,7 +3246,7 @@
       271.72,
       274.29,
       276.79,
-      276.19
+      277.45
      ],
      "dates": [
       "2026-10-29",
@@ -2706,7 +3314,7 @@
       22.39,
       24.13,
       24.07,
-      23.66
+      24
      ],
      "dates": [
       "2026-10-29",
@@ -2774,7 +3382,7 @@
       174.62,
       186.3,
       181.49,
-      189.67
+      203.36
      ],
      "dates": [
       "2026-10-29",
@@ -2924,7 +3532,7 @@
       54.82,
       56.84,
       58.52,
-      59.3
+      59.54
      ],
      "dates": [
       "2026-10-29",
@@ -2997,7 +3605,7 @@
       812.7,
       845.4,
       853.3,
-      810.3
+      794.1
      ],
      "dates": [
       "2026-10-29",
@@ -3065,7 +3673,7 @@
       13.53,
       13.93,
       14.4,
-      14.62
+      14.555
      ],
      "dates": [
       "2026-10-29",
@@ -3169,7 +3777,7 @@
       165.41,
       171.47,
       173.53,
-      176.105
+      176.57
      ],
      "dates": [
       "2026-10-29",
@@ -3237,7 +3845,7 @@
       4.96,
       5.05,
       5,
-      5.115
+      5.34
      ],
      "dates": [
       "2026-10-29",
@@ -3268,7 +3876,7 @@
       704.55,
       723.76,
       730.66,
-      724.62
+      728.85
      ],
      "dates": [
       "2026-10-29",
@@ -3299,7 +3907,7 @@
       391.22,
       410,
       395.51,
-      407.5625
+      404.77
      ],
      "dates": [
       "2026-10-29",
@@ -3628,7 +4236,7 @@
       160.42,
       154.25,
       156.67,
-      158.23
+      164.12
      ],
      "dates": [
       "2026-10-28",
@@ -3697,7 +4305,7 @@
       179.04,
       179.62,
       178.4,
-      186.495
+      184.38
      ],
      "dates": [
       "2026-10-28",
@@ -3766,7 +4374,7 @@
       42.09,
       41.74,
       41.46,
-      41.625
+      43.12
      ],
      "dates": [
       "2026-10-28",
@@ -3799,7 +4407,7 @@
       162.01,
       168.71,
       169.08,
-      168.38
+      172.16
      ],
      "dates": [
       "2026-10-28",
@@ -4014,7 +4622,7 @@
       148.7,
       147.25,
       144.7,
-      143
+      143.7
      ],
      "dates": [
       "2026-10-28",
@@ -4047,7 +4655,7 @@
       209.9,
       207,
       198.6,
-      190.2
+      191.05
      ],
      "dates": [
       "2026-10-28",
@@ -4115,7 +4723,7 @@
       269.45,
       272.8,
       271.5,
-      272.95
+      272.7
      ],
      "dates": [
       "2026-10-28",
@@ -4184,7 +4792,7 @@
       449.04,
       508.58,
       515.21,
-      525.175
+      552.9
      ],
      "dates": [
       "2026-10-28",
@@ -4252,7 +4860,7 @@
       59.36,
       58.86,
       58.12,
-      57.8
+      57.98
      ],
      "dates": [
       "2026-10-28",
@@ -4320,7 +4928,7 @@
       52.48,
       52.46,
       53.47,
-      53.13
+      52.82
      ],
      "dates": [
       "2026-10-28",
