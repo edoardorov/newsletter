@@ -1,8 +1,534 @@
 {
  "today": "2026-11-13",
- "updated": "2026-11-13T14:54:11.896Z",
- "edition": "MD",
+ "updated": "2026-11-13T20:53:50.638Z",
+ "edition": "PM",
  "stories": [
+  {
+   "id": "20261113-pm-fed-officials-signal-further-rate-rises-",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Rates",
+    "Inflation"
+   ],
+   "keywords": [
+    "Federal Reserve",
+    "Rate increases",
+    "Susan Collins",
+    "Mary Daly"
+   ],
+   "companies": [],
+   "cov": 0.8,
+   "imp": 0.8,
+   "title": "Fed officials signal further rate rises may be needed",
+   "dek": "Fresh comments from two Fed officials reinforced expectations of further rate increases as investors weighed how far policymakers may need to go.",
+   "body": [
+    "Two Federal Reserve officials signalled that further tightening may be needed, adding to the market’s focus on the central bank’s December meeting. Boston Fed President Susan Collins said some additional tightening soon would be appropriate and that a tighter policy path than she had expected a few months ago might be warranted.",
+    "San Francisco Fed President Mary Daly said her bias was that rates would likely need to rise, citing services inflation and persistent price pressures. Markets widely expect a December rate increase, Reuters reported."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Fed’s Collins says more rate hikes are coming, Bloomberg Television reports",
+     "url": "https://www.reuters.com/markets/us/feds-collins-says-more-rate-hikes-are-coming-bloomberg-television-reports-2026-11-13/"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Fed likely to need to raise rates amid worsening inflation: Daly",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WO29P?channel=FBi345"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-technology-selloff-drags-us-stocks-lower",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Negative",
+   "themes": [
+    "Tech",
+    "AI",
+    "Earnings"
+   ],
+   "keywords": [
+    "US stocks",
+    "Nasdaq",
+    "Semiconductors",
+    "Nvidia"
+   ],
+   "companies": [
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "move": -3,
+     "series": [
+      186.64,
+      178.67,
+      168.89,
+      173.73,
+      166.19,
+      162.775
+     ],
+     "dates": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.95,
+   "imp": 0.8,
+   "title": "Technology selloff drags US stocks lower at the close",
+   "dek": "US equities finished lower as technology and semiconductor shares led the market down.",
+   "body": [
+    "US stocks ended lower, with the Nasdaq down 1.40% to 25,009.58, the S&P 500 off 0.84% to 7,528.41 and the Dow down 0.23% to 52,176.94. Technology shares led declines: the Philadelphia semiconductor index fell 4%, while Nvidia lost 3%.",
+    "The selloff extended the pressure on chip stocks amid concerns about Nvidia following the departure of its chief executive. Reuters reported Advanced Micro Devices and Broadcom were also sharply lower, without giving closing moves for either."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Stocks fall with tech, Nvidia concerns; US dollar climbs",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WO06M?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-dollar-reaches-a-19-month-high-as-yen-ne",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "FX",
+   "sentiment": "Negative",
+   "themes": [
+    "FX",
+    "Rates"
+   ],
+   "keywords": [
+    "US dollar",
+    "Japanese yen",
+    "Fed",
+    "Intervention"
+   ],
+   "companies": [],
+   "cov": 0.8,
+   "imp": 0.65,
+   "title": "Dollar reaches a 19-month high as yen nears 160",
+   "dek": "Rate-hike expectations supported the dollar and kept the yen close to a level that has drawn intervention attention.",
+   "body": [
+    "The dollar index rose 0.13% to 103.35, after reaching its highest level since April 2025, as investors priced in the prospect of more aggressive Federal Reserve rate increases. The dollar’s strength kept the Japanese yen near the 160-per-dollar level, a threshold that has put traders on alert for possible intervention.",
+    "Reuters reported that traders had raised the probability of a 50-basis-point Fed increase next month, although a 25-basis-point move remained the central expectation."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Dollar near 19-month high on Fed hike bets, yen tests 160",
+     "url": "https://www.reuters.com/5f374b32b07b/world/africa/dollar-near-19-month-high-fed-hike-bets-yen-tests-160-2026-11-13"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Stocks fall with tech, Nvidia concerns; US dollar climbs",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WO06M?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-two-year-treasury-yield-set-for-biggest-",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Negative",
+   "themes": [
+    "Rates",
+    "Inflation"
+   ],
+   "keywords": [
+    "Treasuries",
+    "Two-year yield",
+    "Fed",
+    "Bond market"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.7,
+   "title": "Two-year Treasury yield set for biggest weekly rise in more than two years",
+   "dek": "Short-dated Treasury yields remained elevated as markets repriced the outlook for Fed policy.",
+   "body": [
+    "US Treasury yields swung after the latest inflation data, but the two-year yield was last down 0.94 basis point at 4.855%. It had earlier touched 4.892%, its highest since October 14.",
+    "The two-year yield was on track for its largest weekly rise in more than two years, as investors reassessed the potential pace of Fed tightening."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Stocks fall with tech, Nvidia concerns; US dollar climbs",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WO06M?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-oil-heads-for-a-second-weekly-decline-as",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Commodities",
+   "sentiment": "Neutral",
+   "themes": [
+    "Commodities",
+    "Geopolitics",
+    "Energy"
+   ],
+   "keywords": [
+    "Oil",
+    "Iran",
+    "Brent",
+    "Strait of Hormuz"
+   ],
+   "companies": [],
+   "cov": 0.8,
+   "imp": 0.6,
+   "title": "Oil heads for a second weekly decline as Iran blockade weighs on risk premium",
+   "dek": "Crude was set for a second weekly loss as the Iran blockade eased fears of wider conflict, while shipping risks persisted.",
+   "body": [
+    "Oil prices eased and were headed for a second consecutive weekly decline. US crude fell 0.34% to $88.44 a barrel, while Brent slipped 0.14% to $95.70.",
+    "Reuters said Washington’s continued blockade and economic pressure on Iran eased fears of renewed direct conflict, although attacks on shipping remained a supply risk. Iran’s military said four tankers had been hit by explosions in the Strait of Hormuz on Thursday."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "Oil prices set for second weekly decline as Trump to stay with Iran blockade",
+     "url": "https://www.reuters.com/business/energy/oil-prices-set-second-weekly-decline-trump-stay-with-iran-blockade-2026-11-13/"
+    },
+    {
+     "pub": "Reuters",
+     "title": "Stocks fall with tech, Nvidia concerns; US dollar climbs",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WO06M?channel=frL012"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-cerebras-lifts-2026-outlook-and-names-mi",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "Earnings",
+    "AI",
+    "Tech"
+   ],
+   "keywords": [
+    "Cerebras",
+    "Microsoft",
+    "Revenue outlook",
+    "AI chips"
+   ],
+   "companies": [
+    {
+     "name": "Cerebras",
+     "ticker": "CBRS",
+     "move": 0,
+     "series": [
+      89.68,
+      96.7,
+      93.66,
+      101.08,
+      97.75,
+      108.55
+     ],
+     "dates": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "move": 0,
+     "series": [
+      530.61,
+      545.18,
+      533.16,
+      521.13,
+      523,
+      525.13
+     ],
+     "dates": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.6,
+   "imp": 0.65,
+   "title": "Cerebras lifts 2026 outlook and names Microsoft as a customer",
+   "dek": "Cerebras raised its annual outlook and added Microsoft as a customer, providing a bright spot in a technology-led selloff.",
+   "body": [
+    "Cerebras jumped more than 6% after the chip and cloud company lifted its 2026 revenue outlook and announced Microsoft as a customer, Reuters reported. The company raised its forecast for its own Core revenue measure to $940 million-$960 million.",
+    "Its third-quarter revenue under standard accounting rules was $210.8 million, up 55% year on year; Core revenue was $230.9 million, up 70%."
+   ],
+   "sources": [
+    {
+     "pub": "The Kansas City Star (Reuters)",
+     "title": "Wall St slides as Nvidia overhang weighs on tech",
+     "url": "https://www.kansas.com/news/nation-world/national/article318059457.html"
+    },
+    {
+     "pub": "Stock Titan",
+     "title": "Stocks Give Up Early Gains While AMD, Broadcom and Nvidia Slide",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-modine-surges-on-report-of-samsung-takeo",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Micro",
+   "region": "US",
+   "asset": "Equities",
+   "sentiment": "Positive",
+   "themes": [
+    "M&A",
+    "Tech"
+   ],
+   "keywords": [
+    "Modine",
+    "Samsung",
+    "Takeover talks",
+    "Data centres"
+   ],
+   "companies": [
+    {
+     "name": "Modine Manufacturing",
+     "ticker": "MOD",
+     "move": 30.9,
+     "series": [
+      96.61,
+      106.15,
+      103.07,
+      106.67,
+      106.1,
+      137.38
+     ],
+     "dates": [
+      "2026-11-06",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.55,
+   "imp": 0.7,
+   "title": "Modine surges on report of Samsung takeover discussions",
+   "dek": "A report of possible Samsung takeover talks sparked a sharp rally in the cooling-equipment company’s shares, though no deal was confirmed.",
+   "body": [
+    "Modine shares rose more than 30% in Friday trading after Bloomberg reported Samsung Electronics was in talks to acquire the cooling-equipment maker, according to CNBC’s market coverage. Samsung said it could not confirm the report; Modine had not immediately responded to CNBC.",
+    "The report put a potential takeover in focus for a company whose cooling systems serve data-centre demand. No agreement was announced."
+   ],
+   "sources": [
+    {
+     "pub": "Stock Titan",
+     "title": "Stocks Give Up Early Gains While AMD, Broadcom and Nvidia Slide",
+     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-european-shares-finish-flat-but-post-the",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Europe",
+   "asset": "Equities",
+   "sentiment": "Neutral",
+   "themes": [
+    "Growth",
+    "Earnings"
+   ],
+   "keywords": [
+    "STOXX 600",
+    "European shares",
+    "Weekly gain",
+    "Earnings"
+   ],
+   "companies": [],
+   "cov": 0.75,
+   "imp": 0.4,
+   "title": "European shares finish flat but post their best week since June",
+   "dek": "A quiet Friday close capped the STOXX 600’s strongest week since late June, supported by earnings and a rotation away from technology.",
+   "body": [
+    "European shares ended little changed, with the STOXX 600 closing flat at 664.14 points, but the index gained more than 2% over the week, its best weekly performance since late June, Reuters reported.",
+    "The mixed session left Germany’s DAX down 0.1%, France’s CAC 40 up 0.1% and the UK’s FTSE 100 up 0.4% in other reported closing data."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters via Fidelity",
+     "title": "European shares end best week since June as strong earnings lift sentiment",
+     "url": "https://www.fidelity.com/news/article/international/202611131246RTRSNEWSCOMBINED_L3N46U1KC_1"
+    },
+    {
+     "pub": "Fidelity",
+     "title": "European Stocks Close Mixed in Friday Trading; EU, Euro Area GDP Growth in Line With Projections",
+     "url": "https://www.fidelity.com/news/article/international/202611131151MIDNIGHTUSEQUITY_A3753973"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-bessent-and-fed-s-goolsbee-clash-over-wh",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "US",
+   "asset": "Rates",
+   "sentiment": "Neutral",
+   "themes": [
+    "Inflation",
+    "Rates",
+    "Energy"
+   ],
+   "keywords": [
+    "Scott Bessent",
+    "Austan Goolsbee",
+    "Energy shock",
+    "Inflation"
+   ],
+   "companies": [],
+   "cov": 0.7,
+   "imp": 0.55,
+   "title": "Bessent and Fed’s Goolsbee clash over whether energy inflation warrants a rate rise",
+   "dek": "Bessent urged the Fed to look through energy-driven inflation, while Goolsbee said price pressures were broader than oil.",
+   "body": [
+    "US Treasury Secretary Scott Bessent argued the Fed should not raise rates in response to an energy-supply shock linked to the Iran war, saying policymakers should look through noisy data and consider the outlook.",
+    "Chicago Fed President Austan Goolsbee pushed back in a CNBC appearance, saying inflation pressures were spreading beyond energy into services and medical care. The contrasting views put the source of inflation—and the appropriate policy response—under scrutiny."
+   ],
+   "sources": [
+    {
+     "pub": "Reuters",
+     "title": "US Treasury chief says Fed should not hike rates over energy shock tied to Iran war",
+     "url": "http://rmb.reuters.com/rmd/rss/item/tag:reuters.com,2026:newsml_KCN3WO1NJ?channel=frL012"
+    },
+    {
+     "pub": "The News & Observer (Reuters)",
+     "title": "Bessent, Fed’s Goolsbee divided on role of energy shock in inflation",
+     "url": "https://www.newsobserver.com/news/business/article318061929.html"
+    }
+   ]
+  },
+  {
+   "id": "20261113-pm-bitcoin-extends-selloff-below-70-000-as-",
+   "date": "2026-11-13",
+   "ed": "PM",
+   "scope": "Macro",
+   "region": "Global",
+   "asset": "Crypto",
+   "sentiment": "Negative",
+   "themes": [
+    "Crypto",
+    "Rates"
+   ],
+   "keywords": [
+    "Bitcoin",
+    "Ether",
+    "Liquidations",
+    "Dollar"
+   ],
+   "companies": [
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "move": 0,
+     "series": [
+      74584.6484,
+      75223.1484,
+      73720.1172,
+      73964.4688,
+      71342.9688,
+      68885.2734
+     ],
+     "dates": [
+      "2026-11-08",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    },
+    {
+     "name": "Ethereum",
+     "ticker": "ETH-USD",
+     "move": 0,
+     "series": [
+      2120.9802,
+      2131.4985,
+      2050.1809,
+      2055.8762,
+      2016.8297,
+      1948.24
+     ],
+     "dates": [
+      "2026-11-08",
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+     ],
+     "eventIndex": 5,
+     "currency": "USD"
+    }
+   ],
+   "cov": 0.75,
+   "imp": 0.85,
+   "title": "Bitcoin extends selloff below $70,000 as liquidations top $1.6 billion",
+   "dek": "Bitcoin and ether hit 12-week lows as rising rate expectations and dollar strength pressured risk assets.",
+   "body": [
+    "Bitcoin traded below $70,000 and fell to a 12-week low as a stronger dollar and expectations of higher US rates weighed on digital assets. CoinDesk reported bitcoin at $68,778.59 and ether at $1,938.83 in its market update.",
+    "Liquidations across crypto markets topped $1.6 billion, according to the report, as leveraged positions were unwound. The move extended the selloff already reported earlier in the day."
+   ],
+   "sources": [
+    {
+     "pub": "CoinDesk",
+     "title": "Bitcoin hits 12-week low as dollar rallies on interest-rate outlook, liquidations top $1.6 billion",
+     "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-hits-12-week-low-as-dollar-rallies-on-interest-rate-outlook-liquidations-top-usd1-6-billion"
+    }
+   ]
+  },
   {
    "id": "20261113-md-us-producer-prices-post-their-biggest-an",
    "date": "2026-11-13",
@@ -234,7 +760,7 @@
       724.8,
       736.2,
       739.6,
-      758.2
+      764.8
      ],
      "dates": [
       "2026-11-06",
@@ -298,7 +824,7 @@
       823.8,
       835.4,
       830.6,
-      890
+      894.4
      ],
      "dates": [
       "2026-11-06",
@@ -362,7 +888,7 @@
       134,
       133,
       134,
-      129.5
+      129
      ],
      "dates": [
       "2026-11-06",
@@ -426,7 +952,7 @@
       168.89,
       173.73,
       166.19,
-      162.36
+      162.77
      ],
      "dates": [
       "2026-11-06",
@@ -490,7 +1016,7 @@
       678.5,
       681.5,
       696,
-      697
+      702
      ],
      "dates": [
       "2026-11-06",
@@ -556,7 +1082,7 @@
       168.89,
       173.73,
       166.19,
-      162.35
+      162.775
      ],
      "dates": [
       "2026-11-05",
@@ -618,7 +1144,7 @@
       168.89,
       173.73,
       166.19,
-      162.36
+      162.77
      ],
      "dates": [
       "2026-11-05",
@@ -721,7 +1247,7 @@
       98.15,
       100.76,
       102.01,
-      96.91
+      95.665
      ],
      "dates": [
       "2026-11-05",
@@ -783,7 +1309,7 @@
       372.53,
       395.08,
       380.95,
-      371.68
+      369.67
      ],
      "dates": [
       "2026-11-05",
@@ -879,7 +1405,7 @@
       271.55,
       277,
       281.7,
-      279.3
+      279.4
      ],
      "dates": [
       "2026-11-05",
@@ -904,7 +1430,7 @@
       149.35,
       151.6,
       148.15,
-      148.8
+      149.6
      ],
      "dates": [
       "2026-11-05",
@@ -971,7 +1497,7 @@
       121.07,
       122.35,
       114.41,
-      111.295
+      112.27
      ],
      "dates": [
       "2026-11-05",
@@ -1068,7 +1594,7 @@
       134,
       154.69,
       128.64,
-      115.86
+      116.93
      ],
      "dates": [
       "2026-11-05",
@@ -1200,7 +1726,7 @@
       48.73,
       60.77,
       56.6,
-      52.12
+      53.3996
      ],
      "dates": [
       "2026-11-04",
@@ -1268,7 +1794,7 @@
       48.73,
       60.77,
       56.6,
-      52.1
+      53.405
      ],
      "dates": [
       "2026-11-04",
@@ -1336,7 +1862,7 @@
       501.62,
       551.72,
       545.14,
-      526.01
+      527.955
      ],
      "dates": [
       "2026-11-04",
@@ -1363,7 +1889,7 @@
       859.99,
       977.69,
       937.46,
-      887.2961
+      884.88
      ],
      "dates": [
       "2026-11-04",
@@ -1390,7 +1916,7 @@
       725.11,
       811.3,
       798.44,
-      782.7699
+      779.82
      ],
      "dates": [
       "2026-11-04",
@@ -1453,7 +1979,7 @@
       2.66,
       3.67,
       3.35,
-      3.416
+      3.497
      ],
      "dates": [
       "2026-11-04",
@@ -1516,7 +2042,7 @@
       7.87,
       9.97,
       8.74,
-      8.645
+      8.455
      ],
      "dates": [
       "2026-11-04",
@@ -1579,7 +2105,7 @@
       1.39,
       1.82,
       1.86,
-      1.83
+      1.825
      ],
      "dates": [
       "2026-11-04",
@@ -1642,7 +2168,7 @@
       25.09,
       25.86,
       24.45,
-      23.7
+      23.94
      ],
      "dates": [
       "2026-11-04",
@@ -1775,7 +2301,7 @@
       658.32,
       663.05,
       664.01,
-      663.44
+      664.14
      ],
      "dates": [
       "2026-11-04",
@@ -1802,7 +2328,7 @@
       119.84,
       132.76,
       132.52,
-      131.98
+      131.28
      ],
      "dates": [
       "2026-11-04",
@@ -1829,7 +2355,7 @@
       13.44,
       10.54,
       10.016,
-      9.92
+      10.1
      ],
      "dates": [
       "2026-11-04",
@@ -1928,7 +2454,7 @@
       48.73,
       60.77,
       56.6,
-      52.1
+      53.3996
      ],
      "dates": [
       "2026-11-04",
@@ -1955,7 +2481,7 @@
       168.89,
       173.73,
       166.19,
-      162.35
+      162.745
      ],
      "dates": [
       "2026-11-04",
@@ -2060,7 +2586,7 @@
       119.84,
       132.76,
       132.52,
-      131.98
+      131.28
      ],
      "dates": [
       "2026-11-04",
@@ -2123,7 +2649,7 @@
       198.6,
       191.05,
       198.25,
-      196.35
+      194.55
      ],
      "dates": [
       "2026-11-04",
@@ -2191,7 +2717,7 @@
       58.14,
       59.2,
       59.24,
-      59.82
+      59.58
      ],
      "dates": [
       "2026-11-04",
@@ -2254,7 +2780,7 @@
       13.44,
       10.54,
       10.016,
-      9.92
+      10.1
      ],
      "dates": [
       "2026-11-04",
@@ -2428,7 +2954,7 @@
       168.89,
       173.73,
       166.19,
-      162.35
+      162.745
      ],
      "dates": [
       "2026-11-03",
@@ -2638,7 +3164,7 @@
       7.34,
       7.66,
       7.2,
-      6.955
+      7.05
      ],
      "dates": [
       "2026-11-03",
@@ -2703,7 +3229,7 @@
       97.11,
       97.5,
       98.05,
-      97.47
+      96.78
      ],
      "dates": [
       "2026-11-03",
@@ -2768,7 +3294,7 @@
       93,
       98.53,
       100.29,
-      100.57
+      100.07
      ],
      "dates": [
       "2026-11-03",
@@ -2833,7 +3359,7 @@
       48.73,
       60.77,
       56.6,
-      52.1
+      53.39
      ],
      "dates": [
       "2026-11-03",
@@ -3035,7 +3561,7 @@
       49.05,
       52.12,
       52.11,
-      50.84
+      49.875
      ],
      "dates": [
       "2026-11-03",
@@ -3099,7 +3625,7 @@
       115.75,
       117.35,
       118.05,
-      115.55
+      116.95
      ],
      "dates": [
       "2026-11-03",
@@ -3197,7 +3723,7 @@
       12.83,
       12.7,
       12.72,
-      12.81
+      12.7
      ],
      "dates": [
       "2026-11-03",
@@ -3266,7 +3792,7 @@
       58.13,
       62.5,
       61.2,
-      59.265
+      59.74
      ],
      "dates": [
       "2026-11-03",
@@ -3295,7 +3821,7 @@
       154.39,
       168.8,
       164.45,
-      157.175
+      157.48
      ],
      "dates": [
       "2026-11-03",
@@ -3324,7 +3850,7 @@
       48.73,
       60.77,
       56.6,
-      52.1
+      53.3745
      ],
      "dates": [
       "2026-11-03",
@@ -3353,7 +3879,7 @@
       134,
       154.69,
       128.64,
-      115.86
+      116.93
      ],
      "dates": [
       "2026-11-03",
@@ -3570,7 +4096,7 @@
       69.02,
       71.3,
       70.9,
-      71.6
+      72.98
      ],
      "dates": [
       "2026-10-30",
@@ -3639,7 +4165,7 @@
       42.77,
       42.33,
       42.63,
-      42.77
+      42.66
      ],
      "dates": [
       "2026-10-30",
@@ -3708,7 +4234,7 @@
       456.7,
       458.5,
       452.1,
-      451.4
+      452.9
      ],
      "dates": [
       "2026-10-30",
@@ -3849,7 +4375,7 @@
       64.05,
       64.88,
       62.03,
-      60.015
+      59.915
      ],
      "dates": [
       "2026-10-30",
@@ -3882,7 +4408,7 @@
       41.68,
       42.24,
       40.36,
-      39.05
+      38.98
      ],
      "dates": [
       "2026-10-30",
